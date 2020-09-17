@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos_menu.css">
+	<link rel="icon" href="images/favicon_sylard3.svg" sizes="any" type="image/svg+xml">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css"> <!--GRID SOLAMENTE-->
+<title>SYLARD Visor EAF</title>
+	
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid back_aqua">
+			<!--INICIA barra de navegacion superior-->
+			<nav class="container contenedor_ancho_area_principal "> 
+				<div class="contenedor_switch float_left">
+                	<label class="texto" for="checkbox">ESP</label>
+					<label class="switch">
+					<input type="checkbox">
+                   	<span class="slider round"></span></label>
+					<label class="texto" for="checkbox">ENG</label>
+				</div>
+				<div class="barra_superior_elemento float_left active"><a  href="#" ><span class="icono icon-home1"></span> SYLARD</a></div> 
+				<!-- la clase "ACTIVE" se usa en la sección que esta activa--> <!-- En el caso de HOME este elemento desaparece, ya que hay un icono en la barra publico-->
+            	<!--<div class="barra_superior_elemento float_right"><a  class="" href="#">ACCESAR <span class="icono icon-login"></span></a></div>
+				<div class="barra_superior_elemento float_right"><a href="#">REGISTRO <span class="icono icon-person"></span></a></div>-->
+				<div class="barra_superior_elemento dropdown_menu_usuario float_right">
+					<button class="dropbtn_barra_superior">
+						<div class="contenedor_icono_usuario"><img src="images/iconousuario.svg" class="imagen_icono_usuario" alt="Ícono de venado usuario"></div>
+						Emiliano Zapata <span class="icono icon-angle-down" id="flecha_dropdow_barra_superior"></span>
+					</button>
+					<div class="contenido_dropdown_menu_usuario">
+						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-edit"></span> Editar cuenta</a>
+   						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-key1"></span> Editar contraseña</a>
+    					<a href="#"><span class="icono_dropdown_menu_usuario_item icon-folder-open-o"></span> Mis colecciones</a>
+						<a href="#">Link 1 </a>
+   						<a href="#">Link 2</a>
+    					<a class="dropdown_menu_usuario_logout" href="#"><span class="icono_dropdown_menu_usuario_item icon-log-out"></span>  Cerrar sesión</a>
+					</div>
+				</div>
+			</nav>
+			<!--TERMINA barra de navegacion superior-->
+		</div>
+		<!--INICIA barra de navegacion publico-->
+		<div class="container-fluid back_aqua_0">
+			<nav class=" container contenedor_barra_nav_publico">
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_1"><span class="icono_nav_publico icon-home1"></span></a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_2">Catálogo</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_3">Documentación</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_4">Manual de usuario</a>		
+				<h1 class="logo_menu" id="bnpe_5">SYLARD</h1>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_6">Contacto</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_7">Descargas</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_8">Términos y condiciones</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_9">Creditos</a>
+			</nav>
+		</div>
+		<!--TERMINA-- barra de navegacion publico-->
+	</header>
+	<main>
+		<div class="container-fluid" id="contenedor_viewer_ancho_total">
+			<section class="container">
+				<div class="col-sm-12 contenedor-90vh" id="contenedor_general_viewer">
+					<h2>I³tun⁴ ti¹nu’⁴u⁴<br>
+						<i>(Malvaceae: Guazuma ulmifolia Lam. var. ulmifolia)</i></h2>
+					<button class="contenedor_acordeon"><span class="icono_acordeon icon-chevron-down"></span> Opciones visuales</button>
+					<div class="acordeon_panel">
+						<div class="acordeon_panel_item float_left">
+							
+							<form method="post" action="#" role="form" class="formulario_contenedor_hablantes_viewer  ">
+							<div class="contenedor_hablante_y_switch">	
+								<p class="label label_switch_horizontal">Canal 1 (Hablante)</p>
+								<div class="contenedor_switch_canal">
+									<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal1_off">OFF</label>
+									<label class="switch_general">
+									<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_1" checked>
+                   					<span class="slider_general round"></span></label>
+									<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+								</div>
+							</div>
+							<h5 class="nombre_hablante">Nombre de usuario de muchas palabras</h5>
+							<div class="contenedor_opciones_visuales_canal1_viewer ">	
+								<select class="opciones_despliegue_viewer" list="opciones_despliegue" role="listbox">
+									<datalist id="opciones_despliegue">
+										<option  value="One line display" selected>One line display</option>
+										<option value="Scroll">Scroll</option>
+									</datalist>
+								</select>
+								<input type="text" class="inp" id="colorPicker" autocomplete="off">
+								<div class="palette" id="colorPalette"></div>
+							</div>	
+							</form>
+						</div>
+						<div class="acordeon_panel_item float_left">
+							
+							<form method="post" action="#" role="form" class="formulario_contenedor_hablantes_viewer  ">
+							<div class="contenedor_hablante_y_switch">	
+								<p class="label label_switch_horizontal">Canal 2 (Hablante)</p>
+								<div class="contenedor_switch_canal">
+									<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal2_off">OFF</label>
+									<label class="switch_general">
+									<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_2" checked>
+                   					<span class="slider_general round"></span></label>
+									<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal2_on">ON</label>
+								</div>
+							</div>
+							<h5 class="nombre_hablante">Nombre de usuario de muchas palabras</h5>
+							<div class="contenedor_opciones_visuales_canal1_viewer ">	
+								<select class="opciones_despliegue_viewer" list="opciones_despliegue2" role="listbox">
+									<datalist id="opciones_despliegue2">
+										<option  value="One line display" selected>One line display</option>
+										<option value="Scroll">Scroll</option>
+									</datalist>
+								</select>
+								<input type="text" class="inp" id="colorPicker2" autocomplete="off">
+								<div class="palette" id="colorPalette2"></div>
+							</div>	
+							</form>
+						</div>
+						<div class="acordeon_panel_item float_left">
+							
+							<form method="post" action="#" role="form" class="formulario_contenedor_hablantes_viewer  ">
+							<div class="contenedor_hablante_y_switch">	
+								<p class="label label_switch_horizontal">Canal 3 (Hablante)</p>
+								<div class="contenedor_switch_canal">
+									<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal3_off">OFF</label>
+									<label class="switch_general">
+									<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_3" checked>
+                   					<span class="slider_general round"></span></label>
+									<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal3_on">ON</label>
+								</div>
+							</div>
+							<h5 class="nombre_hablante">Nombre de usuario de muchas palabras</h5>
+							<div class="contenedor_opciones_visuales_canal1_viewer ">	
+								<select class="opciones_despliegue_viewer" list="opciones_despliegue3" role="listbox">
+									<datalist id="opciones_despliegue3">
+										<option  value="One line display" selected>One line display</option>
+										<option value="Scroll">Scroll</option>
+									</datalist>
+								</select>
+								<input type="text" class="inp" id="colorPicker3" autocomplete="off">
+								<div class="palette" id="colorPalette3"></div>
+							</div>	
+							</form>
+						</div>
+						<div class="acordeon_panel_item float_left">
+							
+							<form method="post" action="#" role="form" class="formulario_contenedor_hablantes_viewer  ">
+							<div class="contenedor_hablante_y_switch">	
+								<p class="label label_switch_horizontal">Canal 4 (Hablante)</p>
+								<div class="contenedor_switch_canal">
+									<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal4_off">OFF</label>
+									<label class="switch_general">
+									<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_4" checked>
+                   					<span class="slider_general round"></span></label>
+									<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal4_on">ON</label>
+								</div>
+							</div>
+							<h5 class="nombre_hablante">Nombre de usuario de muchas palabras</h5>
+							<div class="contenedor_opciones_visuales_canal1_viewer ">	
+								<select class="opciones_despliegue_viewer" list="opciones_despliegue3" role="listbox">
+									<datalist id="opciones_despliegue4">
+										<option  value="One line display" selected>One line display</option>
+										<option value="Scroll">Scroll</option>
+									</datalist>
+								</select>
+								<input type="text" class="inp" id="colorPicker4" autocomplete="off">
+								<div class="palette" id="colorPalette4"></div>
+							</div>	
+							</form>
+						</div>
+					</div>
+					<div id="waveform"></div>
+					
+					<img src="images/wave.png" class="wdt-100" alt="Opciones de visualizacion de waveform:waveColor: '#A5DBE6',	progressColor: '#7EBFCC', cursorColor: '#15C1D1', barWidth: 3, barRadius: 3, cursorWidth: 2, height: 72, barGap: 3">	
+					<div class="contenedor_boton_play">		
+						<button type="button" class="btn btn-predeterminado" id="boton_play_viewer"><span class="icon-play_arrow"></span> / <span class="icon-pause1"></span></button>
+					</div>
+					<hr>	
+					<div class="contenedor_one_line_display">
+						<table class="table_one_line"> 
+							<tr>
+								<td>
+									<p class="canal_1_hablante_one_line_display_item"><span class="siglas_canal_item">SIGLAS1: </span>Nda³tu’⁴un⁴ lu³chi’⁴i²=un⁴ ji’⁴in⁴=ndu² xa’¹a⁴ i³ta² sa³in⁴ ta³ta² chi¹.</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p class="canal_2_hablante_one_line_display_item"><span class="siglas_canal_item">SIGLAS2: </span>Cuéntanos un poco sobre la flor de olote. </p>
+								</td>	
+							</tr>
+						</table>
+					</div>
+					<hr>
+					<div class="contenedor_multilinea">
+					<table class="tabla_multilinea">
+						<tr class="row_multilinea">
+							<td rowspan="2" class="td_reproduccion"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal reproduccion"><span>TGL: </span>Sa¹a³ nu¹⁴u³ ba⁴² i⁴yo² tan³ sa¹a³, nda⁴a² ba⁴² chi’⁴i⁴=na⁽²⁾=e² nda⁴a² tiem⁴pu² chi’⁴i⁴=na⁽²⁾=e²</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td class="td_canal reproduccion"><span>TGL: </span>Cuántos tipos hay, dónde hay, y en qué tiempo lo siembran.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
+						</tr>
+						<tr class="row_multilinea">
+							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
+							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
+						</tr>
+						
+						
+						
+						
+							
+						
+					</table>
+					</div>
+						
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="container-fluid contenedor_ancho_total back_aqua_0">
+			<div class="container contenedor_footer">
+				<a href="#">Terminos y condiciones</a>
+				<a href="#">Aviso de privacidad</a>
+				<a href="#" target="_blank"><span class="icono_footer icon-github"></span></a>
+				<p>© Derechos reservados SYLARD</p><img src="images/favicon_sylard3.svg" alt="Logo SYLARD">
+
+			</div>
+		</div>
+	</footer>
+	<script>
+	var acc = document.getElementsByClassName("contenedor_acordeon");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("acordeon_activo");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+	</script>
+	<script>
+var acc = document.getElementsByClassName("contenedor_acordeon");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("acordeon_activo");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+	<script src="la_color_picker.js"></script>
+	</body>
+	
+</html>

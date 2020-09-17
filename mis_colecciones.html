@@ -1,0 +1,341 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos_menu.css">
+	<link rel="icon" href="images/favicon_sylard3.svg" sizes="any" type="image/svg+xml">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css"> <!--GRID SOLAMENTE-->
+	
+	
+<title>Mis colecciones</title>
+	
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid back_aqua">
+			<!--INICIA barra de navegacion superior-->
+			<nav class="container contenedor_ancho_area_principal "> 
+				<div class="contenedor_switch float_left">
+                	<label class="texto" for="checkbox">ESP</label>
+					<label class="switch">
+					<input type="checkbox">
+                   	<span class="slider round"></span></label>
+					<label class="texto" for="checkbox">ENG</label>
+				</div>
+				<div class="barra_superior_elemento float_left active"><a  href="#" ><span class="icono icon-home1"></span> SYLARD</a></div> 
+				<!-- la clase "ACTIVE" se usa en la sección que esta activa--> <!-- En el caso de HOME este elemento desaparece, ya que hay un icono en la barra publico-->
+            	<!--<div class="barra_superior_elemento float_right"><a  class="" href="#">ACCESAR <span class="icono icon-login"></span></a></div>
+				<div class="barra_superior_elemento float_right"><a href="#">REGISTRO <span class="icono icon-person"></span></a></div>-->
+				<div class="barra_superior_elemento dropdown_menu_usuario float_right">
+					<button class="dropbtn_barra_superior">
+						<div class="contenedor_icono_usuario"><img src="images/iconousuario.svg" class="imagen_icono_usuario" alt="Ícono de venado usuario"></div>
+						Emiliano Zapata <span class="icono icon-angle-down" id="flecha_dropdow_barra_superior"></span>
+					</button>
+					<div class="contenido_dropdown_menu_usuario">
+						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-edit"></span> Editar cuenta</a>
+   						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-key1"></span> Editar contraseña</a>
+    					<a href="#"><span class="icono_dropdown_menu_usuario_item icon-folder-open-o"></span> Mis colecciones</a>
+						<a href="#">Link 1 </a>
+   						<a href="#">Link 2</a>
+    					<a class="dropdown_menu_usuario_logout" href="#"><span class="icono_dropdown_menu_usuario_item icon-log-out"></span>  Cerrar sesión</a>
+					</div>
+				</div>
+			</nav>
+			<!--TERMINA barra de navegacion superior-->
+		</div>
+		<!--INICIA barra de navegacion publico
+		<div class="container-fluid back_aqua_0">
+			<nav class=" container contenedor_barra_nav_publico">
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_1"><span class="icono_nav_publico icon-home1"></span></a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_2">Catálogo</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_3">Documentación</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_4">Manual de usuario</a>		
+				<h1 class="logo_menu" id="bnpe_5">SYLARD</h1>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_6">Contacto</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_7">Descargas</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_8">Términos y condiciones</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_9">Creditos</a>
+			</nav>
+		</div>
+		<!--TERMINA-- barra de navegacion publico-->
+	</header>
+	<main>
+		<div class="container-fluid" id="contenedor_mis_colecciones">
+			<div class="container-fluid" id="cabezal_mis_colecciones">
+				<div class="container">
+					<div class="col-sm-12" id="contenedor_items_cabezal_mis_colecciones">
+						<div  class="" id="contenedor_titulos_cabezal_mis_colecciones">
+							<h1 id="titulo_mis_colecciones"><span class="icono_cabezal icon-folder-open-o"></span> Mis colecciones</h1>
+							<h2 class="llamada" id="llamada_mis_colecciones">¡Hola!</h2>
+							<h3 class="blanco">Emiliano Zapata</h3>
+						</div>	
+						<div class="" id="contenedor_botones_cabezal">
+							<button class="btn btn-predeterminado">Agregar colección <span class="icono_boton icon-create_new_folder"></span></button>
+							<button class="btn btn-primario">Cargar audioanotacion <span class="icono_boton icon-file_upload"></span></button>
+						</div>	
+					</div>	
+				</div>
+			</div>
+			<section class="container">
+				<div class="col-sm-12 contenedor-90vh " id="contenedor_general_mis_colecciones">
+					<!--<div class="contenedor_barras_de_busqueda">
+						<div class="barra_de_busqueda_item" id="barra_busq_coleccion">
+							<div class="contenedor_etiquetas_barras_busqueda" >
+								<label class="label label_junto_flechas">Colección</label>
+								<button class="flecha_orden_ascendente active"><span class="icon-arrow-up"></span></button>
+								<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
+							</div>
+							<input class="input_busqueda" type="search" placeholder="Búsqueda">
+						</div>	
+						<div class="barra_de_busqueda_item">
+							<div class="contenedor_etiquetas_barras_busqueda">
+								<label class="label label_junto_flechas">Lengua Terminal</label>
+								<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
+								<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
+							</div>
+							<input class="input_busqueda" type="search" placeholder="Búsqueda">
+						</div>
+						<div class="barra_de_busqueda_item">
+							<div class="contenedor_etiquetas_barras_busqueda">
+								<label class="label label_junto_flechas">Gpo. de lenguas</label>
+								<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
+								<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
+							</div>
+							<input class="input_busqueda" type="search" placeholder="Búsqueda">
+						</div>
+						<div class="barra_de_busqueda_item">
+							<div class="contenedor_etiquetas_barras_busqueda">
+								<label class="label label_junto_flechas">Comunidades</label>
+								<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
+								<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
+							</div>
+							<input class="input_busqueda" type="search" placeholder="Búsqueda">
+						</div>
+						<div class="barra_de_busqueda_item" id="item_vacio_barra_busqueda">
+						</div>
+					</div> barras de busqueda por divs-->
+					<div class="contenedor_tabla_mis_colecciones">
+						<table class="tabla_mis_colecciones">
+       					 	<thead>
+                				<th class="cabezal_columnas_th" id="th_coleccion">
+									<div class="contenedor_etiquetas_barras_busqueda" >
+										<label class="label label_junto_flechas">Colección</label>
+										<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
+										<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
+									</div>
+									<input class="input_busqueda" type="search" placeholder="Búsqueda">
+								</th>
+								<th class="cabezal_columnas_th">
+									<div class="contenedor_etiquetas_barras_busqueda" >
+										<label class="label label_junto_flechas">Lengua terminal</label>
+										<button class="flecha_orden_ascendente active"><span class="icon-arrow-up"></span></button>
+										<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
+									</div>
+									<input class="input_busqueda" type="search" placeholder="Búsqueda">
+								</th>
+								<th class="cabezal_columnas_th">
+									<div class="contenedor_etiquetas_barras_busqueda" >
+										<label class="label label_junto_flechas">Gpos. de lenguas</label>
+										<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
+										<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
+									</div>
+									<input class="input_busqueda" type="search" placeholder="Búsqueda">
+								</th>
+								<th class="cabezal_columnas_th">
+									<div class="contenedor_etiquetas_barras_busqueda" >
+										<label class="label label_junto_flechas">Comunidades</label>
+										<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
+										<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
+									</div>
+									<input class="input_busqueda" type="search" placeholder="Búsqueda">
+								</th>
+								<th class="" id="th_acciones">
+									
+								</th>
+                				
+        					</thead>
+    					    <tr>
+            					<td>
+									<strong><i>Estudio Florístico y Etnobotánico de Comunidades Mixtecas en el Municipio de San Luis Acatlán</i></strong><p class="primeras_palabras_descripcion_collect"></p>
+									<div id="modal_info" class="modal">
+										<div class="contenido_modal">
+											<span class="icono_cerrar_modal icon-close"></span>
+											<h1><span class="icono_modal"></span></h1>	
+											<h2 class="titulo_modal">Estudio Florístico y Etnobotánico de Comunidades Mixtecas en el Municipio de San Luis Acatlán</h2>
+											<p class=" p_2columnas">Este proyecto representa un esfuerzo por documentar la riqueza florística del municipio de San Luis Acatlán y la nomenclatura, clasificación y uso económico y simbólico de las plantas en las cuatro comunidades de habla mixteco principal dentro de este municipio: Yoloxóchitl, Cuanacaxtitlán, Arroyo Cumiapa y Buena Vista. Incluye la colaboración de botánicos y lingüistas: Kenia Velasco Gutiérrez (botánica) se encargó de la mayor parte de las colectas en las cuatro comunidades; Rey Castillo García (un lingüista y hablante nativo de Yoloxóchitl) se encargó de la escritura tanto de nomenclatura como de transcripción y traducción de audio grabados. Hasta la fecha se ha hecho un total de 1,428 colectas que representan un total de 126 familias y 502 géneros.  Todavía se están identificando las colectas a especies pero se calcula llegar a aproximadamente 900 a 1,000 especies distintas.  La mayoría de las colectas son Magnoliophyta (1,381) pero también incluye Pteridophyta (39), Cycadophyta (3) y Coniferophyta (2). En cuanto a distribución geográfica se llevaron a cabo colectas en las siguientes comunidades: Yoloxóchitl (1,274), Buena Vista (68), Arroyo Cumiapa (43), Cuanacaxtitlán (40) y San Luis Acatlán (3). Se contó con el apoyo de más de 35 asesores locales los principales siendo Esteban Guadalupe Sierra y Constantino Teodoro Bautista de Yoloxóchitl. Para las identificación a especie también apoyaron más de 75 taxónomos expertos.</p>
+										</div>
+									</div>
+								</td>
+            					<td class="" data-label="Lengua terminal (glottocode)">
+									yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span><br>yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span>
+								</td>
+            					<td class="" data-label="Grupo de lenguas (glottocode)">
+									amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span><br>amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span>
+								</td>
+            					<td class="comunidades"><span class="pais">
+									México</span><span class="estado">Guerrero</span><span class="comunidad">Yoloxóchitl</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Cuanacaxtitlán</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Arroyo Cumiapa</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Buena Vista</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span>
+								</td>
+								<td class="td_acciones ">
+									<div class="contenedor_botones_accion">
+										<button class="btn_accion_tabla" id="coleccion_info"><span class="icono_accion_tabla  icon-info1"></span></button>
+										<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-launch"></span></button>
+										<button class="btn_accion_tabla"><span class="icono_accion_tabla icon-ellipsis-v"></span></button>
+									</div>
+								</td>
+        					</tr>
+							<tr>
+            					<td>
+									<strong><i>Estudio Florístico y Etnobotánico de Comunidades Mixtecas en el Municipio de San Luis Acatlán</i></strong><p class="primeras_palabras_descripcion_collect"></p>
+								</td>
+            					<td class="" data-label="Lengua terminal (glottocode)">
+									yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span><br>yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span>
+								</td>
+            					<td class="" data-label="Grupo de lenguas (glottocode)">
+									amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span><br>amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span>
+								</td>
+            					<td class="comunidades"><span class="pais">
+									México</span><span class="estado">Guerrero</span><span class="comunidad">Yoloxóchitl</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Cuanacaxtitlán</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Arroyo Cumiapa</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Buena Vista</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span>
+								</td>
+								<td class="td_acciones ">
+									<div class="contenedor_botones_accion ">
+									<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-info1"></span></button>
+									<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-launch"></span></button>
+										<button class="btn_accion_tabla"><span class="icono_accion_tabla icon-ellipsis-v"></span></button>
+									</div>
+								</td>
+        					</tr>
+							<tr>
+            					<td>
+									<strong><i>Estudio Florístico y Etnobotánico de Comunidades Mixtecas en el Municipio de San Luis Acatlán</i></strong><p class="primeras_palabras_descripcion_collect"></p>
+								</td>
+            					<td class="" data-label="Lengua terminal (glottocode)">
+									yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span><br>yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span>
+								</td>
+            					<td class="" data-label="Grupo de lenguas (glottocode)">
+									amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span><br>amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span>
+								</td>
+            					<td class="comunidades"><span class="pais">
+									México</span><span class="estado">Guerrero</span><span class="comunidad">Yoloxóchitl</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Cuanacaxtitlán</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Arroyo Cumiapa</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Buena Vista</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span>
+								</td>
+								<td class="td_acciones">
+									<div class="contenedor_botones_accion">
+										<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-info1"></span></button>
+										<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-launch"></span></button>
+										<button id="elipsis1" class="btn_accion_tabla"><span class="icono_accion_tabla icon-ellipsis-v"></span></button>
+										<div id="modal_elipsis1" class="contenido_modal_elipsis">
+											<span class="icono_cerrar_modal_elipsis icon-close "></span>
+											<div class="contenedor_opciones_elipsis">
+												<a class="btn_opciones_ellipsis_mis_colecciones" href="#"><span class="icono_opcion_elipsis icon-file_upload"></span> Cargar audioanotación</a>
+												<a class="btn_opciones_ellipsis_mis_colecciones" href="#"><span class="icono_opcion_elipsis icon-edit"></span> Editar metadatos</a>
+												<a class="btn_opciones_ellipsis_mis_colecciones" href="#"><span class="icono_opcion_elipsis icon-delete"></span> Eliminar</a>
+											</div>	
+										</div>	
+									</div>
+								</td>
+        					</tr>
+        					
+        					
+						</table>
+						<div class="contenedor_paginacion">
+							<div class="contenedor_input_paginacion">
+								<input class="" id="busqueda_paginacion" type="text" placeholder="Pag.">
+								<button class="btn_lateral_input" for="busqueda_paginacion"><span class="icono_pagina_busqueda  icon-chevron-right"></span></button>
+
+							</div>
+							<div class="contenedor_numeros_paginacion">
+								<a class="icono_paginacion" href="#"><span class="icon-first_page"></span></a>
+								<a class="icono_paginacion" href="#"><span class="icon-angle-left"></span></a>
+								<a class="numero_paginacion" href="#">2</a>
+								<a class="numero_paginacion" href="#">3</a>
+								<a class="numero_paginacion" href="#">4</a>
+								<a class="numero_paginacion active" href="#">5</a>
+								<a class="numero_paginacion" href="#">6</a>
+								<a class="numero_paginacion" href="#">7</a>
+								<a class="ultima_pagina" href="#">...29</a>
+								<a class="icono_paginacion" href="#"><span class="icon-angle-right"></span></a>
+								<a class="icono_paginacion" href="#"><span class=" icon-last_page"></span></a>
+							</div>
+							
+						</div>	
+					</div>
+				</div>
+				
+			</section>
+		</div>
+		
+		
+	
+		
+	</main>
+	<footer>
+		<div class="container-fluid contenedor_ancho_total back_aqua_0">
+			<div class="container contenedor_footer">
+				<a href="#">Terminos y condiciones</a>
+				<a href="#">Aviso de privacidad</a>
+				<a href="#" target="_blank"><span class="icono_footer icon-github"></span></a>
+				<p>© Derechos reservados SYLARD</p><img src="images/favicon_sylard3.svg" alt="Logo SYLARD">
+
+			</div>
+		</div>
+	</footer>
+		<script>
+		// Get the modal
+var modal_info = document.getElementById("modal_info");
+
+// Get the button that opens the modal
+var btn_coleccion_info = document.getElementById("coleccion_info");
+
+// Get the <span> element that closes the modal
+var icono_cerrar_modal = document.getElementsByClassName("icono_cerrar_modal")[0];
+
+// When the user clicks on the button, open the modal
+btn_coleccion_info.onclick = function() {
+  modal_info.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+icono_cerrar_modal.onclick = function() {
+  modal_info.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal_info.style.display = "none";
+  }
+}
+	</script>
+	<script>
+		// Get the modal
+var modal = document.getElementById("modal_elipsis1");
+
+// Get the button that opens the modal
+var btn = document.getElementById("elipsis1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("icono_cerrar_modal_elipsis")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+	</script>
+	</body>
+	
+</html>

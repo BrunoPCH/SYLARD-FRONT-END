@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos_menu.css">
+	<link rel="icon" href="images/favicon_sylard3.svg" sizes="any" type="image/svg+xml">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css"> <!--GRID SOLAMENTE-->
+	<title>SYLARD Editar Cuenta</title>
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid back_aqua">
+			<!--INICIA barra de navegacion superior-->
+			<nav class="container contenedor_ancho_area_principal "> 
+				<div class="contenedor_switch float_left">
+                	<label class="texto" for="checkbox">ESP</label>
+					<label class="switch">
+					<input type="checkbox">
+                   	<span class="slider round"></span></label>
+					<label class="texto" for="checkbox">ENG</label>
+				</div>
+				<div class="barra_superior_elemento float_left "><a  href="#" ><span class="icono icon-home1"></span> SYLARD</a></div> 
+				<!-- la clase "ACTIVE" se usa en la sección que esta activa--> <!-- En el caso de HOME este elemento desaparece, ya que hay un icono en la barra publico-->
+            	<div class="barra_superior_elemento float_right"><a  class="" href="login.html">Ingresar <span class="icono icon-login"></span></a></div>
+				<!--<div class="barra_superior_elemento float_right"><a href="registro.html" class="">REGISTRO <span class="icono icon-person"></span></a></div>-->
+				<!--<div class="barra_superior_elemento dropdown_menu_usuario float_right">
+					<button class="dropbtn_barra_superior">
+						<div class="contenedor_icono_usuario"><img src="images/iconousuario.svg" class="imagen_icono_usuario" alt="Ícono de venado usuario"></div>
+						Emiliano Zapata <span class="icono icon-angle-down" id="flecha_dropdow_barra_superior"></span>
+					</button>
+					<div class="contenido_dropdown_menu_usuario">
+						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-edit"></span> Editar cuenta</a>
+   						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-key1"></span> Editar contraseña</a>
+    					<a href="#"><span class="icono_dropdown_menu_usuario_item icon-folder-open-o"></span> Mis colecciones</a>
+						<a href="#">Link 1 </a>
+   						<a href="#">Link 2</a>
+    					<a class="dropdown_menu_usuario_logout" href="#"><span class="icono_dropdown_menu_usuario_item icon-log-out"></span>  Cerrar sesión</a>
+					</div>
+				</div>-->
+			</nav>
+			<!--TERMINA barra de navegacion superior-->
+		</div>
+		
+	</header>
+	<main>
+		<div class="container-fluid" id="contenedor_restablecer_contrasena">
+			<div class="extension_fondo_blanco_izquierdo d-sm-none d-md-block"></div>
+			<div class="container">
+				<div class="row contenedor-90vh" id="fila1_restablecer_contrasena">
+					<div class="col-sm-12 col-md-7" id="columna_izquierda_restablecer_contrasena">
+						<div class="" id="columna_izquierda_restablecer_contrasena_anidada">
+							<h1 class=""><span class="icono_principal_mensaje icon-unlock-alt" id="icono_principal_restablecer_contrasena"></span></h1>
+							<h1>Restablecer contraseña</h1>
+							<h3>¡Escríbe tu correo!<br>Te enviaremos una contraseña provisional</h3>
+							<form method="post" action="#" role="form" class="">
+								<div class="contenedor_inputs_restablecer_contrasena" id="contenedor_inputs_restablecer_contrasena">
+									<label class="label" for="input_email_restablecer_contrasena" id=""><span class="icon-email"></span> Correo electrónico:</label>
+										<input class="input_email_restablecer_contrasena" type="email" id="input_email_restablecer_contrasena" placeholder="Escribe tu correo" required>
+										<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+										<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								</div>			
+							
+								<div class="contenedor_botones_restablecer_contrasena">
+									<button type="submit" class="btn btn-primario" id="boton_enviar_restablecer_contrasena">Enviar</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="" id="columna_derecha_restablecer_contrasena_anidada">
+						<img class="" src="images/flores_restablecer_contrasena.svg" id="img_restablecer_contrasena" alt="Flor de textil">
+					</div>
+				</div>
+		</div>
+	</div>
+	</main>
+	<footer>
+		<div class="container-fluid contenedor_ancho_total back_aqua_0">
+			<div class="container contenedor_footer">
+				<a href="#">Terminos y condiciones</a>
+				<a href="#">Aviso de privacidad</a>
+				<a href="#" target="_blank"><span class="icono_footer icon-github"></span></a>
+				<p>© Derechos reservados SYLARD</p><img src="images/favicon_sylard3.svg" alt="Logo SYLARD">
+
+			</div>
+		</div>
+	</footer>
+</body>
+</html>	

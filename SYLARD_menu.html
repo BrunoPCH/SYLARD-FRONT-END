@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos_menu.css">
+	<link rel="icon" href="images/favicon_sylard3.svg" sizes="any" type="image/svg+xml">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css"> <!--GRID SOLAMENTE-->
+<title>SYLARD Synchronized Language Annotation Result Display</title>
+	
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid back_aqua">
+			<!--INICIA barra de navegacion superior-->
+			<nav class="container contenedor_ancho_area_principal "> 
+				<div class="contenedor_switch float_left">
+                	<label class="texto" for="checkbox">ESP</label>
+					<label class="switch">
+					<input type="checkbox">
+                   	<span class="slider round"></span></label>
+					<label class="texto" for="checkbox">ENG</label>
+				</div>
+				<div class="barra_superior_elemento float_left active"><a  href="#" ><span class="icono icon-home1"></span> SYLARD</a></div> 
+				<!-- la clase "ACTIVE" se usa en la sección que esta activa--> <!-- En el caso de HOME este elemento desaparece, ya que hay un icono en la barra publico-->
+            	<div class="barra_superior_elemento float_right"><a  class="" href="#">ACCESAR <span class="icono icon-login"></span></a></div>
+				<div class="barra_superior_elemento float_right"><a href="#">REGISTRO <span class="icono icon-person"></span></a></div>
+			</nav>
+			<!--TERMINA barra de navegacion superior-->
+		</div>
+		<!--INICIA barra de navegacion publico-->
+		<div class="container-fluid back_aqua_0">
+			<nav class=" container contenedor_barra_nav_publico">
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_1"><span class="icono_nav_publico icon-home1"></span></a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_2">Catálogo</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_3">Documentación</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_4">Manual de usuario</a>		
+				<h1 class="logo_menu" id="bnpe_5">SYLARD</h1>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_6">Contacto</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_7">Descargas</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_8">Términos y condiciones</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_9">Creditos</a>
+			</nav>
+		</div>
+		<!--TERMINA-- barra de navegacion publico-->
+	</header>
+	<main>
+		<div class="container-fluid contenedor_carrusel">
+			<section class="container">
+				<article class="lamina_carrusel row">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+						<h1>SYLARD</h1>
+						<h3>Synchronized Language Annotation Result Display</h3>
+						<p class="parrafo_grande">Es una plataforma que recopila <strong>audios y transcripciones en lenguas indigenas&nbsp;</strong>sobre tópicos que dominan las distintas etnias de mesoamerica.</p>
+						<p class="parrafo_grande">Accede a nuestro catálogo de audiotranscripciones, o bien, puedes ser un colaborador que contribuya con información bajo licencia <em>Creative Commons</em>.</p>
+						<h2 class="llamada color_principal">¡Sólo tienes que registrarte!</h2>
+						<a href="#" class="btn btn-predeterminado">Saber más</a>
+						<a href="#" class="btn btn-predeterminado">Ver catálogo</a>
+						<a href="#" class="btn btn-primario" >Registro</a>
+						<a href="#" class="btn btn-secundario" >Registro</a>
+					</div>
+					<div class="col-md-4 offset-md-1 mt-md-5 col-lg-4  mt-lg-5 col-xl-4 mt-xl-1 d-none d-md-block">
+						<img  class="" src="images/ave_huicahapan-01.svg" alt="Ave de Huichapan">
+					</div>	
+				</article>			
+				<div class="contenedor_elementos_paginacion_carrusel">
+						<div class="contendor_indicadores_carrusel" id="">
+							<ol class="indicadores_carrusel">
+    							<li class="indicador_carrusel_item" data-target="" data-slide-to="0"></li>
+    							<li class="indicador_carrusel_item" data-target="" data-slide-to="1"></li>
+    							<li class="indicador_carrusel_item active" data-target="" data-slide-to="2"></li>
+								<li class="indicador_carrusel_item" data-target="" data-slide-to="3"></li>
+								<li class="indicador_carrusel_item" data-target="" data-slide-to="4"></li>
+								<li class="indicador_carrusel_item" data-target="" data-slide-to="5"></li>
+								<li class="indicador_carrusel_item" data-target="" data-slide-to="6"></li>
+  							</ol>
+						</div>
+						<nav class="contenedor_botones_carrusel">
+							<a class="btn-anterior_lamina" onclick="plusSlides(-1)"><span class="icono_carrusel icon-navigate_before"></span></a>
+  							<a class="btn-siguiente_lamina" onclick="plusSlides(1)"><span class="icono_carrusel icon-navigate_next"></span></a>
+						</nav>
+				</div>
+			</section>
+		</div>
+		
+	</main>
+	<footer>
+		<div class="container-fluid contenedor_ancho_total back_aqua_0">
+			<div class="container contenedor_footer">
+				<a href="#">Terminos y condiciones</a>
+				<a href="#">Aviso de privacidad</a>
+				<a href="#" target="_blank"><span class="icono_footer icon-github"></span></a>
+				<p>© Derechos reservados SYLARD</p><img src="images/favicon_sylard3.svg" alt="Logo SYLARD">
+
+			</div>
+		</div>
+	</footer>
+
+	</body>
+		
+	
+</html>

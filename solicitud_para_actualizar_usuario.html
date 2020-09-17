@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos_menu.css">
+	<link rel="icon" href="images/favicon_sylard3.svg" sizes="any" type="image/svg+xml">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css"> <!--GRID SOLAMENTE-->
+	<title>SYLARD Actualiza Usuario</title>
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid back_aqua">
+			<!--INICIA barra de navegacion superior-->
+			<nav class="container contenedor_ancho_area_principal "> 
+				<div class="contenedor_switch float_left">
+                	<label class="texto" for="checkbox">ESP</label>
+					<label class="switch">
+					<input type="checkbox">
+                   	<span class="slider round"></span></label>
+					<label class="texto" for="checkbox">ENG</label>
+				</div>
+				<div class="barra_superior_elemento float_left "><a  href="#" ><span class="icono icon-home1"></span> SYLARD</a></div> 
+				<!-- la clase "ACTIVE" se usa en la sección que esta activa--> <!-- En el caso de HOME este elemento desaparece, ya que hay un icono en la barra publico-->
+            	<!-- <div class="barra_superior_elemento float_right"><a  class="" href="login.html">ACCESAR <span class="icono icon-login"></span></a></div>
+				<div class="barra_superior_elemento float_right"><a href="registro.html" class="active_a">REGISTRO <span class="icono icon-person"></span></a></div>-->
+				<div class="barra_superior_elemento dropdown_menu_usuario float_right">
+					<button class="dropbtn_barra_superior">
+						<div class="contenedor_icono_usuario"><img src="images/iconousuario.svg" class="imagen_icono_usuario" alt="Ícono de venado usuario"></div>
+						Emiliano Zapata <span class="icono icon-angle-down" id="flecha_dropdow_barra_superior"></span>
+					</button>
+					<div class="contenido_dropdown_menu_usuario">
+						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-edit"></span> Editar cuenta</a>
+   						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-key1"></span> Editar contraseña</a>
+    					<a href="#"><span class="icono_dropdown_menu_usuario_item icon-folder-open-o"></span> Mis colecciones</a>
+						<a href="#">Link 1 </a>
+   						<a href="#">Link 2</a>
+    					<a class="dropdown_menu_usuario_logout" href="#"><span class="icono_dropdown_menu_usuario_item icon-log-out"></span>  Cerrar sesión</a>
+					</div>
+				</div>
+			</nav>
+			<!--TERMINA barra de navegacion superior-->
+		</div>
+		
+	</header>
+	<main>
+		<div class="container-fluid" id="contenedor_actualiza_usuario">
+			<div class="extension_fondo_blanco_izquierdo d-sm-none d-md-block"></div>
+			<div class="container">
+				<div class="row contenedor-90vh" id="fila1_actualiza_usuario">
+					<div class="col-md-7" id="columna_izquierda_actualiza_usuario">
+						<div class="" id="columna_izquierda_actualiza_cuenta_anidada">
+						<h1 class=""><span class="icono_principal_mensaje icon-user-plus" id="icono_principal_actualiza_usuario"></span></h1>
+						<h1>Actualiza tus privilegios</h1>
+						<h3>Dinos por qué quieres ser colaborador</h3>
+						<form method="post" action="#" role="form" class="formulario_contenedor">
+							<div id="contenedor_solicitud_actualiza_usuario" class="">	
+								<label class="label" for="actualiza_usuario">Describe brevemente el proyecto que quieres compartir en SYLARD</label>
+								<textarea name="actualiza_usuario_formulario" id="actualiza_usuario" placeholder="¿Qué? ¿Para qué? ¿Por qué? y ¿Cómo?" rows="13" required></textarea>
+								<p class="secundario float_left">*Se breve, claro y paciente.</p>
+								<button type="submit" class="btn btn-primario float_right" id="boton_actualiza_usuario">Enviar</button>
+							</div>
+						</form>
+						</div>
+					</div>
+					<div class="" id="columna_derecha_actualiza_cuenta_anidada">
+						<img class="" src="images/seritriangulo.svg" id="img_actualiza_usuario" alt="Pintura Facial Seri">
+					</div>
+				</div>
+		</div>
+	</div>
+	</main>
+	<footer>
+		<div class="container-fluid contenedor_ancho_total back_aqua_0">
+			<div class="container contenedor_footer">
+				<a href="#">Terminos y condiciones</a>
+				<a href="#">Aviso de privacidad</a>
+				<a href="#" target="_blank"><span class="icono_footer icon-github"></span></a>
+				<p>© Derechos reservados SYLARD</p><img src="images/favicon_sylard3.svg" alt="Logo SYLARD">
+
+			</div>
+		</div>
+	</footer>
+</body>
+</html>	

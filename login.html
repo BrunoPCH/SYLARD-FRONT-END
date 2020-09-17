@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos_menu.css">
+	<link rel="icon" href="images/favicon_sylard3.svg" sizes="any" type="image/svg+xml">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css"> <!--GRID SOLAMENTE-->
+	<title>SYLARD Login</title>
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid back_aqua">
+			<!--INICIA barra de navegacion superior-->
+			<nav class="container contenedor_ancho_area_principal "> 
+				<div class="contenedor_switch float_left">
+                	<label class="texto" for="checkbox">ESP</label>
+					<label class="switch">
+					<input type="checkbox">
+                   	<span class="slider round"></span></label>
+					<label class="texto" for="checkbox">ENG</label>
+				</div>
+				<div class="barra_superior_elemento float_left "><a  href="#" ><span class="icono icon-home1"></span> SYLARD</a></div> 
+				<!-- la clase "ACTIVE" se usa en la sección que esta activa--> <!-- En el caso de HOME este elemento desaparece, ya que hay un icono en la barra publico-->
+            	<div class="barra_superior_elemento float_right"><a  class="active_a" href="login.html">Ingresar <span class="icono icon-login"></span></a></div>
+				<div class="barra_superior_elemento float_right"><a href="registro.html" class="">REGISTRO <span class="icono icon-person"></span></a></div>
+			</nav>
+			<!--TERMINA barra de navegacion superior-->
+		</div>
+		
+	</header>
+	<main>
+		<div class="container-fluid" id="contenedor_login">
+			<div class="extension_fondo_blanco d-sm-none d-md-block"></div>
+		<div class="container">
+			<div class="row contenedor-90vh" id="Fila1_login">
+				<div class="col-md-5 px-4" id="columna_izquierda_login">
+					<img class="wdt-75" src="images/elotes_huichol_login.svg" id="huichol_img_login" alt="Arte Huichol maíz">	
+				</div>
+				<div class="col-md-7 pt-3" id="columna_derecha_login">
+					<div class="" id="columna_derecha_login_anidada">
+						<h1>Ingresar</h1>
+						<h2 class="llamada" id="llamada_login">¡Bienvenido!</h2>
+						<h3>Teclea tu usuario y contraseña</h3>
+						<br>						
+					<form method="post" action="#" role="form" class="formulario_contenedor_login">
+							
+							
+							<div class="contenedor_inputs_login">
+								<label class="label" for="email"><span class="icon-email"></span> Correo electrónico:</label>
+								<input class="" type="email" id="email_login" placeholder="Escribe tu correo" required>
+								<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+								<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+							</div>
+							<div class="contenedor_inputs_login ">
+								<label class="label " id="label_pass_login" for="password"><span class="icon-lock"></span> Contraseña:</label>
+								<input type="password" id="password_login" placeholder="Escribe la contraseña" minlength="6" required>
+								<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+								<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								<button type="button" class="btn btn-predeterminado btn_input_derecha ml-2"><span class="icon-eye"></span></button>
+								<br>
+								
+							</div>
+							
+							<div class="contenedor_botones_login">
+								<a class="" href="restablecer_contrasena.html">¿Olvidaste la contraseña?</a>
+								<button type="submit" class="btn btn-primario" id="boton_login">Login</button>
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</main>
+	<footer>
+		<div class="container-fluid contenedor_ancho_total back_aqua_0">
+			<div class="container contenedor_footer">
+				<a href="#">Terminos y condiciones</a>
+				<a href="#">Aviso de privacidad</a>
+				<a href="#" target="_blank"><span class="icono_footer icon-github"></span></a>
+				<p class="">© Derechos reservados SYLARD</p><img class="" src="images/favicon_sylard3.svg" alt="Logo SYLARD">
+
+			</div>
+		</div>
+	</footer>
+</body>
+</html>	
