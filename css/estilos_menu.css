@@ -1561,7 +1561,7 @@ min-width: 87%;
 
 
 /*ELEMENTOS ACORDEON VIEWER*/
-#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones  {
+#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones, #contenedor_catalogo_coleccion_individual  {
 	background-color: var(--gris06);
 	padding: 0;
 	margin: 0;
@@ -1837,7 +1837,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 
 }
 
-#contenedor_general_mis_colecciones, #contenedor_general_agregar_coleccion {
+#contenedor_general_mis_colecciones, #contenedor_general_agregar_coleccion, #contenedor_general_catalogo_coleccion_individual {
 	padding-top: 3rem;
 	background-color: white;
 }
@@ -1846,7 +1846,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	background-color: #5B4884;
 }
 
-#titulo_mis_colecciones, #titulo_audioanotaciones {
+#titulo_mis_colecciones, #titulo_audioanotaciones, #titulo_catalogo_coleccion_individual {
 	color: white;
 	
 }
@@ -1864,7 +1864,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 #llamada_mis_colecciones {
 	color: var(--color-primario-principal);
 }
-#contenedor_items_cabezal_audioanotaciones {
+#contenedor_items_cabezal_audioanotaciones, #contenedor_items_cabezal_catalogo_coleccion_individual {
 	padding-top: 2rem;
 	padding-bottom: 1rem;
 	display: flex;
@@ -1958,7 +1958,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	flex-grow: 0.6;
 }
 
-.contenedor_tabla_mis_colecciones, .contenedor_tabla_catalogo_colecciones, .contenedor_tabla_catalogo_audioanotaciones  {
+.contenedor_tabla_mis_colecciones, .contenedor_tabla_catalogo_colecciones, .contenedor_tabla_catalogo_audioanotaciones, .contenedor_tabla_catalogo_coleccion_individual  {
 	overflow: hidden;
 }
 
@@ -1968,7 +1968,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	vertical-align: bottom;
 }
 
-.tabla_mis_colecciones, .tabla_catalogo_colecciones, .tabla_catalogo_audianotaciones {
+.tabla_mis_colecciones, .tabla_catalogo_colecciones, .tabla_catalogo_audianotaciones, .tabla_catalogo_audianotaciones_coleccion_individual {
 	border-collapse: collapse;
 	vertical-align:middle;
 }
@@ -2559,7 +2559,7 @@ margin-bottom: 1rem;
 
 .btn_info_coleccion_cabezal_coleccion_audioanotaciones {
 	color: white;
-	background-color: #EB6868;
+	background-color:transparent;
 	padding: 0;
 	margin-left: .25rem;
 	border: none;
@@ -2743,4 +2743,23 @@ tr.selected {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+#cabezal_catalogo_coleccion_individual {
+	background-color: #000000;
+}
+
+#contenedor_botones_cabezal prueba {
+	
+}
+
+.contenedor_imagen_cabezal_catalogo_coleccion_individual {
+	flex-basis: 20%;
+	min-width: 16%;
+	margin-left: 3rem;
+	margin-right: 2rem;
+}
+
+.imagen_reflejada {
+	transform: scaleX(-1)
 }
