@@ -68,68 +68,40 @@
 			<div class="container-fluid" id="cabezal_audioanotaciones">
 				<div class="container">
 					<div class="col-sm-12" id="contenedor_items_cabezal_audioanotaciones">
-						<div  class="prueba" id="contenedor_titulos_cabezal_audioanotaciones">
+						<div  class="" id="contenedor_titulos_cabezal_audioanotaciones">
 							<h1 id="titulo_audioanotaciones"><span class="icono_cabezal icon-file-sound-o"></span> Audioanotaciones</h1>
 							<h4 class="etiqueta_nombre_coleccion_audioanotaciones" id="etiqueta_coleccion_audioanotaciones">De la colección</h4>
-							<h3 class="nombre_coleccion_audioanotaciones blanco">Estudio Florístico y Etnobotánico de Comunidades Mixtecas en el Municipio de San Luis Acatlán<button class="btn_info_coleccion_cabezal_coleccion_audioanotaciones" id="coleccion_info"><span class="icono_info_coleccion_audioanotacion  icon-info1"></span></button></h3>
-<h4 class="blanco">							Grupo de lenguas: Amuzgo-mixtecan [amuz1253] 
-</h4>						</div>	
-						<div class="prueba" id="contenedor_botones_cabezal">
-							<button class="btn btn-predeterminado">Agregar colección <span class="icono_boton icon-create_new_folder"></span></button>
+							<h3 class="nombre_coleccion_audioanotaciones blanco">Estudio Florístico y Etnobotánico de Comunidades Mixtecas en el Municipio de San Luis Acatlán<button class="btn_info_coleccion_cabezal_coleccion_audioanotaciones" id="coleccion_info_general_cabezal"><span class="icono_info_coleccion_audioanotacion  icon-info1"></span></button></h3>
+							<h4 class="blanco gpo_lenguas_audioanotaciones">Grupo de lenguas: <strong>Amuzgo-mixtecan <span class="gpo_lenguas_glottocode_info">[amuz1253]</span></strong></h4>
+						</div>	
+						<div class="" id="contenedor_botones_cabezal">
+							<button class="btn btn-predeterminado">Editar colección <span class="icono_boton icon-edit"></span></button>
 							<button class="btn btn-primario">Cargar audioanotacion <span class="icono_boton icon-file_upload"></span></button>
+							
 						</div>	
 					</div>	
 				</div>
 			</div>
 			<section class="container">
 				<div class="col-sm-12 contenedor-90vh " id="contenedor_general_mis_colecciones">
-					<!--<div class="contenedor_barras_de_busqueda">
-						<div class="barra_de_busqueda_item" id="barra_busq_coleccion">
-							<div class="contenedor_etiquetas_barras_busqueda" >
-								<label class="label label_junto_flechas">Colección</label>
-								<button class="flecha_orden_ascendente active"><span class="icon-arrow-up"></span></button>
-								<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
-							</div>
-							<input class="input_busqueda" type="search" placeholder="Búsqueda">
-						</div>	
-						<div class="barra_de_busqueda_item">
-							<div class="contenedor_etiquetas_barras_busqueda">
-								<label class="label label_junto_flechas">Lengua Terminal</label>
-								<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
-								<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
-							</div>
-							<input class="input_busqueda" type="search" placeholder="Búsqueda">
-						</div>
-						<div class="barra_de_busqueda_item">
-							<div class="contenedor_etiquetas_barras_busqueda">
-								<label class="label label_junto_flechas">Gpo. de lenguas</label>
-								<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
-								<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
-							</div>
-							<input class="input_busqueda" type="search" placeholder="Búsqueda">
-						</div>
-						<div class="barra_de_busqueda_item">
-							<div class="contenedor_etiquetas_barras_busqueda">
-								<label class="label label_junto_flechas">Comunidades</label>
-								<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
-								<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
-							</div>
-							<input class="input_busqueda" type="search" placeholder="Búsqueda">
-						</div>
-						<div class="barra_de_busqueda_item" id="item_vacio_barra_busqueda">
-						</div>
-					</div> barras de busqueda por divs-->
 					<div class="contenedor_tabla_mis_colecciones">
-						<table class="tabla_mis_colecciones">
+						<table class="tabla_catalogo_audianotaciones">
        					 	<thead>
-                				<th class="cabezal_columnas_th" id="th_coleccion">
+								<th class="cabezal_columnas_th" id="th_acciones_generales">
+									<div class="contenedor_acciones_generales">
+										<input type="checkbox" class="input_checkbox_cabezal_columna prueba">
+										<button class="btn-eliminar_seleccionados prueba"><span class="icono_boton_eliminar_audioanotaciones icon-delete"></span></button>
+									</div>
+								</th>
+								<th class="cabezal_columnas_th" id="th_titulo_por_audioanotacion">
 									<div class="contenedor_etiquetas_barras_busqueda" >
-										<label class="label label_junto_flechas">Colección</label>
+										<label class="label label_junto_flechas">Título</label>
 										<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
 										<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
 									</div>
 									<input class="input_busqueda" type="search" placeholder="Búsqueda">
 								</th>
+                				
 								<th class="cabezal_columnas_th">
 									<div class="contenedor_etiquetas_barras_busqueda" >
 										<label class="label label_junto_flechas">Lengua terminal</label>
@@ -138,9 +110,17 @@
 									</div>
 									<input class="input_busqueda" type="search" placeholder="Búsqueda">
 								</th>
-								<th class="cabezal_columnas_th">
+																<th class="cabezal_columnas_th">
 									<div class="contenedor_etiquetas_barras_busqueda" >
-										<label class="label label_junto_flechas">Gpos. de lenguas</label>
+										<label class="label label_junto_flechas">Comunidad</label>
+										<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
+										<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
+									</div>
+									<input class="input_busqueda" type="search" placeholder="Búsqueda">
+								</th>
+								<th class="cabezal_columnas_th" id="th_hablantes">
+									<div class="contenedor_etiquetas_barras_busqueda" >
+										<label class="label label_junto_flechas">Hablantes</label>
 										<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
 										<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
 									</div>
@@ -148,97 +128,108 @@
 								</th>
 								<th class="cabezal_columnas_th">
 									<div class="contenedor_etiquetas_barras_busqueda" >
-										<label class="label label_junto_flechas">Comunidades</label>
+										<label class="label label_junto_flechas">Género y duracion</label>
 										<button class="flecha_orden_ascendente "><span class="icon-arrow-up"></span></button>
 										<button class="flecha_orden_descendente"><span class="icon-arrow-down"></span></button>
 									</div>
 									<input class="input_busqueda" type="search" placeholder="Búsqueda">
 								</th>
-								<th class="" id="th_acciones">
-									
+								<th class="contenedor_btn_regresar_th" id="th_acciones">
+									<div class="contenedor_boton_accion_cabeza_tabla_audioanotaciones">
+									<button class="btn-regresar_audioanotaciones " id="btn-regresar_audioanotaciones"><span class="icono_boton_eliminar_audioanotaciones icon-back"></span></button>
+									</div>
 								</th>
-                				
         					</thead>
+							<tbody>
     					    <tr>
-            					<td>
-									<strong><i>Estudio Florístico y Etnobotánico de Comunidades Mixtecas en el Municipio de San Luis Acatlán</i></strong><p class="primeras_palabras_descripcion_collect"></p>
-									<div id="modal_info" class="modal">
-										<div class="contenido_modal">
-											<span class="icono_cerrar_modal icon-close"></span>
-											<h1><span class="icono_modal"></span></h1>	
-											<h2 class="titulo_modal">Estudio Florístico y Etnobotánico de Comunidades Mixtecas en el Municipio de San Luis Acatlán</h2>
-											<p class=" p_2columnas">Este proyecto representa un esfuerzo por documentar la riqueza florística del municipio de San Luis Acatlán y la nomenclatura, clasificación y uso económico y simbólico de las plantas en las cuatro comunidades de habla mixteco principal dentro de este municipio: Yoloxóchitl, Cuanacaxtitlán, Arroyo Cumiapa y Buena Vista. Incluye la colaboración de botánicos y lingüistas: Kenia Velasco Gutiérrez (botánica) se encargó de la mayor parte de las colectas en las cuatro comunidades; Rey Castillo García (un lingüista y hablante nativo de Yoloxóchitl) se encargó de la escritura tanto de nomenclatura como de transcripción y traducción de audio grabados. Hasta la fecha se ha hecho un total de 1,428 colectas que representan un total de 126 familias y 502 géneros.  Todavía se están identificando las colectas a especies pero se calcula llegar a aproximadamente 900 a 1,000 especies distintas.  La mayoría de las colectas son Magnoliophyta (1,381) pero también incluye Pteridophyta (39), Cycadophyta (3) y Coniferophyta (2). En cuanto a distribución geográfica se llevaron a cabo colectas en las siguientes comunidades: Yoloxóchitl (1,274), Buena Vista (68), Arroyo Cumiapa (43), Cuanacaxtitlán (40) y San Luis Acatlán (3). Se contó con el apoyo de más de 35 asesores locales los principales siendo Esteban Guadalupe Sierra y Constantino Teodoro Bautista de Yoloxóchitl. Para las identificación a especie también apoyaron más de 75 taxónomos expertos.</p>
-										</div>
+								<td>
+								<label class="contenedor_checkbox"> 
+									<input type="checkbox"  class="checkbox_personalizada">
+									<span class="marca_check"></span>
+								</label>
+								</td>
+								<td class="titulo_audioanotacion_tabla" data-label="titulo">
+									I³tun⁴ ti¹nu’⁴u⁴ <i>(Malvaceae: Guazuma ulmifolia Lam. var.  ulmifolia)</i><span class="unique_id" data-label="unique_id">UID:xxx xxxxxxx xx</span>
+								</td>
+            													 
+            					<td class="" data-label="Lengua terminal (glottocode)">
+									yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span>
+								</td>
+            					
+								<td>
+            					<!--td class=""><span class="pais">México</span><span class="estado">Guerrero</span--><span class="comunidad_2">Yoloxóchitl</span><br><span class="estado_tabla_catalogo">Guerrero</span><!--span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span-->
+								</td>
+								<td class="">
+									<div class="contenedor_hablantes">
+										<span class="hablante">Constantino Teodoro Bautista</span><br><span class="canal">Canal 1</span>
+										<span class="hablante">Filomeno Encarnación Fidencio</span><br><span class="canal">Canal 2</span>
 									</div>
 								</td>
-            					<td class="" data-label="Lengua terminal (glottocode)">
-									yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span><br>yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span>
-								</td>
-            					<td class="" data-label="Grupo de lenguas (glottocode)">
-									amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span><br>amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span>
-								</td>
-            					<td class="comunidades"><span class="pais">
-									México</span><span class="estado">Guerrero</span><span class="comunidad">Yoloxóchitl</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Cuanacaxtitlán</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Arroyo Cumiapa</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Buena Vista</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span>
+								<td>
+									<span class="genero">Etnobotánica</span>
+									<span class="duracion">3:23</span>
 								</td>
 								<td class="td_acciones ">
 									<div class="contenedor_botones_accion">
 										<button class="btn_accion_tabla" id="coleccion_info"><span class="icono_accion_tabla  icon-info1"></span></button>
 										<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-launch"></span></button>
-										<button class="btn_accion_tabla"><span class="icono_accion_tabla icon-ellipsis-v"></span></button>
+									</div>
+									<div id="modal_info" class="modal">
+										<div class="contenido_modal">
+											<span class="icono_cerrar_modal icon-close"></span>
+											<h1><span class="icono_modal"></span></h1>	
+											<h2 class="titulo_modal">I³tun⁴ ti¹nu’⁴u⁴ (Malvaceae: Guazuma ulmifolia Lam. var. ulmifolia)</h2>
+											<p class=" p_2columnas">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id libero vitae mi maximus tempus non vel quam. Sed et egestas libero. Mauris quis sem dictum, ultrices mi sit amet, rhoncus dui. Integer non sapien libero. Curabitur luctus placerat posuere. Sed lobortis accumsan tellus, viverra aliquam est imperdiet in. Sed venenatis molestie magna, a mattis mi tincidunt ut. Donec semper lectus in nibh viverra, sit amet faucibus felis consequat. Suspendisse tempor elementum venenatis. Donec porttitor rutrum placerat. Phasellus nibh arcu, mollis a mi non, vestibulum mattis ipsum. Aenean dapibus, lacus nec pretium consectetur, lectus nibh laoreet arcu, in faucibus tellus erat eget tortor. Fusce et placerat metus. Praesent nibh est, tincidunt vestibulum volutpat ac, scelerisque maximus ex. Donec sodales sollicitudin leo vitae posuere. Mauris est risus, luctus eu tempus sed, hendrerit aliquet libero.</p>
+										</div>
+									</div>
+								</td>							
+        					</tr>
+							<tr class="selected">
+								<td>
+								<label class="contenedor_checkbox"> 
+								  <input type="checkbox"  class="checkbox_personalizada" checked>
+									<span class="marca_check"></span>
+								</label>
+								</td>
+								<td class="titulo_audioanotacion_tabla" data-label="titulo">
+									Segunda audioanotacion <i>simulada</i><span class="unique_id" data-label="unique_id">UID:xxx xxxxxxx xx</span>
+								</td>
+            													 
+            					<td class="" data-label="Lengua terminal (glottocode)">
+									yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span>
+								</td>
+            					
+								<td>
+            					<!--td class=""><span class="pais">México</span><span class="estado">Guerrero</span--><span class="comunidad_2">Yoloxóchitl</span><br><span class="estado_tabla_catalogo">Guerrero</span><!--span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span-->
+								</td>
+								<td class="">
+									<div class="contenedor_hablantes">
+										<span class="hablante">Emiliano Zapata Rámirez</span><br><span class="canal">Canal 1</span>
+										<span class="hablante">Juan Escalante Romero</span><br><span class="canal">Canal 2</span>
 									</div>
 								</td>
-        					</tr>
-							<tr>
-            					<td>
-									<strong><i>Estudio Florístico y Etnobotánico de Comunidades Mixtecas en el Municipio de San Luis Acatlán</i></strong><p class="primeras_palabras_descripcion_collect"></p>
-								</td>
-            					<td class="" data-label="Lengua terminal (glottocode)">
-									yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span><br>yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span>
-								</td>
-            					<td class="" data-label="Grupo de lenguas (glottocode)">
-									amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span><br>amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span>
-								</td>
-            					<td class="comunidades"><span class="pais">
-									México</span><span class="estado">Guerrero</span><span class="comunidad">Yoloxóchitl</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Cuanacaxtitlán</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Arroyo Cumiapa</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Buena Vista</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span>
+								<td>
+									<span class="genero">Cuento</span>
+									<span class="duracion">3:23</span>
 								</td>
 								<td class="td_acciones ">
-									<div class="contenedor_botones_accion ">
-									<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-info1"></span></button>
-									<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-launch"></span></button>
-										<button class="btn_accion_tabla"><span class="icono_accion_tabla icon-ellipsis-v"></span></button>
-									</div>
-								</td>
-        					</tr>
-							<tr>
-            					<td>
-									<strong><i>Estudio Florístico y Etnobotánico de Comunidades Mixtecas en el Municipio de San Luis Acatlán</i></strong><p class="primeras_palabras_descripcion_collect"></p>
-								</td>
-            					<td class="" data-label="Lengua terminal (glottocode)">
-									yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span><br>yolo1241<span class="lengua_term_comun" data-label="Lengua terminal (nombre común)">Yoloxóchitl Mixtec</span>
-								</td>
-            					<td class="" data-label="Grupo de lenguas (glottocode)">
-									amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span><br>amuz1253<span class="grupo_lengua_comun" data-label="Grupo de lenguas (nombre común)" >Amuzgo-mixtecan</span>
-								</td>
-            					<td class="comunidades"><span class="pais">
-									México</span><span class="estado">Guerrero</span><span class="comunidad">Yoloxóchitl</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Cuanacaxtitlán</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Arroyo Cumiapa</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span><hr class="hr_divisor_comunidad"><span class="pais">México</span><span class="estado">Guerrero</span><span class="comunidad">Buena Vista</span><span class="municipio_tabla">San Luis Acatlán</span><span class="localizacion">16.816020, -98.685990</span>
-								</td>
-								<td class="td_acciones">
 									<div class="contenedor_botones_accion">
-										<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-info1"></span></button>
+										<button class="btn_accion_tabla" id="coleccion_info2"><span class="icono_accion_tabla  icon-info1"></span></button>
 										<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-launch"></span></button>
-										<button id="elipsis1" class="btn_accion_tabla"><span class="icono_accion_tabla icon-ellipsis-v"></span></button>
-										<div id="modal_elipsis1" class="contenido_modal_elipsis">
-											<span class="icono_cerrar_modal_elipsis icon-close "></span>
-											<div class="contenedor_opciones_elipsis">
-												<a class="btn_opciones_ellipsis_mis_colecciones" href="#"><span class="icono_opcion_elipsis icon-file_upload"></span> Cargar audioanotación</a>
-												<a class="btn_opciones_ellipsis_mis_colecciones" href="#"><span class="icono_opcion_elipsis icon-edit"></span> Editar metadatos</a>
-												<a class="btn_opciones_ellipsis_mis_colecciones" href="#"><span class="icono_opcion_elipsis icon-delete"></span> Eliminar</a>
-											</div>	
-										</div>	
 									</div>
-								</td>
+									<div id="modal_info" class="modal">
+										<div class="contenido_modal">
+											<span class="icono_cerrar_modal icon-close"></span>
+											<h1><span class="icono_modal"></span></h1>	
+											<h2 class="titulo_modal">I³tun⁴ ti¹nu’⁴u⁴ (Malvaceae: Guazuma ulmifolia Lam. var. ulmifolia)</h2>
+											<p class=" p_2columnas">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id libero vitae mi maximus tempus non vel quam. Sed et egestas libero. Mauris quis sem dictum, ultrices mi sit amet, rhoncus dui. Integer non sapien libero. Curabitur luctus placerat posuere. Sed lobortis accumsan tellus, viverra aliquam est imperdiet in. Sed venenatis molestie magna, a mattis mi tincidunt ut. Donec semper lectus in nibh viverra, sit amet faucibus felis consequat. Suspendisse tempor elementum venenatis. Donec porttitor rutrum placerat. Phasellus nibh arcu, mollis a mi non, vestibulum mattis ipsum. Aenean dapibus, lacus nec pretium consectetur, lectus nibh laoreet arcu, in faucibus tellus erat eget tortor. Fusce et placerat metus. Praesent nibh est, tincidunt vestibulum volutpat ac, scelerisque maximus ex. Donec sodales sollicitudin leo vitae posuere. Mauris est risus, luctus eu tempus sed, hendrerit aliquet libero.</p>
+										</div>
+									</div>
+								</td>							
         					</tr>
-        					
+								
+						</tbody>	 
+							        					
         					
 						</table>
 						<div class="contenedor_paginacion">
