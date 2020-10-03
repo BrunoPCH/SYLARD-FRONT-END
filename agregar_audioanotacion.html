@@ -8,7 +8,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="fonts/style.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css"> <!--GRID SOLAMENTE-->
-<title>SYLARD Visor EAF</title>
+	
+	
+<title>Agregar coleccion</title>
 	
 </head>
 
@@ -45,7 +47,7 @@
 			</nav>
 			<!--TERMINA barra de navegacion superior-->
 		</div>
-		<!--INICIA barra de navegacion publico-->
+		<!--INICIA barra de navegacion publico
 		<div class="container-fluid back_aqua_0">
 			<nav class=" container contenedor_barra_nav_publico">
 				<a class="barra_nav_publico_elemento" href="#" id="bnpe_1"><span class="icono_nav_publico icon-home1"></span></a>
@@ -62,18 +64,99 @@
 		<!--TERMINA-- barra de navegacion publico-->
 	</header>
 	<main>
-		<div class="container-fluid" id="contenedor_viewer_ancho_total">
+		<div class="container-fluid" id="contenedor_agregar_audioanotacion">
+			<div class="container-fluid" id="cabezal_agregar_audioanotacion">
+				<div class="container">
+					<div class="col-sm-12" id="contenedor_items_cabezal_agregar_audioanotacion">
+						<div  class="" id="contenedor_titulos_cabezal_agregar_audioanotacion">
+							<h1 class= "blanco" id="titulo_agregar_audioanotacion"><span class="icono_cabezal icon-file_upload"></span> Agregar audioanotacion</h1>
+							<h2 class="llamada" id="llamada_agregar_audioanotacion">Llena los campos correctamente</h2>
+						</div>	
+					</div>	
+				</div>
+			</div>
 			<section class="container">
-				<div class="col-sm-12 contenedor-90vh" id="contenedor_general_viewer">
-					<h2>I³tun⁴ ti¹nu’⁴u⁴<br>
-						<i>(Malvaceae: Guazuma ulmifolia Lam. var. ulmifolia)</i></h2>
-					<button class="contenedor_acordeon"><span class="icono_acordeon icon-chevron-down"></span> Opciones visuales</button>
-					<div class="acordeon_panel">
-						<div class="acordeon_panel_item">
+				<div class="col-sm-12 contenedor-90vh" id="contenedor_general_agregar_audioanotacion">
+					<form class="">
+						<div class="contenedor_establecer_origen_archivos_audioanotacion">
+							<div class="contenedor_input_seleciona_origen_audioanotacion">
+								<label class="label label_al_100" id="selecciona_archivo_eaf" for="selecciona_archivo_eaf_input">Selecciona el archivo con terminacion ".eaf"</label>
+								<input class="input_flexible" type="file" id="selecciona_archivo_eaf_input" placeholder="Selecciona el archivo" name="selecciona_archivo_eaf_input" required>
+								<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+								<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+							</div>
+							<div class="contenedor_input_seleciona_origen_audioanotacion">
+								<label class="label" id="selecciona_url_mp3" for="selecciona_url_mp3_input">Selecciona URL del audio en ".mp3"</label>
+								<input class="input_flexible" type="url" id="selecciona_url_mp3_input" placeholder="Pega la URL de la ubicación del archivo con terminación &quot.mp3&quot" name="selecciona_url_mp3_input" required>
+								<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+								<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+							</div>		
+						</div>
+						<div class="contenedor_input_agregar_audioanotacion">
+							<label class="label label_al_100" id="titulo_audioanotacion" for="titulo_audioanotacion_input">Título</label>
+							<input class="input_flexible" type="text" id="titulo_audioanotacion_input" placeholder="Titulo breve (max 120 carácteres)" maxlength="120" required>
+							<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+							<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+						</div>
+						<div class="contenedor_input_agregar_audioanotacion">
+							<label class="label label_al_100" id="descripcion_de_la_audioanotacion" for="descripcion_audioanotacion_input">Descripcion de la audioanotación</label>
+							<textarea class="input_flexible" type="textarea" id="descripcion_audioanotacion_input" placeholder="Breve descripcion (max 200 carácteres)" maxlength="200" rows="5" required></textarea>
 							
-							<form method="post" action="#" role="form" class="formulario_contenedor_hablantes_viewer  ">
+						</div>
+						<div class="contenedor_input_agregar_audioanotacion">
+							<label class="label label_al_100" id="seleccion_coleccion_audioanotacion_label" for="seleccion_coleccion_audioanotacion_input">Colección a la que pertenece</label>
+							<input type="search" class="input_flexible" id="seleccion_coloeccion_para_audioanotacion" list="colecciones" placeholder="Selecciona la colección" role="listbox" required>
+							<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+							<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								<datalist id="colecciones">
+									<option value="" disabled selected>Selecciona colección</option>
+									<option value="Títiulo de colección muy largo. Aproximadamente de todo el ancho"></option>
+									<option value="Títiulo de colección muy largo. Aproximadamente de todo el ancho"></option>
+									<option value="Títiulo de colección muy largo. Aproximadamente de todo el ancho"></option>
+									</datalist>
+						</div>
+						<div class="contenedor_flex_audioanotacion">
+							<div class="contenedor_flex_tercio_audioanotacion">
+							<label class="label label_al_100" id="seleccion_comunidad_audioanotacion_label" for="seleccion_comunidad_audioanotacion_input">Comunidad a la que pertenece</label>
+							<input type="search" class="input_flexible" id="seleccion_comunidad_para_audioanotacion" list="comunidades" placeholder="Selecciona la comunidad" role="listbox" required>
+							<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+							<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								<datalist id="comunidades">
+									<option value="" disabled selected>Selecciona colección</option>
+									<option value="Comunidad 1"></option>
+									<option value="Comunidad 2"></option>
+									<option value="Comunidad 3"></option>
+								</datalist>
+							</div>
+							<div class="contenedor_flex_tercio_audioanotacion">
+							<label class="label label_al_100" id="seleccion_lengua_terminal_audioanotacion_label" for="seleccion_lengua_terminal_audioanotacion_input">Lengua terminal a la que pertenece</label>
+							<input type="search" class="input_flexible" id="seleccion_lengua_terminal_audioanotacion_input" list="lenguas_terminales_de_coleccion" placeholder="Selecciona la lengua terminal" role="listbox" required>
+							<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+							<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								<datalist id="lenguas_terminales_de_coleccion">
+									<option value="" disabled selected>Selecciona la lengua terminal</option>
+									<option value="Lengua 1"></option>
+									<option value="Lengua 2"></option>
+									<option value="Lengua 3"></option>
+								</datalist>
+							</div>
+							<div class="contenedor_flex_tercio_audioanotacion">
+							<label class="label label_al_100" id="seleccion_genero_audioanotacion_label" for="seleccion_lengua_terminal_audioanotacion_input">Género al que pertenece</label>
+							<input type="search" class="input_flexible" id="seleccion_genero_audioanotacion_input" list="generos_de_la_coleccion" placeholder="Selecciona el género al que pertenece" role="listbox" required>
+							<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+							<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								<datalist id="generos_de_la_coleccion">
+									<option value="" disabled selected>Selecciona el género al que pertenece</option>
+									<option value="Género 1"></option>
+									<option value="Género 2"></option>
+									<option value="Género 3"></option>
+								</datalist>
+							</div>
+						</div>
+						<p class="label" id="opciones_visuales_predeterminadas">Opciones visuales predeterminadas</p>
+						<div class="contenedor_opciones_visuales_predeterminadas">
 							<div class="contenedor_canal_audioanotacion">
-								<div class="contenedor_canal_padre_compacto">
+								<div class="contenedor_canal_padre">
 									<div class="contenedor_hablante">
 									<p class="label label_al_100">Canal 1 (hablante)</p>
 									<h5 class="hablante_canal_padre">Teodoro González de León</h5>
@@ -82,17 +165,17 @@
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
 										<label class="label label_al_100">Mostrar</label>
 											<div class="contenedor_switch_canal_audioanotacion">
-												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal1_off">OFF</label>
 												<label class="switch_general">
 												<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_1" checked>
                    								<span class="slider_general round"></span></label>
-												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+												<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
 											</div>
 											
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
 											<label class="label label_al_100">Visualizar en:</label>
-											<select class="opciones_despliegue_viewer input_flexible_compacto" list="opciones_despliegue" role="listbox">
+											<select class="opciones_despliegue_viewer input_flexible" list="opciones_despliegue" role="listbox">
 												<datalist id="opciones_despliegue">
 													<option  value="One line display" >One line display</option>
 													<option value="Scroll" selected>Scroll</option>
@@ -101,7 +184,7 @@
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion">
 											<label class="label label_al_100">Color de tipografía</label>
-											<input type="text" class="inp input_flexible_compacto" id="colorPicker" autocomplete="off">
+											<input type="text" class="inp input_flexible" id="colorPicker" autocomplete="off">
 											<div class="palette" id="colorPalette"></div>
 										</div>	
 									</div>
@@ -110,22 +193,22 @@
 									
 							</div>
 							<div class="contenedor_canal_audioanotacion">
-								<div class="contenedor_canal_hijo_compacto">
+								<div class="contenedor_canal_hijo">
 									<div class="contenedor_hablante_hijo">
-										<h6 class="canal_hijo_compacto">TGL traducción</h6>
+										<h6 class="canal_hijo">TGL traducción</h6>
 									</div>
 									<div class="contenedor_opciones_visuales_canal1_viewer">
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
 											<div class="contenedor_switch_canal_audioanotacion_hijo">
-												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal1_off">OFF</label>
 												<label class="switch_general">
 												<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_1" checked>
                    								<span class="slider_general round"></span></label>
-												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+												<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
 											</div>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
-											<select class="opciones_despliegue_viewer input_flexible_compacto" list="opciones_despliegue" role="listbox">
+											<select class="opciones_despliegue_viewer input_flexible" list="opciones_despliegue" role="listbox">
 												<datalist id="opciones_despliegue">
 													<option  value="One line display" >One line display</option>
 													<option value="Scroll" selected>Scroll</option>
@@ -133,29 +216,29 @@
 											</select>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
-											<input type="text" class="inp input_flexible_compacto" id="colorPicker" autocomplete="off">
+											<input type="text" class="inp input_flexible" id="colorPicker" autocomplete="off">
 											<div class="palette" id="colorPalette"></div>
 										</div>
 									</div>	
 								</div>
 							</div>
 							<div class="contenedor_canal_audioanotacion">
-								<div class="contenedor_canal_hijo_compacto">
+								<div class="contenedor_canal_hijo">
 									<div class="contenedor_hablante_hijo">
-										<h6 class="canal_hijo_compacto">TGL traslation</h6>
+										<h6 class="canal_hijo">TGL traslation</h6>
 									</div>
 									<div class="contenedor_opciones_visuales_canal1_viewer">
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
 											<div class="contenedor_switch_canal_audioanotacion_hijo">
-												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal1_off">OFF</label>
 												<label class="switch_general">
 												<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_1" checked>
                    								<span class="slider_general round"></span></label>
-												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+												<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
 											</div>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
-											<select class="opciones_despliegue_viewer input_flexible_compacto" list="opciones_despliegue" role="listbox">
+											<select class="opciones_despliegue_viewer input_flexible" list="opciones_despliegue" role="listbox">
 												<datalist id="opciones_despliegue">
 													<option  value="One line display" >One line display</option>
 													<option value="Scroll" selected>Scroll</option>
@@ -163,29 +246,29 @@
 											</select>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
-											<input type="text" class="inp input_flexible_compacto" id="colorPicker" autocomplete="off">
+											<input type="text" class="inp input_flexible" id="colorPicker" autocomplete="off">
 											<div class="palette" id="colorPalette"></div>
 										</div>
 									</div>	
 								</div>
 							</div>
 							<div class="contenedor_canal_audioanotacion">
-								<div class="contenedor_canal_hijo_compacto">
+								<div class="contenedor_canal_hijo">
 									<div class="contenedor_hablante_hijo">
-										<h6 class="canal_hijo_compacto">TGL Surface-2</h6>
+										<h6 class="canal_hijo">TGL Surface-2</h6>
 									</div>
 									<div class="contenedor_opciones_visuales_canal1_viewer">
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
 											<div class="contenedor_switch_canal_audioanotacion_hijo">
-												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal1_off">OFF</label>
 												<label class="switch_general">
 												<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_1" checked>
                    								<span class="slider_general round"></span></label>
-												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+												<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
 											</div>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
-											<select class="opciones_despliegue_viewer input_flexible_compacto" list="opciones_despliegue" role="listbox">
+											<select class="opciones_despliegue_viewer input_flexible" list="opciones_despliegue" role="listbox">
 												<datalist id="opciones_despliegue">
 													<option  value="One line display" >One line display</option>
 													<option value="Scroll" selected>Scroll</option>
@@ -193,29 +276,29 @@
 											</select>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
-											<input type="text" class="inp input_flexible_compacto" id="colorPicker" autocomplete="off">
+											<input type="text" class="inp input_flexible" id="colorPicker" autocomplete="off">
 											<div class="palette" id="colorPalette"></div>
 										</div>
 									</div>	
 								</div>
 							</div>
 						 	<div class="contenedor_canal_audioanotacion">
-								<div class="contenedor_canal_hijo_compacto">
+								<div class="contenedor_canal_hijo">
 									<div class="contenedor_hablante_hijo">
-										<h6 class="canal_hijo_compacto">TGL Surface-3</h6>
+										<h6 class="canal_hijo">TGL Surface-3</h6>
 									</div>
 									<div class="contenedor_opciones_visuales_canal1_viewer">
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
 											<div class="contenedor_switch_canal_audioanotacion_hijo">
-												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal1_off">OFF</label>
 												<label class="switch_general">
 												<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_1" checked>
                    								<span class="slider_general round"></span></label>
-												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+												<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
 											</div>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
-											<select class="opciones_despliegue_viewer input_flexible_compacto" list="opciones_despliegue" role="listbox">
+											<select class="opciones_despliegue_viewer input_flexible" list="opciones_despliegue" role="listbox">
 												<datalist id="opciones_despliegue">
 													<option  value="One line display" >One line display</option>
 													<option value="Scroll" selected>Scroll</option>
@@ -223,14 +306,14 @@
 											</select>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
-											<input type="text" class="inp input_flexible_compacto" id="colorPicker" autocomplete="off">
+											<input type="text" class="inp input_flexible" id="colorPicker" autocomplete="off">
 											<div class="palette" id="colorPalette"></div>
 										</div>
 									</div>	
 								</div>
 							</div>
 							<div class="contenedor_canal_audioanotacion">
-								<div class="contenedor_canal_padre_compacto">
+								<div class="contenedor_canal_padre">
 									<div class="contenedor_hablante">
 									<p class="label label_al_100">Canal 2 (hablante)</p>
 									<h5 class="hablante_canal_padre">Juan Ramón de la Fuente&nbsp;</h5>
@@ -239,17 +322,17 @@
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
 										<label class="label label_al_100">Mostrar</label>
 											<div class="contenedor_switch_canal_audioanotacion">
-												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal1_off">OFF</label>
 												<label class="switch_general">
 												<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_1" checked>
                    								<span class="slider_general round"></span></label>
-												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+												<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
 											</div>
 											
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
 											<label class="label label_al_100">Visualizar en:</label>
-											<select class="opciones_despliegue_viewer input_flexible_compacto" list="opciones_despliegue" role="listbox">
+											<select class="opciones_despliegue_viewer input_flexible" list="opciones_despliegue" role="listbox">
 												<datalist id="opciones_despliegue">
 													<option  value="One line display" >One line display</option>
 													<option value="Scroll" selected>Scroll</option>
@@ -258,7 +341,7 @@
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion">
 											<label class="label label_al_100">Color de tipografía</label>
-											<input type="text" class="inp input_flexible_compacto" id="colorPicker" autocomplete="off">
+											<input type="text" class="inp input_flexible" id="colorPicker" autocomplete="off">
 											<div class="palette" id="colorPalette"></div>
 										</div>	
 									</div>
@@ -267,22 +350,22 @@
 									
 							</div>
 							<div class="contenedor_canal_audioanotacion">
-								<div class="contenedor_canal_hijo_compacto">
+								<div class="contenedor_canal_hijo">
 									<div class="contenedor_hablante_hijo">
-										<h6 class="canal_hijo_compacto">JRF traducción</h6>
+										<h6 class="canal_hijo">JRF traducción</h6>
 									</div>
 									<div class="contenedor_opciones_visuales_canal1_viewer">
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
 											<div class="contenedor_switch_canal_audioanotacion_hijo">
-												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal1_off">OFF</label>
 												<label class="switch_general">
 												<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_1" checked>
                    								<span class="slider_general round"></span></label>
-												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+												<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
 											</div>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
-											<select class="opciones_despliegue_viewer input_flexible_compacto" list="opciones_despliegue" role="listbox">
+											<select class="opciones_despliegue_viewer input_flexible" list="opciones_despliegue" role="listbox">
 												<datalist id="opciones_despliegue">
 													<option  value="One line display" >One line display</option>
 													<option value="Scroll" selected>Scroll</option>
@@ -290,29 +373,29 @@
 											</select>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
-											<input type="text" class="inp input_flexible_compacto" id="colorPicker" autocomplete="off">
+											<input type="text" class="inp input_flexible" id="colorPicker" autocomplete="off">
 											<div class="palette" id="colorPalette"></div>
 										</div>
 									</div>	
 								</div>
 							</div>
 							<div class="contenedor_canal_audioanotacion">
-								<div class="contenedor_canal_hijo_compacto">
+								<div class="contenedor_canal_hijo">
 									<div class="contenedor_hablante_hijo">
-										<h6 class="canal_hijo_compacto">JRF traslation</h6>
+										<h6 class="canal_hijo">JRF traslation</h6>
 									</div>
 									<div class="contenedor_opciones_visuales_canal1_viewer">
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
 											<div class="contenedor_switch_canal_audioanotacion_hijo">
-												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal1_off">OFF</label>
 												<label class="switch_general">
 												<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_1" checked>
                    								<span class="slider_general round"></span></label>
-												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+												<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
 											</div>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
-											<select class="opciones_despliegue_viewer input_flexible_compacto" list="opciones_despliegue" role="listbox">
+											<select class="opciones_despliegue_viewer input_flexible" list="opciones_despliegue" role="listbox">
 												<datalist id="opciones_despliegue">
 													<option  value="One line display" >One line display</option>
 													<option value="Scroll" selected>Scroll</option>
@@ -320,29 +403,29 @@
 											</select>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
-											<input type="text" class="inp input_flexible_compacto" id="colorPicker" autocomplete="off">
+											<input type="text" class="inp input_flexible" id="colorPicker" autocomplete="off">
 											<div class="palette" id="colorPalette"></div>
 										</div>
 									</div>	
 								</div>
 							</div>
 							<div class="contenedor_canal_audioanotacion">
-								<div class="contenedor_canal_hijo_compacto">
+								<div class="contenedor_canal_hijo">
 									<div class="contenedor_hablante_hijo">
-										<h6 class="canal_hijo_compacto">JRF Surface-2</h6>
+										<h6 class="canal_hijo">JRF Surface-2</h6>
 									</div>
 									<div class="contenedor_opciones_visuales_canal1_viewer">
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
 											<div class="contenedor_switch_canal_audioanotacion_hijo">
-												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal1_off">OFF</label>
 												<label class="switch_general">
 												<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_1" checked>
                    								<span class="slider_general round"></span></label>
-												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+												<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
 											</div>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
-											<select class="opciones_despliegue_viewer input_flexible_compacto" list="opciones_despliegue" role="listbox">
+											<select class="opciones_despliegue_viewer input_flexible" list="opciones_despliegue" role="listbox">
 												<datalist id="opciones_despliegue">
 													<option  value="One line display" >One line display</option>
 													<option value="Scroll" selected>Scroll</option>
@@ -350,29 +433,29 @@
 											</select>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
-											<input type="text" class="inp input_flexible_compacto" id="colorPicker" autocomplete="off">
+											<input type="text" class="inp input_flexible" id="colorPicker" autocomplete="off">
 											<div class="palette" id="colorPalette"></div>
 										</div>
 									</div>	
 								</div>
 							</div>
 						 	<div class="contenedor_canal_audioanotacion">
-								<div class="contenedor_canal_hijo_compacto">
+								<div class="contenedor_canal_hijo">
 									<div class="contenedor_hablante_hijo">
-										<h6 class="canal_hijo_compacto">JRF Surface-3</h6>
+										<h6 class="canal_hijo">JRF Surface-3</h6>
 									</div>
 									<div class="contenedor_opciones_visuales_canal1_viewer">
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
 											<div class="contenedor_switch_canal_audioanotacion_hijo">
-												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="swich_etiqueta_opcion1" for="checkbox" id="switch_canal1_off">OFF</label>
 												<label class="switch_general">
 												<input type="checkbox"  class="checkbox_canal1" id="checbox_canal_1" checked>
                    								<span class="slider_general round"></span></label>
-												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+												<label class="swich_etiqueta_opcion2" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
 											</div>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
-											<select class="opciones_despliegue_viewer input_flexible_compacto" list="opciones_despliegue" role="listbox">
+											<select class="opciones_despliegue_viewer input_flexible" list="opciones_despliegue" role="listbox">
 												<datalist id="opciones_despliegue">
 													<option  value="One line display" >One line display</option>
 													<option value="Scroll" selected>Scroll</option>
@@ -380,114 +463,31 @@
 											</select>
 										</div>
 										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
-											<input type="text" class="inp input_flexible_compacto" id="colorPicker" autocomplete="off">
+											<input type="text" class="inp input_flexible" id="colorPicker" autocomplete="off">
 											<div class="palette" id="colorPalette"></div>
 										</div>
 									</div>	
 								</div>
-							</div>
-							</form>
+							</div>	
 						</div>
-					</div>
-					<div id="waveform"></div>
 					
-					<img src="images/wave.png" class="wdt-100" alt="Opciones de visualizacion de waveform:waveColor: '#A5DBE6',	progressColor: '#7EBFCC', cursorColor: '#15C1D1', barWidth: 3, barRadius: 3, cursorWidth: 2, height: 72, barGap: 3">	
-					<div class="contenedor_boton_play">		
-						<button type="button" class="btn btn-predeterminado" id="boton_play_viewer"><span class="icon-play_arrow"></span> / <span class="icon-pause1"></span></button>
-					</div>
-					<hr>	
-					<div class="contenedor_one_line_display">
-						<table class="table_one_line"> 
-							<tr>
-								<td>
-									<p class="canal_1_hablante_one_line_display_item"><span class="siglas_canal_item">SIGLAS1: </span>Nda³tu’⁴un⁴ lu³chi’⁴i²=un⁴ ji’⁴in⁴=ndu² xa’¹a⁴ i³ta² sa³in⁴ ta³ta² chi¹.</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p class="canal_2_hablante_one_line_display_item"><span class="siglas_canal_item">SIGLAS2: </span>Cuéntanos un poco sobre la flor de olote. </p>
-								</td>	
-							</tr>
-						</table>
-					</div>
-					<hr>
-					<div class="contenedor_multilinea">
-					<table class="tabla_multilinea">
-						<tr class="row_multilinea">
-							<td rowspan="2" class="td_reproduccion"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal reproduccion"><span>TGL: </span>Sa¹a³ nu¹⁴u³ ba⁴² i⁴yo² tan³ sa¹a³, nda⁴a² ba⁴² chi’⁴i⁴=na⁽²⁾=e² nda⁴a² tiem⁴pu² chi’⁴i⁴=na⁽²⁾=e²</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td class="td_canal reproduccion"><span>TGL: </span>Cuántos tipos hay, dónde hay, y en qué tiempo lo siembran.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>na⁴chu³ jo⁴ndo¹³=a² ji’⁴in⁴=na², sa¹a³ i⁴in⁽⁴⁾=a² chi¹ tan³ na⁴chu³ jo⁴ndo¹³=a² chi¹.</td>
-						</tr>
-						<tr class="row_multilinea">
-							<td  class="td_reproduccion_oculta"><span class="bocina_reproduccion icon-volume-up"></span></td>
-							<td class="td_canal "><span>TGL: </span>Para qué lo utilizan, cómo son, y para qué se utilizan.</td>
-						</tr>
-						
-						
-						
-						
+						<div class="botones_agregar_audioanotacion">
 							
+							<div class="contenedor_botones">
+							<button type="reset" class="btn btn-secundario" id="boton_restablecer_agregar_audioanotacion">Restablecer</button>
+							<button type="submit" class="btn btn-primario" id="boton_guardar_agregar_audioanotacion">Guardar</button>
+							</div>
+						</div>
 						
-					</table>
-					</div>
-						
-				</div>
+					</form>
+				</div>	
+				
 			</section>
 		</div>
+		
+		
+	
+		
 	</main>
 	<footer>
 		<div class="container-fluid contenedor_ancho_total back_aqua_0">
@@ -500,43 +500,7 @@
 			</div>
 		</div>
 	</footer>
-	<script>
-	var acc = document.getElementsByClassName("contenedor_acordeon");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("acordeon_activo");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-	</script>
-	<script>
-var acc = document.getElementsByClassName("contenedor_acordeon");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("acordeon_activo");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
-</script>
-	<script src="js/la_color_picker.js"></script>
+<script src="js/la_color_picker.js"</script>
 	</body>
 	
 </html>
