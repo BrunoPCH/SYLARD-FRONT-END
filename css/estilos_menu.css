@@ -149,6 +149,12 @@ h1 {
 	
 }
 
+h1.blanco {
+	color: white;
+}
+
+
+
 h2 {
 	font-size: 1.875rem;
 	line-height: 2rem;
@@ -487,6 +493,13 @@ textarea /*no redimensiona el textarea (pensarlo) */ {
 input[type=checkbox] {
 	
 }
+
+
+input[type=file]{
+	font-weight: 600;
+	color: var(--gris-texto-principal);
+}
+
 /*ESTILO DE INPUTS AL EDITARSE */
 
 .icono_error_input {
@@ -1129,6 +1142,13 @@ input:checked + .slider_general {
 	font-weight: 500;
 	color: var(--gris-texto-principal);
 }
+
+.swich_etiqueta_opcion1_compacto, .swich_etiqueta_opcion2_compacto {
+	font-family: 'Raleway';
+	font-size: 0.625rem;
+	font-weight: 500;
+	color: var(--gris-texto-principal);
+}
 .contenedor_switch_formularios {
 	margin-bottom: 1rem;
 }
@@ -1561,7 +1581,7 @@ min-width: 87%;
 
 
 /*ELEMENTOS ACORDEON VIEWER*/
-#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones, #contenedor_catalogo_coleccion_individual  {
+#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones, #contenedor_catalogo_coleccion_individual, #contenedor_agregar_audioanotacion  {
 	background-color: var(--gris06);
 	padding: 0;
 	margin: 0;
@@ -1609,13 +1629,14 @@ min-width: 87%;
 }
 
 .acordeon_panel_item {
-	width: 45%;
-	margin-left: 5%;
+	width: 95%;
+	padding-right: .25rem;
+	
 }
 
 /*ELEMENTOS VIEWER*/
 .opciones_despliegue_viewer {
-	width:10rem; 
+	flex-grow: 1;	
 }
 
 #switch_canal1_off, switch_usuario_canal1_on {
@@ -1625,9 +1646,7 @@ min-width: 87%;
 /*ELEMENTOS SELECTOR COLOR*/
 .inp {
 	border-right: 1rem solid red;
-	width: 6rem;
-	margin-left: 1rem;
-	
+	width: 6rem;	
 	
 }
 
@@ -1647,7 +1666,8 @@ min-width: 87%;
   display: none;
   padding: .25rem;
   position: absolute;
-  left: 12.25rem;		
+  right: 0rem;
+  bottom:-8rem;
   z-index: 1000;
 }
 .color-option {
@@ -1837,7 +1857,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 
 }
 
-#contenedor_general_mis_colecciones, #contenedor_general_agregar_coleccion, #contenedor_general_catalogo_coleccion_individual {
+#contenedor_general_mis_colecciones, #contenedor_general_agregar_coleccion, #contenedor_general_catalogo_coleccion_individual, #contenedor_general_agregar_audioanotacion {
 	padding-top: 3rem;
 	background-color: white;
 }
@@ -1851,7 +1871,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	
 }
 
-#contenedor_items_cabezal_mis_colecciones, #contenedor_items_cabezal_agregar_coleccion {
+#contenedor_items_cabezal_mis_colecciones, #contenedor_items_cabezal_agregar_coleccion, #contenedor_items_cabezal_agregar_audioanotacion {
 	padding-top: 2rem;
 	padding-bottom: 1rem;
 	display: flex;
@@ -2448,7 +2468,6 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 
 #boton_restablecer_agregar_coleccion, #boton_guardar_agregar_coleccion, #licencia_cc {
 	margin-bottom: .75rem;
-	margin-left: ;
 	margin-right: 0;
 }
 
@@ -2762,4 +2781,218 @@ tr.selected {
 
 .imagen_reflejada {
 	transform: scaleX(-1)
+}
+
+#cabezal_agregar_audioanotacion {
+	background-color: #C30606;
+	min-height: 200px;
+}
+
+#llamada_agregar_audioanotacion {
+	color: white;
+}
+
+
+.contenedor_establecer_origen_archivos_audioanotacion {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.contenedor_establecer_origen_archivos_audioanotacion:first-child {
+	margin-left: 0!important;
+}
+
+.contenedor_flex_audioanotacion {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.contenedor_input_seleciona_origen_audioanotacion {
+	flex-basis: 50%;
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	
+}
+.contenedor_input_seleciona_origen_audioanotacion:first-of-type {
+	margin-left: 0;
+}
+.contenedor_input_seleciona_origen_audioanotacion:last-of-type {
+	margin-right: 0;
+}
+
+.contenedor_flex_tercio_audioanotacion {
+	flex-basis: 33.3%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-left: .5rem;
+	margin-right: .5rem;
+}
+
+.contenedor_flex_tercio_audioanotacion:first-of-type {
+	margin-left:0;
+}
+
+.contenedor_flex_tercio_audioanotacion:last-of-type {
+	margin-right: 0;
+}
+
+.contenedor_flex_tercio_audioanotacion:first-child {
+	padding-left: 0;
+}
+
+.contenedor_input_agregar_audioanotacion {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+#descripcion_audioanotacion_input {
+		margin-right: 2.5%;
+}
+
+
+
+.contenedor_canal_audioanotacion {
+	margin-top:0;
+}
+
+
+.contenedor_opciones_visuales_predeterminadas {
+	border: 1px solid var(--color-primario-principal);
+	padding-bottom: 1.5rem;
+	margin-bottom: 1.5rem;
+	border-radius: .25rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+h5.hablante_canal_padre {
+	font-weight: 400;
+	font-size: 1.325rem;
+	line-height: 1.875rem;
+	margin-top: .125rem;
+	color: var(--gris-texto-principal);
+	
+}
+
+.contenedor_canal_padre, .contenedor_canal_hijo {
+	margin-top:0;
+	margin-bottom: .75rem;
+	border-bottom: 1px solid var(--gris05);
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.contenedor_canal_padre_compacto, .contenedor_canal_hijo_compacto {
+	margin-top:0;
+	margin-bottom: .25rem;
+	border-bottom: 1px solid var(--gris05);
+	display: flex;
+	flex-flow: row nowrap;
+}
+.contenedor_canal_padre {
+	margin-top: 2rem;
+}
+
+
+
+
+.contenedor_canal_hijo {
+	margin-left: 2rem;
+}
+.contenedor_canal_hijo_compacto {
+	margin-left: 2rem;
+}
+
+.conenedor_canal_hijo:last-of-type {
+	margin-bottom: 20rem;
+}
+
+.label_canal_padre {
+	flex-basis: 100%;
+}
+
+.contenedor_switch_canal_audioanotacion {
+}
+
+.contenedor_hablante {
+	flex-basis: 52%;
+	flex-grow: 2;
+}
+
+.contenedor_opciones_visuales_canal1_viewer {
+	flex-basis: 45%;
+	flex-grow: 1;
+	display: flex;
+	flex-flow: row nowrap;
+	
+	
+}
+
+.contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion {
+	margin: 0 .5rem;
+	flex-grow: 1;
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
+	
+}
+.contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion:last-of-type {
+	margin-right: 0;
+}
+
+.contenedor_mostrar_canal {
+	flex-basis: 30%;
+}
+
+.contenedor_visualizar_canal_en {
+	flex-basis: 43%;
+}
+
+.color_audioanotacion {
+	flex-basis: 35%;
+}
+
+h6.canal_hijo {
+	margin-left: 1rem;
+	font-size: 1.125rem;
+	font-weight: 400;
+	color: var(--gris-texto-secundario);
+}
+
+h6.canal_hijo_compacto {
+	margin-left: 1rem;
+	font-size: .75rem;
+	font-weight: 400;
+	color: var(--gris-texto-secundario);
+}
+
+.contenedor_switch_canal_audioanotacion_hijo {
+	align-self: center;
+	height: 1.5rem;
+}
+
+.contenedor_hablante_hijo {
+	flex-basis: calc(52% - 2rem);
+	flex-grow: 2;
+}
+
+
+.botones_agregar_audioanotacion {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+}
+
+.input_flexible_compacto {
+	flex-grow: 1;
+	font-size: 10px;
+	line-height: 14px;
+	padding: 2px;
+	margin-bottom: 4px;
 }
