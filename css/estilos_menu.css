@@ -2885,6 +2885,7 @@ h5.hablante_canal_padre {
 	line-height: 1.875rem;
 	margin-top: .125rem;
 	color: var(--gris-texto-principal);
+	margin-right: .25rem;
 	
 }
 
@@ -2931,6 +2932,8 @@ h5.hablante_canal_padre {
 .contenedor_hablante {
 	flex-basis: 52%;
 	flex-grow: 2;
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .contenedor_opciones_visuales_canal1_viewer {
