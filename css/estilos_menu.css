@@ -2934,6 +2934,7 @@ h5.hablante_canal_padre {
 	flex-grow: 2;
 	display: flex;
 	flex-flow: row wrap;
+	align-items:baseline;
 }
 
 .contenedor_opciones_visuales_canal1_viewer {
@@ -3176,4 +3177,20 @@ h6.canal_hijo_compacto {
 #contenedor_hijo_lamina1 {
 	align-items: stretch;
 	padding-bottom: 4rem!important;
+}
+
+.hablante_canal_padre_input {
+	font-weight: 400;
+	font-size: 1.325rem;
+	line-height: 1.875rem;
+	margin-top: .125rem;
+	color: var(--gris-texto-principal);
+	margin-right: .75rem;
+	flex-grow: 1;
+	max-width: 90%;
+}
+
+.hablante_canal_padre_input:disabled {
+	background-color: white;
+	border: none;
 }
