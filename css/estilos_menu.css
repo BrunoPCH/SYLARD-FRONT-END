@@ -512,6 +512,8 @@ input[type=file]{
 	color: var(--gris-texto-principal);
 }
 
+
+
 /*ESTILO DE INPUTS AL EDITARSE */
 
 .icono_error_input {
@@ -1589,7 +1591,7 @@ min-width: 87%;
 
 
 /*ELEMENTOS ACORDEON VIEWER*/
-#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones, #contenedor_catalogo_coleccion_individual, #contenedor_agregar_audioanotacion  {
+#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones, #contenedor_catalogo_coleccion_individual, #contenedor_agregar_audioanotacion, #contenedor_todas_las_colecciones, #contenedor_agregar_coleccion_superusuario  {
 	background-color: var(--gris06);
 	padding: 0;
 	margin: 0;
@@ -1865,7 +1867,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 
 }
 
-#contenedor_general_mis_colecciones, #contenedor_general_agregar_coleccion, #contenedor_general_catalogo_coleccion_individual, #contenedor_general_agregar_audioanotacion {
+#contenedor_general_mis_colecciones, #contenedor_general_agregar_coleccion, #contenedor_general_catalogo_coleccion_individual, #contenedor_general_agregar_audioanotacion, #contenedor_general_todas_las_colecciones, #contenedor_general_agregar_coleccion_superusuario {
 	padding-top: 3rem;
 	background-color: white;
 }
@@ -1874,12 +1876,12 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	background-color: #5B4884;
 }
 
-#titulo_mis_colecciones, #titulo_audioanotaciones, #titulo_catalogo_coleccion_individual {
+#titulo_mis_colecciones, #titulo_audioanotaciones, #titulo_catalogo_coleccion_individual, #titulo_todas_las_colecciones {
 	color: white;
 	
 }
 
-#contenedor_items_cabezal_mis_colecciones, #contenedor_items_cabezal_agregar_coleccion, #contenedor_items_cabezal_agregar_audioanotacion {
+#contenedor_items_cabezal_mis_colecciones, #contenedor_items_cabezal_agregar_coleccion, #contenedor_items_cabezal_agregar_audioanotacion, #contenedor_items_cabezal_todas_las_colecciones, #contenedor_items_cabezal_agregar_coleccion_superusuario {
 	padding-top: 2rem;
 	padding-bottom: 1rem;
 	display: flex;
@@ -1889,7 +1891,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	
 }
 
-#llamada_mis_colecciones {
+#llamada_mis_colecciones, #llamada_todas_las_colecciones, #llamada_agregar_coleccion_superusuario  {
 	color: var(--color-primario-principal);
 }
 #contenedor_items_cabezal_audioanotaciones, #contenedor_items_cabezal_catalogo_coleccion_individual {
@@ -1986,7 +1988,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	flex-grow: 0.6;
 }
 
-.contenedor_tabla_mis_colecciones, .contenedor_tabla_catalogo_colecciones, .contenedor_tabla_catalogo_audioanotaciones, .contenedor_tabla_catalogo_coleccion_individual  {
+.contenedor_tabla_mis_colecciones, .contenedor_tabla_catalogo_colecciones, .contenedor_tabla_catalogo_audioanotaciones, .contenedor_tabla_catalogo_coleccion_individual, .contenedor_tabla_todas_las_colecciones  {
 	overflow: hidden;
 }
 
@@ -1996,7 +1998,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	vertical-align: bottom;
 }
 
-.tabla_mis_colecciones, .tabla_catalogo_colecciones, .tabla_catalogo_audianotaciones, .tabla_catalogo_audianotaciones_coleccion_individual {
+.tabla_mis_colecciones, .tabla_catalogo_colecciones, .tabla_catalogo_audianotaciones, .tabla_catalogo_audianotaciones_coleccion_individual, .tabla_todas_las_colecciones {
 	border-collapse: collapse;
 	vertical-align:middle;
 }
@@ -2358,7 +2360,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	flex-grow: 2;
 }
 
-.btn_lateral_input_agregar_lengua, .btn_lateral_input_agregar_comunidad {
+.btn_lateral_input_agregar_lengua, .btn_lateral_input_agregar_comunidad, .btn_lateral_input_agregar_usuario {
 	padding: 0;
 	padding-top: 3px;
 	margin:0;
@@ -2377,40 +2379,40 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	font-size: 1rem;
 }
 
-.modulo_boton_lengua, .modulo_boton_comunidad  {
+.modulo_boton_lengua, .modulo_boton_comunidad, .modulo_boton_usuarios  {
 	align-self: flex-end;
 	margin-bottom: .875rem;
 }
 
-.contenedor_etiqueta_agregar_coleccion_lenguas, .contenedor_etiqueta_agregar_coleccion_comunidad {
+.contenedor_etiqueta_agregar_coleccion_lenguas, .contenedor_etiqueta_agregar_coleccion_comunidad, .contenedor_etiqueta_agregar_coleccion_superusuario_usuarios {
 	border: 1px solid var(--color-primario-principal);
 	padding-bottom: 1.5rem;
 	margin-bottom: 1.5rem;
 	border-radius: .25rem;
 }
 
-.contenedor_lenguas_agregadas, .contenedor_comunidades_agregadas  {
+.contenedor_lenguas_agregadas, .contenedor_comunidades_agregadas, .contenedor_usuarios_agregados  {
 	padding-top: .5rem;
 	width: 90%;
 	margin: 0 auto;
 }
 
-.contenedor_botones_accion_lengua {
+.contenedor_botones_accion_lengua, .contenedor_botones_accion_usuario {
 	border-left: 2px solid var(--color-sec-disabled-fill);
 	padding-left: 1rem;
 	display:inline-block;
 	
 }
 
-.lengua_terminal_glottocode_agregar_coleccion, .grupo_terminal_glottocode_agregar_coleccion, .comunidad_agregar_coleccion {
+.lengua_terminal_glottocode_agregar_coleccion, .grupo_terminal_glottocode_agregar_coleccion, .comunidad_agregar_coleccion, .usuario_agregar_coleccion {
 	font-weight: 800;
 }
 
-.tabla_lenguas_agregadas, .tabla_comunidades_agregadas {
+.tabla_lenguas_agregadas, .tabla_comunidades_agregadas, .tabla_usuarios_agregados  {
 	color: var(--gris-texto-principal);
 }
 
-.row_lenguas_agregadas, .row_comunidades_agregadas {
+.row_lenguas_agregadas, .row_comunidades_agregadas, .row_usuarios_agregados {
 	border-bottom: 1px solid var(--gris05);
 }
 
@@ -2723,6 +2725,7 @@ tr.selected {
   	-ms-user-select: none;
   	user-select: none;
 	margin-left: .25rem;
+	padding-top: .75rem;
 }
 
 .contenedor_checkbox input {
@@ -3194,3 +3197,56 @@ h6.canal_hijo_compacto {
 	background-color: white;
 	border: none;
 }
+
+.imagen_icono_super_usuario {
+	margin: 0.01rem;
+	width: 100%;
+	
+}
+
+.contenedor_icono_super_usuario {
+	display: inline-block;
+	margin-right: .5rem;
+	background-color: darkred;
+	border-radius: 1rem;
+	border: 2px solid var(--naranja);
+	vertical-align: middle;
+	height: 1.5rem;
+	width: 1.5rem;
+	overflow: hidden;
+}
+
+#cabezal_todas_las_colecciones {
+	background-color: var(--color-primario-principal-oscuro);
+}
+
+#th_coleccion_todas_las_colecciones {
+	width: 23%;
+}
+
+#th_director {
+	width: 17%;
+}
+
+#cabezal_agregar_coleccion_supersusuario {
+	background-color: var(--color-primario-principal-oscuro);
+}
+
+.contenedor_inputs_agregar_coleccion_superusuario_usuarios {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	padding-top: .5rem;
+	padding-right: 1rem;
+	padding-left: .5rem;
+}
+
+.modulo_inputs_superusuario_usuario {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	flex-grow: 1;
+
+#comunidades {
