@@ -1591,7 +1591,7 @@ min-width: 87%;
 
 
 /*ELEMENTOS ACORDEON VIEWER*/
-#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones, #contenedor_catalogo_coleccion_individual, #contenedor_agregar_audioanotacion, #contenedor_todas_las_colecciones, #contenedor_agregar_coleccion_superusuario  {
+#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones, #contenedor_catalogo_coleccion_individual, #contenedor_agregar_audioanotacion, #contenedor_todas_las_colecciones, #contenedor_agregar_coleccion_superusuario, #contenedor_audioanotaciones_superusuario  {
 	background-color: var(--gris06);
 	padding: 0;
 	margin: 0;
@@ -1876,7 +1876,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	background-color: #5B4884;
 }
 
-#titulo_mis_colecciones, #titulo_audioanotaciones, #titulo_catalogo_coleccion_individual, #titulo_todas_las_colecciones {
+#titulo_mis_colecciones, #titulo_audioanotaciones, #titulo_catalogo_coleccion_individual, #titulo_todas_las_colecciones, #titulo_audioanotaciones_superusuario  {
 	color: white;
 	
 }
@@ -1894,7 +1894,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 #llamada_mis_colecciones, #llamada_todas_las_colecciones, #llamada_agregar_coleccion_superusuario  {
 	color: var(--color-primario-principal);
 }
-#contenedor_items_cabezal_audioanotaciones, #contenedor_items_cabezal_catalogo_coleccion_individual {
+#contenedor_items_cabezal_audioanotaciones, #contenedor_items_cabezal_catalogo_coleccion_individual, #contenedor_items_cabezal_audioanotaciones_superusuario {
 	padding-top: 2rem;
 	padding-bottom: 1rem;
 	display: flex;
@@ -2580,7 +2580,7 @@ margin-bottom: 1rem;
 	background-color: #EB6868;
 }
 
-.etiqueta_nombre_coleccion_audioanotaciones {
+.etiqueta_nombre_coleccion_audioanotaciones,.etiqueta_nombre_coleccion_audioanotaciones_superusuario  {
 	color: white;
 }
 
@@ -2656,7 +2656,6 @@ margin-bottom: 1rem;
 	display: block;
 	margin-bottom: 0.25rem;
 	margin:0!important;
-	margin-bottom: .25rem!important;
 	text-align: center;
 	
 }
@@ -3248,5 +3247,8 @@ h6.canal_hijo_compacto {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	flex-grow: 1;
+}
 
-#comunidades {
+#cabezal_audioanotaciones_superusuario {
+	background-color: var(--color-primario-principal-oscuro);
+}
