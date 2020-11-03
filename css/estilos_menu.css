@@ -1591,7 +1591,7 @@ min-width: 87%;
 
 
 /*ELEMENTOS ACORDEON VIEWER*/
-#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones, #contenedor_catalogo_coleccion_individual, #contenedor_agregar_audioanotacion, #contenedor_todas_las_colecciones, #contenedor_agregar_coleccion_superusuario, #contenedor_audioanotaciones_superusuario  {
+#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones, #contenedor_catalogo_coleccion_individual, #contenedor_agregar_audioanotacion, #contenedor_todas_las_colecciones, #contenedor_agregar_coleccion_superusuario, #contenedor_audioanotaciones_superusuario, #contenedor_editor_de_campos_superusuario  {
 	background-color: var(--gris06);
 	padding: 0;
 	margin: 0;
@@ -1867,9 +1867,12 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 
 }
 
-#contenedor_general_mis_colecciones, #contenedor_general_agregar_coleccion, #contenedor_general_catalogo_coleccion_individual, #contenedor_general_agregar_audioanotacion, #contenedor_general_todas_las_colecciones, #contenedor_general_agregar_coleccion_superusuario {
+#contenedor_general_mis_colecciones, #contenedor_general_agregar_coleccion, #contenedor_general_catalogo_coleccion_individual, #contenedor_general_agregar_audioanotacion, #contenedor_general_todas_las_colecciones, #contenedor_general_agregar_coleccion_superusuario, #contenedor_general_editor_campos_superusuario {
 	padding-top: 3rem;
 	background-color: white;
+}
+#contenedor_general_editor_campos_superusuario {
+	padding-bottom: 1.5rem;
 }
 
 #cabezal_mis_colecciones {
@@ -1881,7 +1884,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	
 }
 
-#contenedor_items_cabezal_mis_colecciones, #contenedor_items_cabezal_agregar_coleccion, #contenedor_items_cabezal_agregar_audioanotacion, #contenedor_items_cabezal_todas_las_colecciones, #contenedor_items_cabezal_agregar_coleccion_superusuario {
+#contenedor_items_cabezal_mis_colecciones, #contenedor_items_cabezal_agregar_coleccion, #contenedor_items_cabezal_agregar_audioanotacion, #contenedor_items_cabezal_todas_las_colecciones, #contenedor_items_cabezal_agregar_coleccion_superusuario, #contenedor_items_cabezal_editor_de_campos_superusuario {
 	padding-top: 2rem;
 	padding-bottom: 1rem;
 	display: flex;
@@ -1891,7 +1894,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	
 }
 
-#llamada_mis_colecciones, #llamada_todas_las_colecciones, #llamada_agregar_coleccion_superusuario  {
+#llamada_mis_colecciones, #llamada_todas_las_colecciones, #llamada_agregar_coleccion_superusuario, #llamada_editor_de_campos_superusuario   {
 	color: var(--color-primario-principal);
 }
 #contenedor_items_cabezal_audioanotaciones, #contenedor_items_cabezal_catalogo_coleccion_individual, #contenedor_items_cabezal_audioanotaciones_superusuario {
@@ -2341,7 +2344,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	
 }
 
-.modulo_inputs_lengua {
+.modulo_inputs_lengua, .modulo_inputs_hablantes_editor_de_campos_superusuario {
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 	flex-basis: 48%;
@@ -2360,7 +2363,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	flex-grow: 2;
 }
 
-.btn_lateral_input_agregar_lengua, .btn_lateral_input_agregar_comunidad, .btn_lateral_input_agregar_usuario {
+.btn_lateral_input_agregar_lengua, .btn_lateral_input_agregar_comunidad, .btn_lateral_input_agregar_usuario,.btn_lateral_input_agregar_genero_editor_campos_superusuario  {
 	padding: 0;
 	padding-top: 3px;
 	margin:0;
@@ -2379,19 +2382,20 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	font-size: 1rem;
 }
 
-.modulo_boton_lengua, .modulo_boton_comunidad, .modulo_boton_usuarios  {
+.modulo_boton_lengua, .modulo_boton_comunidad, .modulo_boton_usuarios, .modulo_boton_agregar_genero_editor_campos_superusuario, .modulo_boton_agregar_hablantes_editor_de_campos_superusuario   {
 	align-self: flex-end;
 	margin-bottom: .875rem;
 }
 
-.contenedor_etiqueta_agregar_coleccion_lenguas, .contenedor_etiqueta_agregar_coleccion_comunidad, .contenedor_etiqueta_agregar_coleccion_superusuario_usuarios {
+.contenedor_etiqueta_agregar_coleccion_lenguas, .contenedor_etiqueta_agregar_coleccion_comunidad, .contenedor_etiqueta_agregar_coleccion_superusuario_usuarios, .contenedor_etiqueta_agregar_genero_editor_de_campos_superusuario, .contenedor_etiqueta_hablantes_editor_de_campos_superusuario  {
 	border: 1px solid var(--color-primario-principal);
 	padding-bottom: 1.5rem;
 	margin-bottom: 1.5rem;
 	border-radius: .25rem;
 }
 
-.contenedor_lenguas_agregadas, .contenedor_comunidades_agregadas, .contenedor_usuarios_agregados  {
+
+.contenedor_lenguas_agregadas, .contenedor_comunidades_agregadas, .contenedor_usuarios_agregados, .contenedor_generos_agregados, .contenedor_hablantes_agregados_editor_de_campos_superusuario  {
 	padding-top: .5rem;
 	width: 90%;
 	margin: 0 auto;
@@ -2408,11 +2412,11 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	font-weight: 800;
 }
 
-.tabla_lenguas_agregadas, .tabla_comunidades_agregadas, .tabla_usuarios_agregados  {
+.tabla_lenguas_agregadas, .tabla_comunidades_agregadas, .tabla_usuarios_agregados, .tabla_generos_agregados, .tabla_hablantes_agregados_superusuario  {
 	color: var(--gris-texto-principal);
 }
 
-.row_lenguas_agregadas, .row_comunidades_agregadas, .row_usuarios_agregados {
+.row_lenguas_agregadas, .row_comunidades_agregadas, .row_usuarios_agregados, .row_generos_agregados, .row_hablantes_agregados_editor_de_campos_superusuario {
 	border-bottom: 1px solid var(--gris05);
 }
 
@@ -3231,7 +3235,7 @@ h6.canal_hijo_compacto {
 	background-color: var(--color-primario-principal-oscuro);
 }
 
-.contenedor_inputs_agregar_coleccion_superusuario_usuarios {
+.contenedor_inputs_agregar_coleccion_superusuario_usuarios,.contenedor_inputs_agregar_genero_editor_de_campos_superusuario {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -3240,7 +3244,7 @@ h6.canal_hijo_compacto {
 	padding-left: .5rem;
 }
 
-.modulo_inputs_superusuario_usuario {
+.modulo_inputs_superusuario_usuario, .modulo_inputs_genero_editor_de_campos_superusuario {
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 	display: flex;
@@ -3251,4 +3255,109 @@ h6.canal_hijo_compacto {
 
 #cabezal_audioanotaciones_superusuario {
 	background-color: var(--color-primario-principal-oscuro);
+}
+
+#cabezal_editor_de_campos_superusuario {
+	background-color: var(--color-primario-principal-oscuro);
+}
+
+#titulo_editor_de_campos_superusuario {
+	color: white;
+}
+
+.genero_agregado_input {
+	width: 60%;
+	margin-right: .5rem;
+}
+
+.genero_agregado_input:disabled {
+	background-color: white;
+	border: none;
+}
+	
+
+.contenedor_boton_acciones_celda_generos {
+	width: 32%;
+	padding-left: .375rem;
+	border-left: 2px solid var(--color-primario-principal);
+	border-right: 1px solid var(--gris03);
+	display: inline-block;
+	
+}
+
+.contenedor_inputs_agregar_hablantes_editor_de_campos {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	padding-top: .5rem;
+	padding-right: 1rem;
+	padding-left: .5rem;
+}
+
+.hablante_agregado_input {
+	margin-right: .5rem;
+}
+.hablante_agregado_input:disabled {
+	border: none;
+	background-color: transparent;
+}
+
+.contenedor_boton_acciones_celda_hablantes {
+	padding-left: .375rem;
+	border-left: 2px solid var(--color-primario-principal);
+	border-right: 1px solid var(--gris03);
+	display: inline-block;
+}
+
+.celdas_hablante_editor_de_campos_superusuario {
+	width: 50%;
+}
+
+
+
+.comunidades_agregadas_editor_de_campos_superusuario_input {
+	width: 78%;
+	margin-right: .375rem;
+}
+.comunidades_agregadas_editor_de_campos_superusuario_input:disabled {
+	background-color: transparent;
+	border:none;
+}
+
+.cabezal_comunidad_agregada {
+	border-bottom: none!important;
+	padding-top: 1.5rem!important;
+}
+
+.primera_fila_comunidades_agregadas_editor_de_campos {
+	border-bottom: none;
+}
+
+.comunidad_principal_editor_de_campos {
+	font-weight: 800;
+}
+
+.contenedor_boton_acciones_cabezal_comunidad_editor_de_campos_superusuario {
+	margin-left: .5rem;;
+	border-left: 2px solid var(--color-primario-principal);
+	display: inline-block;
+}
+
+.contenedor_boton_acciones_celda_comunidades {
+	padding-left: .375rem;
+	padding-right: .375rem;
+	border-left: 2px solid var(--color-primario-principal);
+	border-right: 1px solid var(--gris03);
+	display: inline-block;
+}
+
+.fila_sin_linea_abajo {
+	border-bottom: none;
+}
+
+.contenedor_etiqueta_agregar_coleccion_comunidad_editor_campos_superusuario {
+	border: 1px solid var(--color-primario-principal);
+	padding-bottom: 1.5rem;
+	margin-bottom: 0rem;
+	border-radius: .25rem;
 }
