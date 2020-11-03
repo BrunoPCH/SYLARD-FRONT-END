@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos_menu.css">
+	<link rel="icon" href="images/favicon_sylard3.svg" sizes="any" type="image/svg+xml">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css"> <!--GRID SOLAMENTE-->
+	
+	
+<title>Editor de campos</title>
+	
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid back_aqua">
+			<!--INICIA barra de navegacion superior-->
+			<nav class="container contenedor_ancho_area_principal "> 
+				<div class="contenedor_switch float_left">
+                	<label class="texto" for="checkbox">ESP</label>
+					<label class="switch">
+					<input type="checkbox">
+                   	<span class="slider round"></span></label>
+					<label class="texto" for="checkbox">ENG</label>
+				</div>
+				<div class="barra_superior_elemento float_left active"><a  href="#" ><span class="icono icon-home1"></span> SYLARD</a></div> 
+				<!-- la clase "ACTIVE" se usa en la sección que esta activa--> <!-- En el caso de HOME este elemento desaparece, ya que hay un icono en la barra publico-->
+            	<!--<div class="barra_superior_elemento float_right"><a  class="" href="#">ACCESAR <span class="icono icon-login"></span></a></div>
+				<div class="barra_superior_elemento float_right"><a href="#">REGISTRO <span class="icono icon-person"></span></a></div>-->
+				<div class="barra_superior_elemento dropdown_menu_usuario float_right">
+					<button class="dropbtn_barra_superior">
+						<div class="contenedor_icono_super_usuario"><img src="images/iconousuarioSU.svg" class="imagen_icono_super_usuario" alt="Ícono de Super usuario"></div>
+						Superusuario <span class="icono icon-angle-down" id="flecha_dropdow_barra_superior"></span>
+					</button>
+					<div class="contenido_dropdown_menu_usuario">
+						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-edit"></span> Editar cuenta</a>
+   						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-key1"></span> Editar contraseña</a>
+    					<a href="#"><span class="icono_dropdown_menu_usuario_item icon-folder-open-o"></span> Mis colecciones</a>
+						<a href="#">Link 1 </a>
+   						<a href="#">Link 2</a>
+    					<a class="dropdown_menu_usuario_logout" href="#"><span class="icono_dropdown_menu_usuario_item icon-log-out"></span>  Cerrar sesión</a>
+					</div>
+				</div>
+			</nav>
+			<!--TERMINA barra de navegacion superior-->
+		</div>
+		<!--INICIA barra de navegacion publico
+		<div class="container-fluid back_aqua_0">
+			<nav class=" container contenedor_barra_nav_publico">
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_1"><span class="icono_nav_publico icon-home1"></span></a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_2">Catálogo</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_3">Documentación</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_4">Manual de usuario</a>		
+				<h1 class="logo_menu" id="bnpe_5">SYLARD</h1>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_6">Contacto</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_7">Descargas</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_8">Términos y condiciones</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_9">Creditos</a>
+			</nav>
+		</div>
+		<!--TERMINA-- barra de navegacion publico-->
+	</header>
+	<main>
+		<div class="container-fluid" id="contenedor_editor_de_campos_superusuario">
+			<div class="container-fluid" id="cabezal_editor_de_campos_superusuario">
+				<div class="container">
+					<div class="col-sm-12" id="contenedor_items_cabezal_editor_de_campos_superusuario">
+						<div  class="" id="contenedor_titulos_cabezal_editor_de_campos_superusuario">
+							<h1 id="titulo_editor_de_campos_superusuario"><span class="icono_cabezal icon-text_fields"></span> Editor de campos</h1>
+							<h2 class="llamada" id="llamada_editor_de_campos_superusuario">Controla algunos campos para los colaboradores</h2>
+							<h3 class="blanco">Llena o edita los campos correctamente</h3>							
+						</div>						
+					</div>	
+				</div>
+			</div>
+			<section class="container">
+				<div class="col-sm-12 contenedor-90vh" id="contenedor_general_editor_campos_superusuario">
+					<form class="">
+						<p class="label" id="genero_de_audioanotacion">Género de la audioanotación</p>
+						<div class="contenedor_etiqueta_agregar_genero_editor_de_campos_superusuario">
+							<div class="contenedor_inputs_agregar_genero_editor_de_campos_superusuario">
+								<div class="modulo_inputs_genero_editor_de_campos_superusuario" id="">
+									<label class="label label_al_100" id="generos_agregados_editor_de_campos_superusuario" for="agregar_genero_editor_de_campos_superusuario_input">Agregar género</label>
+									<input type="text" class="input_flexible" id="agregar_genero_editor_de_campos_superusuario_input" placeholder="Escribe el género y pulsa el botón de más" role="option" required>
+									<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+									<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								</div>
+								<div class="modulo_boton_agregar_genero_editor_campos_superusuario">
+									<button class="btn_lateral_input_agregar_genero_editor_campos_superusuario"><span class="icono_boton_lateral icon-plus"></span></button>
+								</div>
+							</div>
+							<div class="contenedor_generos_agregados">
+									<p class="label">Generos agregados a SYLARD</p>
+									<table class="tabla_generos_agregados">
+										<thead>
+										</thead>
+										<tr class="row_generos_agregados">
+											<td class="celda_genero_agregado">
+												<input type="text" class="genero_agregado_input" id="" required>
+												<div class="contenedor_boton_acciones_celda_generos">
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+												</div>
+											</td>
+											<td class="celda_genero_agregado">
+												<input type="text" class="genero_agregado_input" value="Cuento" required disabled>
+												<div class="contenedor_boton_acciones_celda_generos">
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+												</div>
+											</td>
+											<td class="celda_genero_agregado">
+												<input type="text" class="genero_agregado_input" value="Diálogo" required disabled>
+												<div class="contenedor_boton_acciones_celda_generos">
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+												</div>
+											</td>
+											<td class="celda_genero_agregado">
+												<input type="text" class="genero_agregado_input" value="Etnobotánica" required disabled>
+												<div class="contenedor_boton_acciones_celda_generos">
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+												</div>
+											</td>
+										</tr>
+										<tr class="row_generos_agregados">
+											<td class="celda_genero_agregado">
+												<input type="text" class="genero_agregado_input" value="Fábula" required disabled>
+												<div class="contenedor_boton_acciones_celda_generos">
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+												</div>
+											</td>
+											<td class="celda_genero_agregado">
+												<input type="text" class="genero_agregado_input" value="Leyenda" required disabled>
+												<div class="contenedor_boton_acciones_celda_generos">
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+												</div>
+											</td>
+											<td class="celda_genero_agregado">
+												<input type="text" class="genero_agregado_input" value="Mito" required disabled>
+												<div class="contenedor_boton_acciones_celda_generos">
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+												</div>
+											</td>
+											<td class="celda_genero_agregado">
+												<input type="text" class="genero_agregado_input" value="Tragedia" required disabled>
+												<div class="contenedor_boton_acciones_celda_generos">
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+												</div>
+											</td>
+										</tr>
+									</table>
+								</div>
+						</div>
+						<p class="label" id="hablantes_editor_de_campos_superusuario">Hablantes</p>
+						<div class="contenedor_etiqueta_hablantes_editor_de_campos_superusuario">
+							<div class="contenedor_inputs_agregar_hablantes_editor_de_campos">
+								<div class="modulo_inputs_hablantes_editor_de_campos_superusuario" id="">
+									<label class="label label_al_100">Nombre:</label>
+									<input type="text" class="input_flexible" required>
+									<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+									<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								</div>
+								<div class="modulo_inputs_hablantes_editor_de_campos_superusuario">
+									<label class="label label_al_100">Apellido paterno:</label>
+									<input type="text" class="input_flexible" required>
+									<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+									<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								</div>
+								<div class="modulo_inputs_hablantes_editor_de_campos_superusuario">
+									<label class="label label_al_100">Apellido materno:</label>
+									<input type="text" class="input_flexible">
+									<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+									<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								</div>
+								<div class="modulo_boton_agregar_hablantes_editor_de_campos_superusuario">
+									<button class="btn_lateral_input_agregar_lengua"><span class="icono_boton_lateral icon-plus"></span></button>
+								</div>
+							</div>
+							<div class="contenedor_hablantes_agregados_editor_de_campos_superusuario">
+									<p class="label">Hablantes agregados a SYLARD</p>
+									<table class="tabla_hablantes_agregados_superusuario">
+										<thead>
+										</thead>
+										<tr class="row_hablantes_agregados_editor_de_campos_superusuario">
+											<td class="celdas_hablante_editor_de_campos_superusuario">
+												<input type="text" class="hablante_agregado_input" value="Alejandro Toussaint Rondero" required disabled>
+													<div class="contenedor_boton_acciones_celda_hablantes">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+													</div>
+											</td>
+											<td class="celdas_hablante_editor_de_campos_superusuario">
+												<input type="text" class="hablante_agregado_input" value="Bruno Pérez Ch." required disabled>
+													<div class="contenedor_boton_acciones_celda_hablantes">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+													</div>
+											</td>							
+										</tr>
+										<tr class="row_hablantes_agregados_editor_de_campos_superusuario">
+											<td class="celdas_hablante_editor_de_campos_superusuario">
+												<input type="text" class="hablante_agregado_input" value="Carlos Gómez Vallarta" required disabled>
+													<div class="contenedor_boton_acciones_celda_hablantes">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+													</div>
+											</td>
+											<td class="celdas_hablante_editor_de_campos_superusuario">
+												<input type="text" class="hablante_agregado_input" value="Daniel Chávez Camarillo" required disabled>
+													<div class="contenedor_boton_acciones_celda_hablantes">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+													</div>
+											</td>							
+										</tr>
+										<tr class="row_hablantes_agregados_editor_de_campos_superusuario">
+											<td class="celdas_hablante_editor_de_campos_superusuario">
+												<input type="text" class="hablante_agregado_input" value="Karina Flores López" required disabled>
+													<div class="contenedor_boton_acciones_celda_hablantes">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+													</div>
+											</td>
+											<td class="celdas_hablante_editor_de_campos_superusuario">
+												<input type="text" class="hablante_agregado_input" value="Liliana Nava Arana" required disabled>
+													<div class="contenedor_boton_acciones_celda_hablantes">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+													</div>
+											</td>											
+										</tr>
+										<tr class="row_hablantes_agregados_editor_de_campos_superusuario">
+											<td class="celdas_hablante_editor_de_campos_superusuario">
+												<input type="text" class="hablante_agregado_input" value="Soraya Flores López" required disabled>
+													<div class="contenedor_boton_acciones_celda_hablantes">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+													</div>
+											</td>
+											<td class="celdas_hablante_editor_de_campos_superusuario">
+												<input type="text" class="hablante_agregado_input" value="Zacarías Nav" required >
+													<div class="contenedor_boton_acciones_celda_hablantes">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+													</div>
+											</td>											
+										</tr>
+									</table>
+								</div>
+						</div>
+						<p class="label" id="comunidades_de_la_coleccion">Comunidades de la colección</p>
+						<div class="contenedor_etiqueta_agregar_coleccion_comunidad_editor_campos_superusuario">
+							
+							<div class="contenedor_inputs_agregar_coleccion_comunidad2 ">
+								<div class="contenedor_inputs_boton_lateral">
+									<div class="modulo_inputs_comunidad2" id="">
+									<label class="label label_al_100">País:</label>
+									<input type="text" class="input_flexible" required>
+									<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+									<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								</div>
+								<div class="modulo_inputs_comunidad2" id="">
+									<label class="label label_al_100">Entidad:</label>
+									<input type="text" class="input_flexible" required>
+									<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+									<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								</div>
+								<div class="modulo_inputs_comunidad2">
+									<label class="label label_al_100">Municipio:</label>
+									<input type="text" class="input_flexible" required>
+									<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+									<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								</div>
+								<div class="modulo_inputs_comunidad2">
+									<label class="label label_al_100">Localidad:</label>
+									<input type="text" class="input_flexible" required>
+									<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+									<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								</div>
+								<div class="modulo_inputs_comunidad2" id="">
+									<label class="label label_al_100">Latitud:</label>
+									<input type="text" class="input_flexible" required>
+									<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+									<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								</div>
+								<div class="modulo_inputs_comunidad2" id="">
+									<label class="label label_al_100">Longitud:</label>
+									<input type="text" class="input_flexible" required>
+									<div class="contenedor_icono_correcto_input"><p><span class="icono_correcto_input icon-check_circle"></span></p></div>
+									<div class="contenedor_icono_error_input"><p><span class="icono_error_input icon-error"></span></p></div>
+								</div>
+								</div>
+								<div class="modulo_boton_comunidad">
+									<button class="btn_lateral_input_agregar_comunidad"><span class="icono_boton_lateral icon-plus"></span></button>
+								</div>
+							</div>
+							<div class="contenedor_comunidades_agregadas">
+									<p class="label">Comunidades agregadas a la colección</p>
+									<table class="tabla_comunidades_agregadas">
+										<thead>
+										</thead>
+											<tr class="fila_sin_linea_abajo" >
+												<th class="cabezal_comunidad_agregada" colspan="3"><span class="comunidad_principal_editor_de_campos">Arroyo Cumiapa,</span> 	<span>San Luis Acatlán,</span> <span>Guerrero,</span> <span>México</span>
+													<div class="contenedor_boton_acciones_cabezal_comunidad_editor_de_campos_superusuario">
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+													</div>
+												</th>
+											</tr>										
+											<tr class="primera_fila_comunidades_agregadas_editor_de_campos">
+												<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="México" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+												<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="Guerrero" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+												<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="San Luis Acatlán" required >
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+											</tr>	
+											<tr class="">
+											<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="Arroyo Cumiapa" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+											<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="16.87525" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+											<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="-98.61539" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>	
+										</tr>
+											<tr class="fila_sin_linea_abajo" >
+												<th class="cabezal_comunidad_agregada" colspan="2"><span class="comunidad_principal_editor_de_campos">Buena Vista, </span> 	<span>San Luis Acatlán,</span> <span>Guerrero,</span> <span>México</span>
+													<div class="contenedor_boton_acciones_cabezal_comunidad_editor_de_campos_superusuario">
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+													</div>
+												</th>
+											</tr>										
+											<tr class="primera_fila_comunidades_agregadas_editor_de_campos">
+												<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="México" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+												<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="Guerrero" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+												<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="San Luis Acatlán" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+											</tr>	
+											<tr class="">
+											<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="Yoloxóchitl" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+											<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="16.816020" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+											<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="-98.685990" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>	
+										</tr>
+										<tr class="fila_sin_linea_abajo" >
+												<th class="cabezal_comunidad_agregada" colspan="3"><span class="comunidad_principal_editor_de_campos">Yoloxochitl,</span> 	<span>San Luis Acatlán,</span> <span>Guerrero,</span> <span>México</span>
+													<div class="contenedor_boton_acciones_cabezal_comunidad_editor_de_campos_superusuario">
+													<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-delete"></span></button>
+													</div>
+												</th>
+											</tr>										
+											<tr class="primera_fila_comunidades_agregadas_editor_de_campos">
+												<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="México" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+												<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="Guerrero" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+												<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="San Luis Acatlán" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+											</tr>	
+											<tr class="">
+											<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="Yoloxóchitl" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+											<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="16.816020" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>
+											<td>
+												<input type="text" class="comunidades_agregadas_editor_de_campos_superusuario_input" value="-98.685990" required disabled>
+													<div class="contenedor_boton_acciones_celda_comunidades">
+														<button class="btn_accion_tabla"><span class="icono_accion_tabla  icon-edit"></span></button>
+													</div>
+											</td>	
+										</tr>
+									</table>
+								</div>
+						</div>
+					</form>
+				</div>	
+			</section>
+		</div>
+		
+		
+	
+		
+	</main>
+	<footer>
+		<div class="container-fluid contenedor_ancho_total back_aqua_0">
+			<div class="container contenedor_footer">
+				<a href="#">Terminos y condiciones</a>
+				<a href="#">Aviso de privacidad</a>
+				<a href="#" target="_blank"><span class="icono_footer icon-github"></span></a>
+				<p>© Derechos reservados SYLARD</p><img src="images/favicon_sylard3.svg" alt="Logo SYLARD">
+
+			</div>
+		</div>
+	</footer>
+
+	</body>
+	
+</html>
