@@ -3361,3 +3361,20 @@ h6.canal_hijo_compacto {
 	margin-bottom: 0rem;
 	border-radius: .25rem;
 }
+
+#contenedor_mensaje_cuenta_activa {
+	background-color: yellowgreen;
+}
+
+#icono_principal_mensaje_cuenta_activa {
+	color: #006844;
+}
+
+#llamada_cuenta_activa {
+	color: #006844;
+}
+
+#mensaje_cuenta_activa {
+	color: #006844;
+	font-weight: 500;
+}
