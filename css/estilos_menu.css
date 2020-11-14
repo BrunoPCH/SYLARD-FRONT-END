@@ -89,6 +89,11 @@ body {
 ol, ul {
 	list-style: none;
 }
+li {
+	list-style: square;
+	margin-bottom: .5rem;
+}
+
 blockquote, q {
 	quotes: none;
 }
@@ -838,7 +843,7 @@ select:invalid ~ .contenedor_icono_error_input /*aparece el icono error cuando e
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: var(--color-primario-principal-oscuro);
+	background-color: var(--gris03);
 	-webkit-transition: .2s;
 	transition: .2s;
 }
@@ -911,7 +916,6 @@ input:checked + .slider_general {
 
 .imagen_icono_usuario {
 	width: 90%;
-	margin: 0.02rem;	
 }
 
 .contenido_dropdown_menu_usuario {
@@ -1591,7 +1595,7 @@ min-width: 87%;
 
 
 /*ELEMENTOS ACORDEON VIEWER*/
-#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones, #contenedor_catalogo_coleccion_individual, #contenedor_agregar_audioanotacion, #contenedor_todas_las_colecciones, #contenedor_agregar_coleccion_superusuario, #contenedor_audioanotaciones_superusuario, #contenedor_editor_de_campos_superusuario  {
+#contenedor_viewer_ancho_total, #contenedor_mis_colecciones, #contenedor_agregar_coleccion, #contenedor_catalogo, #contenedor_audioanotaciones, #contenedor_catalogo_coleccion_individual, #contenedor_agregar_audioanotacion, #contenedor_todas_las_colecciones, #contenedor_agregar_coleccion_superusuario, #contenedor_audioanotaciones_superusuario, #contenedor_editor_de_campos_superusuario, #contenedor_administrador_usuarios  {
 	background-color: var(--gris06);
 	padding: 0;
 	margin: 0;
@@ -1867,7 +1871,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 
 }
 
-#contenedor_general_mis_colecciones, #contenedor_general_agregar_coleccion, #contenedor_general_catalogo_coleccion_individual, #contenedor_general_agregar_audioanotacion, #contenedor_general_todas_las_colecciones, #contenedor_general_agregar_coleccion_superusuario, #contenedor_general_editor_campos_superusuario {
+#contenedor_general_mis_colecciones, #contenedor_general_agregar_coleccion, #contenedor_general_catalogo_coleccion_individual, #contenedor_general_agregar_audioanotacion, #contenedor_general_todas_las_colecciones, #contenedor_general_agregar_coleccion_superusuario, #contenedor_general_editor_campos_superusuario, #contenedor_general_todos_los_usuarios {
 	padding-top: 3rem;
 	background-color: white;
 }
@@ -1879,12 +1883,12 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	background-color: #5B4884;
 }
 
-#titulo_mis_colecciones, #titulo_audioanotaciones, #titulo_catalogo_coleccion_individual, #titulo_todas_las_colecciones, #titulo_audioanotaciones_superusuario  {
+#titulo_mis_colecciones, #titulo_audioanotaciones, #titulo_catalogo_coleccion_individual, #titulo_todas_las_colecciones, #titulo_audioanotaciones_superusuario, #titulo_administrador_usuarios  {
 	color: white;
 	
 }
 
-#contenedor_items_cabezal_mis_colecciones, #contenedor_items_cabezal_agregar_coleccion, #contenedor_items_cabezal_agregar_audioanotacion, #contenedor_items_cabezal_todas_las_colecciones, #contenedor_items_cabezal_agregar_coleccion_superusuario, #contenedor_items_cabezal_editor_de_campos_superusuario {
+#contenedor_items_cabezal_mis_colecciones, #contenedor_items_cabezal_agregar_coleccion, #contenedor_items_cabezal_agregar_audioanotacion, #contenedor_items_cabezal_todas_las_colecciones, #contenedor_items_cabezal_agregar_coleccion_superusuario, #contenedor_items_cabezal_editor_de_campos_superusuario, #contenedor_items_cabezal_administrador_usuarios {
 	padding-top: 2rem;
 	padding-bottom: 1rem;
 	display: flex;
@@ -1894,7 +1898,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	
 }
 
-#llamada_mis_colecciones, #llamada_todas_las_colecciones, #llamada_agregar_coleccion_superusuario, #llamada_editor_de_campos_superusuario   {
+#llamada_mis_colecciones, #llamada_todas_las_colecciones, #llamada_agregar_coleccion_superusuario, #llamada_editor_de_campos_superusuario, #llamada_administrador_usuarios   {
 	color: var(--color-primario-principal);
 }
 #contenedor_items_cabezal_audioanotaciones, #contenedor_items_cabezal_catalogo_coleccion_individual, #contenedor_items_cabezal_audioanotaciones_superusuario {
@@ -1991,7 +1995,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	flex-grow: 0.6;
 }
 
-.contenedor_tabla_mis_colecciones, .contenedor_tabla_catalogo_colecciones, .contenedor_tabla_catalogo_audioanotaciones, .contenedor_tabla_catalogo_coleccion_individual, .contenedor_tabla_todas_las_colecciones  {
+.contenedor_tabla_mis_colecciones, .contenedor_tabla_catalogo_colecciones, .contenedor_tabla_catalogo_audioanotaciones, .contenedor_tabla_catalogo_coleccion_individual, .contenedor_tabla_todas_las_colecciones, .contenedor_tabla_todos_los_usuarios  {
 	overflow: hidden;
 }
 
@@ -2001,7 +2005,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 	vertical-align: bottom;
 }
 
-.tabla_mis_colecciones, .tabla_catalogo_colecciones, .tabla_catalogo_audianotaciones, .tabla_catalogo_audianotaciones_coleccion_individual, .tabla_todas_las_colecciones {
+.tabla_mis_colecciones, .tabla_catalogo_colecciones, .tabla_catalogo_audianotaciones, .tabla_catalogo_audianotaciones_coleccion_individual, .tabla_todas_las_colecciones, .tabla_todos_los_usuarios {
 	border-collapse: collapse;
 	vertical-align:middle;
 }
@@ -2012,7 +2016,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 }
 
 
-.lengua_term_comun,.grupo_lengua_comun, .municipio_tabla,  .duracion, .estado_tabla_catalogo {
+.lengua_term_comun,.grupo_lengua_comun, .municipio_tabla,  .duracion, .estado_tabla_catalogo, .correo_de_usuario {
 	font-size: .8rem;
     line-height: 1.3rem;
     color: var(--gris-texto-secundario);
@@ -2101,6 +2105,7 @@ p.canal_1_hablante_one_line_display_item, p.canal_2_hablante_one_line_display_it
 .td_acciones {
 	padding: 0;
 	padding-left: 1rem;
+	padding-right: 1rem;
 	overflow: visible;	
 }
 
@@ -2682,7 +2687,7 @@ margin-bottom: 1rem;
 .contenedor_btn_regresar_th {
 	vertical-align: bottom;
 	padding-bottom: .875rem;
-	align
+	
 }
 
 #btn-regresar_audioanotaciones {
@@ -3377,4 +3382,124 @@ h6.canal_hijo_compacto {
 #mensaje_cuenta_activa {
 	color: #006844;
 	font-weight: 500;
+}
+
+.correo_usuario_mensaje_cuenta_activa {
+	font-weight: 600;
+	color: darkred;
+	font-style: italic;
+}
+
+#cabezal_administrador_usuarios {
+	background-color: var(--color-primario-principal-oscuro);
+}
+
+.icono_usuario_administrador_usuarios {
+	font-size: 1.125rem;
+	color: var(--color-sec-principal);
+	padding-right: 0;
+	text-align: center;
+}
+
+.tipo_de_colaborador_administrador_usuarios {
+	text-align: center;
+	padding-left: .75rem;
+	padding-right: .75rem;
+}
+
+.colecciones_usuario_lista {
+	list-style: square;
+	margin-bottom: .5rem;
+	font-style: italic;
+}
+
+
+
+.input_busqueda_invisible {
+	width: 99%;
+}
+
+.contenedor_botones_accion_administrador_usuarios {
+	border-left: 2px solid var(--color-sec-disabled-fill);
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-top: .675rem;
+	padding-left: 1rem;
+	height: 3.25rem;
+	display:inline-block;
+	width: 5%;
+	overflow: visible;
+	position: relative;
+}
+
+#th_lenguas_habladas {
+	width: 13%;
+}
+
+#privilegios_administrador_usuarios {
+	
+}
+
+.td_colecciones {
+	padding-left: 1.5rem;
+	width: 20%;
+}
+
+.icono_usuario {
+	width: .5rem;
+}
+
+.contenedor_icono_usuario_administrador_usuarios {
+	display: inline-block;
+	background-color: blueviolet;
+	border-radius: 2rem;
+	vertical-align: middle;
+	height: 1.25rem;
+	width: 1.25rem;
+	overflow: hidden;
+}
+
+.imagen_icono_usuario_administrador_usuarios {
+	width: 90%;
+	margin: 0 5%;
+}
+
+.td_icono_usuario_administrador_usuarios {
+	padding-right: 0;
+}
+
+.td_descripcion_usuario_administrador_usuarios {
+	width: 20%;
+	font-size: .75rem;
+	line-height: 1.125rem;
+}
+
+.td_colecciones_administrador_usuarios {
+	padding-left: 1.5rem;
+	width: 20%;
+	font-size: .75rem;
+	line-height: 1.125rem;
+}
+
+#cabezal_editar_coleccion {
+	background-color: #ffbf00;
+	min-height: 200px;
+}
+
+#columna_derecha_editar_cuenta_anidada_superusuario {
+	flex-basis: 100%;
+	align-self: center;
+	justify-content: center;
+}
+
+
+#img_editar_cuenta_superusuario {
+		width: 65%;
+	margin-left: 17%;
+	margin-bottom: -5px;
+}
+#contenedor_editar_cuenta_superusuario {
+	background-color: var(--color-primario-principal-oscuro);
+	position: relative;
+	z-index: 1;
 }
