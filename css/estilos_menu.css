@@ -3500,3 +3500,23 @@ h6.canal_hijo_compacto {
 	position: relative;
 	z-index: 1;
 }
+
+#contenedor_mensaje_promocion_a_colaborador {
+	background-color: var(--color-primario-principal-oscuro);
+}
+
+#icono_principal_mensaje_promocion_a_colaborador {
+	color:var(--color-primario-principal);
+}
+
+#llamada_colaborador_activo {
+	color:var(--color-primario-principal);
+}
+
+#mensaje_promocion_a_colaborador {
+	color:var(--color-primario-principal);
+}
+
+.correo_usuario_mensaje_promocion_a_colaborador {
+	color:white;
+}
