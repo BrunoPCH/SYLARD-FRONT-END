@@ -1,0 +1,42 @@
+{
+  "Rey Castillo Garc\u00eda": {
+    "participant": "Rey Castillo Garc\u00eda",
+    "tiers": {
+      "Rey Castillo Garc\u00eda": {
+        "name": "Rey Castillo Garc\u00eda",
+        "code": "RCG",
+        "color": "a0a3d9"
+      },
+      "Rey Castillo Garc\u00eda Surface-2": {
+        "name": "Rey Castillo Garc\u00eda Surface-2",
+        "code": "RCG",
+        "color": "f3bae7"
+      },
+      "RCG Traducci\u00f3n": {
+        "name": "RCG Traducci\u00f3n",
+        "code": "RCG",
+        "color": "c582a9"
+      }
+    }
+  },
+  "Ra\u00fal Felipe Margarito": {
+    "participant": "Ra\u00fal Felipe Margarito",
+    "tiers": {
+      "Ra\u00fal Felipe Margarito": {
+        "name": "Ra\u00fal Felipe Margarito",
+        "code": "RFM",
+        "color": "c7c8bc"
+      },
+      "Ra\u00fal Felipe Margarito Surface-2": {
+        "name": "Ra\u00fal Felipe Margarito Surface-2",
+        "code": "RFM",
+        "color": "b1d7de"
+      },
+      "RFM Traducci\u00f3n": {
+        "name": "RFM Traducci\u00f3n",
+        "code": "RFM",
+        "color": "a5eea1"
+      }
+    }
+  }
+}

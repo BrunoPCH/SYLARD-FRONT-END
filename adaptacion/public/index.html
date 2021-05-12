@@ -1,0 +1,2172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link rel="stylesheet" href="css/estilos_menu.css">
+	<link rel="icon" href="images/favicon_sylard3.svg" sizes="any" type="image/svg+xml">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css"> <!--GRID SOLAMENTE-->
+ <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/estilos_menu.css">
+	<link rel="icon" href="images/favicon_sylard3.svg" sizes="any" type="image/svg+xml">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<style type="text/css">
+      div[id^="txt-current_"] {
+        background-color: #eeeeee;
+      }
+
+      #player-title-box {
+        padding: 2rem;
+    	padding-top: 3rem;
+    	background-color: white;
+      }
+
+      /*#txt_sync_content {
+        padding: 0px 36px;
+		border: 2px red solid;
+		  
+      }*/
+
+      #spkr_keys_box {
+        margin-top: 0px;
+        margin-bottom: 18px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 22px;
+		padding-left: 1.75rem;
+		padding: 1rem;
+		  
+      }
+
+      .spkr_key {
+        font-family: 'Raleway', Helvetica, sans-serif;
+        font-size: 16px;
+		font-weight: 600;  
+        margin-right: 8px;
+        display: inline;
+      }
+
+      .spkr_name {
+        font-weight: 600;
+    	font-size: 1.325rem;
+    	line-height: 1.875rem;
+    	margin-top: .125rem;
+    	color: var(--gris-texto-principal);
+    	margin-right: .25rem;
+		  
+		 /* font-family: 'Raleway', Helvetica, sans-serif;
+        font-size: 18px;
+        margin-right: 8px;
+        display: inline;
+        font-style: italic;
+		border: 2px solid pink; */ 
+      }
+		.spkr_name_jr {
+    font-size: .75rem;
+    font-weight: 400;
+    color: #999999;
+    font-family: 'Raleway', Helvetica, sans-serif;
+			
+			
+			
+		}
+      #sync_player {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #gloss-box {
+        width: 100%;
+        min-height: 65px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12px;
+		/*border: 2px solid darkgreen;  */
+      }
+
+      div.glossTable {
+        width: 100%;
+        text-align: left;
+        min-height: 30px;
+        margin-bottom: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
+		/*border: 2px solid red;    */
+      }
+      .divTable.glossTable .divTableRow {
+        font-size: 18px;
+        line-height: 26px;
+		  /*border: 2px solid yellow;*/
+      }
+      .divTable.glossTable .divTableCell {
+        font-family: Seravek, Arial, Helvetica, sans-serif;
+		  /*border: 2px dashed violet; */
+      }
+      .divTable.glossTable .spkr {
+        width: 55px;
+		  /*border: 2px dashed purple;*/ 
+      }
+      div.scrollTable {
+        width: 100%;
+        height: 470px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
+        overflow-y: visible;
+        background-color: #ffffff;
+        /*border: dotted 5px yellowgreen;*/
+      }
+      div.scrollTableCont {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+		 /* border: dotted 3px red;*/
+      }
+      .divTable.scrollTableCont .divTableRow {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0;
+		  /*border: dotted 3px blueviolet;*/
+      }
+      .divTable.scrollTableCont .divTableCell {
+        font-family: Seravek, Arial, Helvetica, sans-serif;
+		  /*border: dashed 3px orange;*/
+      }
+      .divTable.scrollTableCont .spkr {
+        width: 55px;
+        margin-right: 4px;
+        font-weight: normal;
+        padding-left: 12px;
+		 /* border: dashed 3px brown;*/
+      }
+      .divTable.scrollTableCont .spkr:hover {
+        cursor: pointer;
+        font-weight: bold;
+		  /*border: double 3px red;*/
+      }
+      .divTable.scrollTableCont .spkn {
+        margin-left: 8px;
+        padding-right: 12px;
+		  /*border: double 1px gray;*/
+      }
+
+      .divTable {
+        display: table;
+		  /*border: double 1px blueviolet;*/
+      }
+      .divTableRow {
+        display: table-row;
+		  /*border: dotted 6px green;*/
+      }
+      .divTableCell {
+        display: table-cell;
+		  /*border: dotted 6px black;*/
+      }
+    </style>
+	
+<title>SYLARD Visor EAF</title>
+	
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid back_aqua">
+			<!--INICIA barra de navegacion superior-->
+			<nav class="container contenedor_ancho_area_principal "> 
+				<div class="contenedor_switch float_left">
+                	<label class="texto" for="checkbox">ESP</label>
+					<label class="switch">
+					<input type="checkbox">
+                   	<span class="slider round"></span></label>
+					<label class="texto" for="checkbox">ENG</label>
+				</div>
+				<div class="barra_superior_elemento float_left active"><a  href="#" ><span class="icono icon-home1"></span> SYLARD</a></div> 
+				<!-- la clase "ACTIVE" se usa en la sección que esta activa--> <!-- En el caso de HOME este elemento desaparece, ya que hay un icono en la barra publico-->
+            	<!--<div class="barra_superior_elemento float_right"><a  class="" href="#">ACCESAR <span class="icono icon-login"></span></a></div>
+				<div class="barra_superior_elemento float_right"><a href="#">REGISTRO <span class="icono icon-person"></span></a></div>-->
+				<div class="barra_superior_elemento dropdown_menu_usuario float_right">
+					<button class="dropbtn_barra_superior">
+						<div class="contenedor_icono_usuario"><img src="images/iconousuario.svg" class="imagen_icono_usuario" alt="Ícono de venado usuario"></div>
+						Emiliano Zapata <span class="icono icon-angle-down" id="flecha_dropdow_barra_superior"></span>
+					</button>
+					<div class="contenido_dropdown_menu_usuario">
+						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-edit"></span> Editar cuenta</a>
+   						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-key1"></span> Editar contraseña</a>
+    					<a href="#"><span class="icono_dropdown_menu_usuario_item icon-folder-open-o"></span> Mis colecciones</a>
+						<a href="#">Link 1 </a>
+   						<a href="#">Link 2</a>
+    					<a class="dropdown_menu_usuario_logout" href="#"><span class="icono_dropdown_menu_usuario_item icon-log-out"></span>  Cerrar sesión</a>
+					</div>
+				</div>
+			</nav>
+			<!--TERMINA barra de navegacion superior-->
+		</div>
+		<!--INICIA barra de navegacion publico-->
+		<div class="container-fluid back_aqua_0">
+			<nav class=" container contenedor_barra_nav_publico">
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_1"><span class="icono_nav_publico icon-home1"></span></a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_2">Catálogo</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_3">Documentación</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_4">Manual de usuario</a>		
+				<h1 class="logo_menu" id="bnpe_5">SYLARD</h1>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_6">Contacto</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_7">Descargas</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_8">Términos y condiciones</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_9">Creditos</a>
+			</nav>
+		</div>
+		<!--TERMINA-- barra de navegacion publico-->
+	</header>
+	<main>
+		<div class="container-fluid" id="contenedor_viewer_ancho_total">
+			<section class="container">
+				<div class="col-sm-12 contenedor-90vh" id="contenedor_general_viewer">
+					<h2>I³tun⁴ ti¹nu’⁴u⁴<br>
+						<i>(Malvaceae: Guazuma ulmifolia Lam. var. ulmifolia)</i></h2>
+					<button class="contenedor_acordeon"><span class="icono_acordeon icon-chevron-down"></span> Opciones visuales</button>
+					<div class="acordeon_panel">
+						<div class="acordeon_panel_item">
+							
+							<form method="post" action="#" role="form" class="formulario_contenedor_hablantes_viewer  ">
+							<div class="contenedor_canal_audioanotacion">
+								<div class="contenedor_canal_padre_compacto">
+									<div class="contenedor_hablante">
+									<p class="label label_al_100">Canal 1 (hablante)</p>
+									<span class="spkr_name">Rey Castillo García</span>	
+									</div>
+									<div class="contenedor_opciones_visuales_canal1_viewer">
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
+										<label class="label label_al_100">Mostrar</label>
+											<div class="contenedor_switch_canal_audioanotacion">
+											<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+											<label class="switch_general">
+											<input type="checkbox"  class="check-pres" id="check-tier-Rey Castillo García" value="Rey Castillo García"
+                     						onchange='changePresCheck("Rey Castillo García");toggleSpeaker("Rey Castillo García");'>
+                   							<span class="slider_general round"></span></label>
+											<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+											</div>
+											
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
+											<label class="label label_al_100">Visualizar en:</label>
+											
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion">
+											<label class="label label_al_100">Color de tipografía</label>
+											
+										</div>	
+									</div>
+									
+								</div>
+									
+							</div>
+							<div class="contenedor_canal_audioanotacion">
+								<div class="contenedor_canal_hijo_compacto">
+									<div class="contenedor_hablante_hijo">
+										
+										<span
+                      					id="key-Rey Castillo García"
+                      					class="spkr_key"
+                      					style="color: #5721ec; margin-right: 8px">
+                      					RCG
+                    					</span>
+										<span class="spkr_name_jr"
+                    					style="">
+                      					Rey Castillo García (transcription)
+                    					</span>
+									</div>
+									<div class="contenedor_opciones_visuales_canal1_viewer">
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
+											<div class="contenedor_switch_canal_audioanotacion_hijo">
+												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="">OFF</label>
+												<label class="switch_general">
+												<input type="checkbox"  class="check-tier" name="check-tier-Rey Castillo García" id="checkbox-Rey Castillo García" onchange='changeTierCheck("Rey Castillo García");toggleTier("Rey Castillo García");'
+                     							 value="Rey Castillo García"
+                      							/>
+                   								<span class="slider_general round"></span></label>
+												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="">ON</label>
+											</div>
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
+											<select class="input_flexible_compacto opciones_despliegue_viewer"
+                     						 	id="Rey Castillo García-display"
+                      							style=""
+                      							onchange="changeTierPlacement('Rey Castillo García');">
+                      							<option value="top">One-line display</option>
+                      							<option value="bottom" selected>Scrolling</option>
+                    						</select>
+											
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
+											<input type="text" class="inp input_flexible_compacto" id="color-Rey Castillo García" autocomplete="off" value="5721EC"
+                      						onchange='changeTierColor(this.value,"Rey Castillo García","Rey Castillo García");'>
+											<div class="palette" id="colorPalette"></div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="contenedor_canal_audioanotacion">
+								<div class="contenedor_canal_hijo_compacto">
+									<div class="contenedor_hablante_hijo">
+										
+										<span
+										  id="key-Rey Castillo García Surface-2"
+										  class="spkr_key"
+										  style="color: #3c4ef1; margin-right: 8px"
+										  >RCG
+										</span>
+										<span class="spkr_name_jr" style="margin-right: 8px">
+										  Rey Castillo García Surface-2
+										</span>
+									</div>
+									<div class="contenedor_opciones_visuales_canal1_viewer">
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
+											<div class="contenedor_switch_canal_audioanotacion_hijo">
+												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="">OFF</label>
+												<label class="switch_general">
+												<input
+												  type="checkbox"
+												  class="check-tier"
+												  name="check-tier-Rey Castillo García"
+												  id="checkbox-Rey Castillo García Surface-2"
+												  onchange='changeTierCheck("Rey Castillo García");toggleTier("Rey Castillo García Surface-2");'
+												  value="Rey Castillo García Surface-2"/>
+                   								<span class="slider_general round"></span></label>
+												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="">ON</label>
+											</div>
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
+											<select class="input_flexible_compacto opciones_despliegue_viewer"
+											  id="Rey Castillo García Surface-2-display"
+											  style=""
+											  onchange="changeTierPlacement('Rey Castillo García Surface-2');">
+											  <option value="top" selected>One-line display</option>
+											  <option value="bottom">Scrolling</option>
+											</select>										
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
+											<input
+											  id="color-Rey Castillo García Surface-2"
+											  class="inp input_flexible_compacto"
+											  value="3C4EF1"
+											  onchange='changeTierColor(this.value,"Rey Castillo García","Rey Castillo García Surface-2");'/>
+											<div class="palette" id="colorPalette"></div>
+										</div>
+									</div>	
+								</div>
+							</div>	
+							<div class="contenedor_canal_audioanotacion">
+								<div class="contenedor_canal_hijo_compacto">
+									<div class="contenedor_hablante_hijo">
+										<span
+										  id="key-RCG Traducción"
+										  class="spkr_key"
+										  style="color: #c57214; margin-right: 8px"
+										>RCG</span>
+										<span class="spkr_name_jr" style="margin-right: 8px"
+										  >RCG Traducción</span>
+									</div>
+									<div class="contenedor_opciones_visuales_canal1_viewer">
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
+											<div class="contenedor_switch_canal_audioanotacion_hijo">
+												<label class="swich_etiqueta_opcion1_compacto" for="checkbox-RCG Traducción" id="">OFF</label>
+												<label class="switch_general">
+												<input
+												  type="checkbox"
+												  style="margin-right: 8px"
+												  class="check-tier"
+												  name="check-tier-Rey Castillo García"
+												  id="checkbox-RCG Traducción"
+												  onchange='changeTierCheck("Rey Castillo García");toggleTier("RCG Traducción");'
+												  value="RCG Traducción"
+												  checked/>
+                   								<span class="slider_general round"></span></label>
+												<label class="swich_etiqueta_opcion2_compacto" for="checkbox-RCG Traducción" id="">ON</label>
+											</div>
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
+											<select class="opciones_despliegue_viewer input_flexible_compacto"
+											  id="RCG Traducción-display"
+											  style=""
+											  onchange="changeTierPlacement('RCG Traducción');"
+											>
+											  <option value="top" selected>One-line display</option>
+											  <option value="bottom">Scrolling</option>
+											</select>
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
+											<input
+											  id="color-RCG Traducción"
+											  class="inp input_flexible_compacto"
+											  value="C57214"
+											  onchange='changeTierColor(this.value,"Rey Castillo García","RCG Traducción");'
+											/>
+											<div class="palette" id="colorPalette"></div>
+										</div>
+									</div>	
+								</div>
+							</div>
+						 	
+							<div class="contenedor_canal_audioanotacion">
+								<div class="contenedor_canal_padre_compacto">
+									<div class="contenedor_hablante">
+									<p class="label label_al_100">Canal 2 (hablante)</p>
+									<span class="spkr_name">Raúl Felipe Margarito</span>
+								  </div>
+									<div class="contenedor_opciones_visuales_canal1_viewer">
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
+										<label class="label label_al_100"></label>
+											<div class="contenedor_switch_canal_audioanotacion">
+												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="">OFF</label>
+												<label class="switch_general">
+												<input
+												  type="checkbox"
+												  class="check-pres"
+												  style=""
+												  id="check-tier-Raúl Felipe Margarito"
+												  value="Raúl Felipe Margarito"
+												  onchange='changePresCheck("Raúl Felipe Margarito");toggleSpeaker("Raúl Felipe Margarito");'
+												/>
+                   								<span class="slider_general round"></span></label>
+												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="">ON</label>
+											</div>
+											
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
+											
+										</div>
+											
+									</div>
+									
+								</div>
+									
+							</div>
+							<div class="contenedor_canal_audioanotacion">
+								<div class="contenedor_canal_hijo_compacto">
+									<div class="contenedor_hablante_hijo">
+										<span
+										  id="key-Raúl Felipe Margarito"
+										  class="spkr_key"
+										  style="color: #c10ff7; margin-right: 8px"
+										  >RFM</span>
+										<span class="spkr_name_jr" style="margin-right: 8px"
+                      						>Raúl Felipe Margarito (transcription)</span>
+									</div>
+									<div class="contenedor_opciones_visuales_canal1_viewer">
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
+											<div class="contenedor_switch_canal_audioanotacion_hijo">
+												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="">OFF</label>
+												<label class="switch_general">
+												<input
+												  type="checkbox"
+												  style="margin-right: 8px"
+												  class="check-tier"
+												  name="check-tier-Raúl Felipe Margarito"
+												  id="checkbox-Raúl Felipe Margarito"
+												  onchange='changeTierCheck("Raúl Felipe Margarito");toggleTier("Raúl Felipe Margarito");'
+												  value="Raúl Felipe Margarito"
+												  checked/>
+                   								<span class="slider_general round"></span></label>
+												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="">ON</label>
+											</div>
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
+											<select
+											  id="Raúl Felipe Margarito-display"
+  											  class="opciones_despliegue_viewer input_flexible_compacto"
+											  style=""
+											  onchange="changeTierPlacement('Raúl Felipe Margarito');"
+											>
+											  <option value="top">One-line display</option>
+											  <option value="bottom" selected>Scrolling</option>
+											</select>
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
+											<input
+											  id="color-Raúl Felipe Margarito"
+											  class="inp input_flexible_compacto"
+											  style=""
+											  value="C10FF7"
+											  onchange='changeTierColor(this.value,"Raúl Felipe Margarito","Raúl Felipe Margarito");'/>
+											<div class="palette" id="colorPalette"></div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="contenedor_canal_audioanotacion">
+								<div class="contenedor_canal_hijo_compacto">
+									<div class="contenedor_hablante_hijo">
+										<span
+											id="key-Raúl Felipe Margarito Surface-2"
+											 class="spkr_key"
+											 style="color: #5927bb; margin-right: 8px"
+										>RFM</span>
+										<span class="spkr_name_jr" style="margin-right: 8px"
+                      						>Raúl Felipe Margarito Surface-2</span>
+									</div>
+									<div class="contenedor_opciones_visuales_canal1_viewer">
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
+											<div class="contenedor_switch_canal_audioanotacion_hijo">
+												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="switch_general">
+												<input
+													  type="checkbox"
+													  style=""
+													  class="check-tier"
+													  name="check-tier-Raúl Felipe Margarito"
+													  id="checkbox-Raúl Felipe Margarito Surface-2"
+													  onchange='changeTierCheck("Raúl Felipe Margarito");toggleTier("Raúl Felipe Margarito Surface-2");'
+													  value="Raúl Felipe Margarito Surface-2"
+													/>                   								
+												<span class="slider_general round"></span></label>
+												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+											</div>
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
+											<select
+											  id="Raúl Felipe Margarito Surface-2-display"
+ 											 class="opciones_despliegue_viewer input_flexible_compacto"
+											  style=""
+											  onchange="changeTierPlacement('Raúl Felipe Margarito Surface-2');"
+											>
+											  <option value="top" selected>One-line display</option>
+											  <option value="bottom">Scrolling</option>
+											</select>
+											
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
+											<input
+											  id="color-Raúl Felipe Margarito Surface-2"
+											  class="inp input_flexible_compacto"
+											  style=""
+											  value="5927BB"
+											  onchange='changeTierColor(this.value,"Raúl Felipe Margarito","Raúl Felipe Margarito Surface-2");'
+											/>
+											<div class="palette" id="colorPalette"></div>
+										</div>
+									</div>	
+								</div>
+							</div>
+							<div class="contenedor_canal_audioanotacion">
+								<div class="contenedor_canal_hijo_compacto">
+									<div class="contenedor_hablante_hijo">
+										<span
+										  id="key-RFM Traducción"
+										  class="spkr_key"
+										  style="color: #f84316; margin-right: 8px"
+										  >RFM</span
+										>
+										<span class="spkr_name_jr" style="margin-right: 8px"
+										  >RFM Traducción</span
+										>
+									</div>
+									<div class="contenedor_opciones_visuales_canal1_viewer">
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_mostrar_canal">
+											<div class="contenedor_switch_canal_audioanotacion_hijo">
+												<label class="swich_etiqueta_opcion1_compacto" for="checkbox" id="switch_canal1_off">OFF</label>
+												<label class="switch_general">
+												<input
+												  type="checkbox"
+												  style=""
+												  class="check-tier"
+												  name="check-tier-Raúl Felipe Margarito"
+												  id="checkbox-RFM Traducción"
+												  onchange='changeTierCheck("Raúl Felipe Margarito");toggleTier("RFM Traducción");'
+												  value="RFM Traducción"
+												  checked/>
+                   								<span class="slider_general round"></span></label>
+												<label class="swich_etiqueta_opcion2_compacto" for="checbox_canal_1" id="switch_usuario_canal1_on">ON</label>
+											</div>
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion contenedor_visualizar_canal_en">
+												<select
+												  id="RFM Traducción-display"
+												  style=""
+  												  class="opciones_despliegue_viewer input_flexible_compacto"
+												  onchange="changeTierPlacement('RFM Traducción');"
+												>
+												  <option value="top" selected>One-line display</option>
+												  <option value="bottom">Scrolling</option>
+												</select>
+										</div>
+										<div class="contenedor_etiqueta_propiedad_opciones_visuales_agregar_audioanotacion color_audioanotacion ">
+											<input
+                      							id="color-RFM Traducción"
+                      							class="inp input_flexible_compacto"
+												  style=""
+												  value="F84316"
+												  onchange='changeTierColor(this.value,"Raúl Felipe Margarito","RFM Traducción");'/>
+											<div class="palette" id="colorPalette"></div>
+										</div>
+									</div>	
+								</div>
+							</div>
+						 	
+							</form>
+						</div>
+					</div>
+					<div id="player_area" style="margin-top: 1rem">
+					<audio
+                  onclick="sync(this.currentTime)"
+                  onmousemove="sync(this.currentTime)"
+                  ontimeupdate="sync(this.currentTime)"
+                  id="sync_player"
+                  controls="true">
+                  <source
+                    src="https://cdn.glitch.com/120f087f-0e29-4163-9f0b-687d6b040d37%2Fasset01.mp3?v=1608405042333"
+                    type="audio/mpeg"
+                    onerror="alertMLoadErr();"/>
+                </audio>
+					</div>
+					<!--img src="images/wave.png" class="wdt-100" alt="Opciones de visualizacion de waveform:waveColor: '#A5DBE6',	progressColor: '#7EBFCC', cursorColor: '#15C1D1', barWidth: 3, barRadius: 3, cursorWidth: 2, height: 72, barGap: 3">	
+					<div class="contenedor_boton_play">		
+						<button type="button" class="btn btn-predeterminado" id="boton_play_viewer"><span class="icon-play_arrow"></span> / <span class="icon-pause1"></span></button>
+					</div-->
+					<hr>
+					 <div id="gloss-box">
+                	<div id="txt_refs" class="divTable glossTable">
+               		 </div>
+              		</div>
+					<hr>
+					
+					<div class="contenedor_multilinea">
+					<div id="txt_lns" class="scrollTable" style=""></div>
+            		</div>
+					</div>
+						
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="container-fluid contenedor_ancho_total back_aqua_0">
+			<div class="container contenedor_footer">
+				<a href="#">Terminos y condiciones</a>
+				<a href="#">Aviso de privacidad</a>
+				<a href="#" target="_blank"><span class="icono_footer icon-github"></span></a>
+				<p>© Derechos reservados SYLARD</p><img src="images/favicon_sylard3.svg" alt="Logo SYLARD">
+
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/shared.js"></script>
+    <!--script src="js/jscolor.js"></script-->
+    <script type="text/javascript">
+      var media;
+      var ts_start_time_array = [];
+      var ts_stop_time_array = [];
+      var sub_time;
+      var initial_time = "";
+      var initial_time_end = "";
+      var current_start_time = "";
+      var current_id_arr = [];
+      var transArr = Array();
+      var glossArr = Array();
+      var speakerShowArr = Array();
+      var tierShowArr = Array();
+      /* DATA */
+      var dataArr = {
+  "Rey Castillo Garc\u00eda": {
+    "display": "bottom",
+    "color": "5721EC",
+    "lines": {
+      "a18": {
+        "lineref": "a18",
+        "start": 0,
+        "stop": 0,
+        "value": "Nda\u00b3tu&#039;\u2074un\u2074 lu\u00b3chi&#039;\u2074i\u00b2=un\u2074 ji&#039;\u2074in\u2074=ndu\u00b2 xa&#039;\u00b9a\u2074 i\u00b3ta\u00b2 sa\u00b3in\u2074 ta\u00b3ta\u00b2 chi\u00b9."
+      },
+      "a19": {
+        "lineref": "a19",
+        "start": 7.1,
+        "stop": 7.1,
+        "value": "Sa\u00b9a\u00b3 nu\u00b9\u2074u\u00b3 ba\u2074\u00b2 i\u2074yo\u00b2 tan\u00b3 sa\u00b9a\u00b3, nda\u2074a\u00b2 ba\u2074\u00b2 chi&#039;\u2074i\u2074=na\u207d\u00b2\u207e=e\u00b2 nda\u2074a\u00b2 tiem\u2074pu\u00b2 chi&#039;\u2074i\u2074=na\u207d\u00b2\u207e=e\u00b2"
+      },
+      "a20": {
+        "lineref": "a20",
+        "start": 11.972,
+        "stop": 11.972,
+        "value": "na\u2074chu\u00b3 jo\u2074ndo\u00b9\u00b3=a\u00b2 ji&#039;\u2074in\u2074=na\u00b2, sa\u00b9a\u00b3 i\u2074in\u207d\u2074\u207e=a\u00b2 chi\u00b9 tan\u00b3 na\u2074chu\u00b3 jo\u2074ndo\u00b9\u00b3=a\u00b2 chi\u00b9."
+      },
+      "a27": {
+        "lineref": "a27",
+        "start": 57.621,
+        "stop": 57.621,
+        "value": "\u00bfAn\u2074 ki\u2074ku\u00b9\u00b3=na\u207d\u00b3\u207e=e\u00b3?"
+      },
+      "a29": {
+        "lineref": "a29",
+        "start": 64.875,
+        "stop": 64.875,
+        "value": "\u00bfAn\u2074 xa&#039;\u2074an\u00b2 bi\u00b9xi\u207d\u00b9\u207e=a\u00b9?"
+      },
+      "a33": {
+        "lineref": "a33",
+        "start": 79.697,
+        "stop": 79.697,
+        "value": "An\u2074 sa\u00b3kan\u2074 ba\u00b3. Tan\u2074\u00b2 i\u2074yo\u00b2, ya\u00b9 ba\u2074li\u2074 ba\u2074\u00b2 kan\u2074. Tan\u00b3 ki\u2074ku\u00b9\u00b3=na\u207d\u00b2\u207e=e\u00b2 tan\u00b3, ya\u00b9kan\u00b3, tan\u00b3 \u00bfsa\u00b9a\u00b3 i\u2074xa\u00b3=na\u00b2 nda\u2074-ka\u00b3ya\u00b2=na\u00b9 ta\u00b3ta\u00b2 tin\u00b3?"
+      },
+      "a36": {
+        "lineref": "a36",
+        "start": 96.045,
+        "stop": 96.045,
+        "value": "Tan\u00b3 \u00bfan\u2074 a\u00b9su\u00b3 in\u00b3ka\u2074chi\u00b9 chi&#039;\u2074i\u2074=na\u207d\u00b2\u207e=e\u00b2 ji&#039;\u2074in\u2074, ya\u00b9kan\u00b3 ...? I\u00b3in\u00b3 tiem\u2074pu\u00b2. An\u2074 sa\u00b3kan\u2074 ba\u00b3."
+      },
+      "a39": {
+        "lineref": "a39",
+        "start": 111.448,
+        "stop": 111.448,
+        "value": "Ba\u00b9\u2074\u00b3 xi\u2074yo\u00b9\u00b3=a\u00b2 yu\u00b3mi\u2074."
+      },
+      "a42": {
+        "lineref": "a42",
+        "start": 117.752,
+        "stop": 117.752,
+        "value": "An\u2074 sa\u00b3kan\u2074 ba\u00b3 te\u00b9. Tan\u00b3 ya\u00b9kan\u00b3, sa\u00b3kan\u2074 ku\u2074u\u2074 ndi&#039;\u00b3i\u00b3 ba\u207d\u00b3\u207e=e\u00b2 ran\u2074. Ba&#039;\u00b9a\u00b3."
+      },
+      "a43": {
+        "lineref": "a43",
+        "start": 124.14,
+        "stop": 124.14,
+        "value": "\u00bfSa\u00b9a\u00b3 na\u00b3ni\u207d\u2074\u207e=un\u2074?"
+      },
+      "a45": {
+        "lineref": "a45",
+        "start": 127.012,
+        "stop": 127.012,
+        "value": "\u00bfSa\u00b9a\u00b3 kwi\u00b9ya\u207d\u00b9\u207e=on\u2074?"
+      },
+      "a47": {
+        "lineref": "a47",
+        "start": 130.175,
+        "stop": 131.876,
+        "value": "\u00bfSa\u00b9a\u00b3 na\u00b3ni\u2074 \u00f1u\u00b3u\u00b2=un\u2074?"
+      },
+      "a49": {
+        "lineref": "a49",
+        "start": 132.305,
+        "stop": 132.313,
+        "value": "Ba&#039;\u00b9a\u00b3 ba\u00b3."
+      }
+    }
+  },
+  "Rey Castillo Garc\u00eda Surface-2": {
+    "display": "nodisplay",
+    "color": "3C4EF1",
+    "lines": {
+      "a18_SURFACE2": {
+        "lineref": "a18_SURFACE2",
+        "start": 0,
+        "stop": 7.1,
+        "value": "Nda\u00b3t\u0169&#039;\u2074\u0169\u2074 lu\u00b3ch\u1ef9\u0169&#039;\u2074\u0169\u00b2\u2074 j\u0129&#039;\u2074\u0129\u2074ndu\u00b2 xa&#039;\u00b9a\u2074 i\u00b3ta\u00b2 s\u00e3\u00b3\u0129\u2074 ta\u00b3ta\u00b2 chi\u00b9."
+      },
+      "a19_SURFACE2": {
+        "lineref": "a19_SURFACE2",
+        "start": 7.1,
+        "stop": 11.972,
+        "value": "Sa\u00b9a\u00b3 n\u0169\u00b9\u2074\u0169\u00b3 ba\u2074\u00b2 i\u2074yo\u00b2 t\u00e3\u00b3 sa\u00b9a\u00b3, nda\u2074a\u00b2 ba\u2074\u00b2 chi&#039;\u2074i\u2074n\u1ebd\u00b2 nda\u2074a\u00b2 tyem\u2074pu\u00b2 chi&#039;\u2074i\u2074n\u1ebd\u00b2."
+      },
+      "a20_SURFACE2": {
+        "lineref": "a20_SURFACE2",
+        "start": 11.972,
+        "stop": 16.909,
+        "value": "n\u00e3\u2074chu\u00b3 jo\u2074ndwa\u00b9\u00b3\u00b2 j\u0129&#039;\u2074\u0129\u2074n\u00e3\u00b2, sa\u00b9a\u00b3 \u1ef9\u00e3\u2074\u00e3\u00b2 chi\u00b9 t\u00e3\u00b3 n\u00e3\u2074chu\u00b3 jo\u2074ndwa\u00b9\u00b3\u00b2 chi\u00b9."
+      },
+      "a27_SURFACE2": {
+        "lineref": "a27_SURFACE2",
+        "start": 57.621,
+        "stop": 58.351,
+        "value": "\u00bfAn\u2074 ki\u2074ku\u00b9\u00b3n\u1ebd\u00b3?"
+      },
+      "a29_SURFACE2": {
+        "lineref": "a29_SURFACE2",
+        "start": 64.875,
+        "stop": 65.885,
+        "value": "\u00bfAn\u2074 x\u00e3&#039;\u2074\u00e3\u00b2 bi\u00b9xya\u00b9?"
+      },
+      "a33_SURFACE2": {
+        "lineref": "a33_SURFACE2",
+        "start": 79.697,
+        "stop": 86.903,
+        "value": "An\u2074 sa\u00b3k\u00e3\u2074 ba\u00b3. T\u00e3\u2074\u00b2 i\u2074yo\u00b2 ya\u00b9 ba\u2074li\u2074 ba\u2074\u00b2 k\u00e3\u2074. T\u00e3\u00b3 ki\u2074ku\u00b9\u00b3n\u1ebd\u00b2 t\u00e3\u00b3, ya\u00b9k\u00e3\u00b3, t\u00e3\u00b3 \u00bfsa\u00b9a\u00b3 i\u2074xa\u00b3n\u00e3\u00b2 nda\u2074ka\u00b3ya\u00b2n\u00e3\u00b9 ta\u00b3ta\u00b2 t\u0129\u00b3?"
+      },
+      "a36_SURFACE2": {
+        "lineref": "a36_SURFACE2",
+        "start": 96.045,
+        "stop": 104.113,
+        "value": "T\u00e3\u00b3 \u00bf\u00e3\u2074 a\u00b9su\u00b3 \u0129\u00b3ka\u2074chi\u00b9 chi&#039;\u2074i\u2074n\u1ebd\u00b2 j\u0129&#039;\u2074\u0129\u2074, ya\u00b9k\u00e3\u00b3 ...?  I\u00b3\u0129\u00b3 tyem\u2074pu\u00b2. An\u2074 sa\u00b3k\u00e3\u2074 ba\u00b3."
+      },
+      "a39_SURFACE2": {
+        "lineref": "a39_SURFACE2",
+        "start": 111.448,
+        "stop": 113.478,
+        "value": "Ba\u00b9\u2074\u00b3 xi\u2074ywa\u00b9\u00b3\u00b2 yu\u00b3m\u0129\u2074."
+      },
+      "a42_SURFACE2": {
+        "lineref": "a42_SURFACE2",
+        "start": 117.752,
+        "stop": 124.14,
+        "value": "An\u2074 sa\u00b3k\u00e3\u2074 ba\u00b3 te\u00b9. T\u00e3\u00b3 ya\u00b9k\u00e3\u00b3, sa\u00b3k\u00e3\u2074 ku\u2074u\u2074 ndi&#039;\u00b3i\u00b3 be\u00b2 r\u00e3\u2074. Ba&#039;\u00b9a\u00b3."
+      },
+      "a43_SURFACE2": {
+        "lineref": "a43_SURFACE2",
+        "start": 124.14,
+        "stop": 127.012,
+        "value": "\u00bfSa\u00b9a\u00b3 n\u00e3\u00b3n\u1ef9\u0169\u2074?"
+      },
+      "a45_SURFACE2": {
+        "lineref": "a45_SURFACE2",
+        "start": 127.012,
+        "stop": 130.175,
+        "value": "\u00bfSa\u00b9a\u00b3 kwi\u00b9\u1ef9\u00f5\u2074?"
+      },
+      "a47_SURFACE2": {
+        "lineref": "a47_SURFACE2",
+        "start": 130.175,
+        "stop": 132.305,
+        "value": "\u00bfSa\u00b9a\u00b3 n\u00e3\u00b3n\u0129\u2074 \u00f1\u0169\u00b3\u0169\u00b2\u2074?"
+      },
+      "a49_SURFACE2": {
+        "lineref": "a49_SURFACE2",
+        "start": 132.313,
+        "stop": 134.468,
+        "value": "Ba&#039;\u00b9a\u00b3 ba\u00b3."
+      }
+    }
+  },
+  "Ra\u00fal Felipe Margarito": {
+    "display": "bottom",
+    "color": "C10FF7",
+    "lines": {
+      "a21": {
+        "lineref": "a21",
+        "start": 16.909,
+        "stop": 16.909,
+        "value": "I\u00b3ta\u00b2 sa\u00b3in\u2074 ta\u00b3ta\u00b2 kan\u2074 ba\u2074\u00b2 ya\u00b9, ya\u00b9 ka\u2074chi\u00b2=o\u2074 ndo\u2074ko\u00b3to\u207d\u00b3\u207e=e\u2074 ji&#039;\u2074in\u2074 i\u00b3ta\u00b2 kwa\u00b9on\u2074 ka\u2074chi\u00b2=o\u2074 ya\u00b9 bi\u00b3ko\u2074 i\u00b3ta\u00b2,"
+      },
+      "a22": {
+        "lineref": "a22",
+        "start": 24.331,
+        "stop": 24.331,
+        "value": "ya\u00b9 chi&#039;\u2074i\u2074=na\u207d\u00b2\u207e=e\u00b2 kan\u2074 ndi\u2074 a\u00b9su\u00b3 tiem\u2074pu\u00b2 ka\u00b3ta\u00b2=e\u2074 tun\u2074 i\u00b3ta\u00b2 kwa\u00b9on\u2074 i\u00b3kan\u2074 ba\u2074\u00b2 chi\u00b3..., ka\u00b3ta\u00b2 tu\u207d\u00b3\u207e=e\u2074 ya\u00b9 kan\u2074 ndi\u00b3kin\u2074=a\u00b2 kan\u2074 tan\u00b3"
+      },
+      "a23": {
+        "lineref": "a23",
+        "start": 31.243,
+        "stop": 31.243,
+        "value": "Xi\u00b9\u2074in\u00b3=ni\u2074\u00b2 bi\u2074=a\u00b2 ko\u00b3o\u207d\u00b3\u207e=a\u00b2 \u00f1u\u00b3u\u00b2=e\u2074 ka\u00b9a\u00b3 ndi\u2074 ba\u00b3 ba\u00b9\u2074\u00b3 ndu\u2074ta&#039;\u00b3an\u207d\u00b2\u207e=e\u00b2 ko\u00b3o\u207d\u00b3\u207e=a\u00b2 ka\u00b9a\u00b3 ndi\u2074 \u00f1u\u00b3u\u00b2 ja\u00b9, an\u2074 \u00f1u\u00b3u\u00b2 sa&#039;\u2074an\u2074 ba\u2074\u00b2 an\u2074 \u00f1u\u00b3u\u00b2 bi\u00b9xin\u00b3 ka\u00b9 i\u00b3kan\u2074 ba\u2074\u00b2 la\u00b3tun\u2074 xi\u2074yo\u00b9\u00b3=a\u00b2 tan\u00b3 \u00f1u\u00b3u\u00b2=e\u2074 ka\u00b9a\u00b3 ndi\u2074 kwa\u2074chi\u00b3=ni\u2074\u00b2 xa&#039;\u2074nu\u00b3=run\u2074 tu\u2074u\u00b2=yu\u00b9."
+      },
+      "a24": {
+        "lineref": "a24",
+        "start": 40.327,
+        "stop": 40.327,
+        "value": "So&#039;\u00b3o\u00b3 so&#039;\u00b3o\u00b3 ti\u2074 ba\u00b3 xa&#039;\u2074nu\u00b3=run\u2074 tan\u00b3 i\u2074yo\u00b2 i\u00b3ta\u00b2=run\u2074, ba\u2074li\u2074=ni\u2074\u00b2 nu\u00b9\u2074u\u207d\u00b3\u207e=a\u00b2 so&#039;\u00b3o\u00b3 so&#039;\u00b3o\u00b3 ti\u2074 ba\u2074li\u2074 nu\u00b9\u2074u\u207d\u00b3\u207e=a\u00b2 tan\u00b3"
+      },
+      "a25": {
+        "lineref": "a25",
+        "start": 46.041,
+        "stop": 46.041,
+        "value": "ya\u00b9 kan\u2074 ba\u2074\u00b2 kwa&#039;\u00b9an\u00b9 ji&#039;\u2074in\u207d\u2074\u207e=o\u2074 pa\u00b3san\u2074tu\u00b2 ndo\u00b3ko\u00b3to\u207d\u00b3\u207e=e\u2074 ji&#039;\u2074in\u2074 i\u00b3ta\u00b2 kwa\u00b9on\u2074 na\u2074tu\u00b2 i\u2074yo\u207d\u00b2\u207e=a\u00b2 xa\u00b3ku\u2074=ni\u2074\u00b2 ba\u2074\u00b2 xi\u2074yo\u00b9\u00b3=a\u00b2 \u00f1u\u00b3u\u00b2 ka\u00b9a\u00b3. Ko\u00b9\u2074o\u00b3 ba&#039;\u00b9a\u00b3 ba&#039;\u00b9a\u00b3=e\u00b2 kan\u2074 \u00f1u\u00b3u\u00b2 ka\u00b9a\u00b3 ndi\u2074,"
+      },
+      "a26": {
+        "lineref": "a26",
+        "start": 53.917,
+        "stop": 53.917,
+        "value": "an\u2074 ba\u00b9\u2074\u00b3 chi&#039;\u2074i\u2074=na\u207d\u00b2\u207e=e\u00b2 an\u2074 ko\u00b9\u2074o\u00b3 ni\u00b3 mi\u00b3i\u2074=\u00b2 tan\u00b3 ba\u00b9\u2074\u00b3 chi&#039;\u2074i\u207d\u2074\u207e=a\u00b2 a\u00b9chi\u00b9 ndi\u2074 ta\u00b3ta\u207d\u00b2\u207e=e\u00b2 ku\u2074ni\u207d\u00b2\u207e=a\u00b2."
+      },
+      "a28": {
+        "lineref": "a28",
+        "start": 58.351,
+        "stop": 58.351,
+        "value": "Ki\u2074ku\u00b9\u00b3=na\u207d\u00b2\u207e=e\u00b2 ji&#039;\u2074in\u2074 yo&#039;\u00b3o\u2074 ki\u2074ku\u00b9\u00b3=na\u207d\u00b3\u207e=e\u00b3. Ni\u2074i\u00b2\u2074 chi&#039;\u2074i\u00b2 so&#039;\u00b3o\u00b3 so&#039;\u00b3o\u00b3 ti\u2074 yo&#039;\u00b3o\u2074=a\u00b2 ya\u00b9 sa\u00b3kan\u2074 ku\u2074u\u207d\u2074\u207e=a\u00b2 ya\u00b9 i\u00b3ta\u00b2 ba\u2074li\u2074=ni\u2074\u00b2 ba\u2074\u00b3."
+      },
+      "a30": {
+        "lineref": "a30",
+        "start": 65.885,
+        "stop": 65.885,
+        "value": "Xa&#039;\u2074an\u00b2 bi\u00b9xi\u00b9 ta&#039;\u00b3an\u207d\u00b2\u207e=e\u00b2, xa&#039;\u2074an\u00b2 bi\u00b9xi\u207d\u00b9\u207e=a\u00b9 ba&#039;\u00b9a\u00b3 xi\u00b3ko\u00b2 ba\u207d\u00b3\u207e=e\u00b2 ku&#039;\u00b9un\u00b9 ji&#039;\u2074in\u207d\u2074\u207e=o\u2074 ndo\u00b3ko\u00b3to\u207d\u00b3\u207e=e\u2074."
+      },
+      "a31": {
+        "lineref": "a31",
+        "start": 70.611,
+        "stop": 70.611,
+        "value": "I\u00b3ta\u00b2 ndi\u00b9\u2074i\u00b2 ba\u2074\u00b2 kan\u2074, i\u2074yo\u207d\u00b2\u207e=a\u00b2 ndi\u00b9\u2074i\u00b2 i\u2074yo\u207d\u00b2\u207e=a\u00b2 kwa&#039;\u2074a\u00b9, u\u00b9bi\u00b9 nu\u00b9\u2074u\u00b3 tu\u00b3 ba\u2074\u00b2 kan\u2074 ba\u00b3."
+      },
+      "a32": {
+        "lineref": "a32",
+        "start": 75.889,
+        "stop": 75.889,
+        "value": "Tan\u2074\u00b2 ku\u2074ni\u00b2 ko\u00b3o\u00b3 yu\u00b9ku\u00b9 tun\u2074 i\u00b3ta\u00b2 <i>pastora</i> sa\u00b3kan\u2074 ku\u2074ni\u00b2 ko\u00b3o\u00b3 tu\u00b3 yu\u00b9ku\u00b9 tun\u2074 kan\u2074 ba\u00b3."
+      },
+      "a34": {
+        "lineref": "a34",
+        "start": 79.697,
+        "stop": 86.903,
+        "value": "A\u00b9be\u00b3, sa\u00b3kan\u2074 i\u2074in\u207d\u2074\u207e=a\u00b2 ya\u00b9 kwi\u2074i\u00b2\u2074 ba\u2074li\u2074 ba\u2074\u00b2 kan\u2074."
+      },
+      "a35": {
+        "lineref": "a35",
+        "start": 86.903,
+        "stop": 86.903,
+        "value": "Ndi\u00b3kin\u2074=a\u00b2 kan\u2074 nda\u2074-ka\u00b3ya\u00b2=na\u00b9 tu\u2074u\u00b2=yu\u00b9 a\u00b9chi\u00b9 ndi\u2074 ta&#039;\u00b9\u2074an\u00b2 chi&#039;\u00b3i\u207d\u00b3\u207e=a\u00b2. A\u00b9chi\u00b9 ndi\u2074 ya\u00b9 i\u2074yo\u00b2 ndi\u00b3kin\u2074 ba\u2074\u00b2 mi\u2074i\u2074 i\u2074yo\u00b2, mi\u2074i\u2074 i\u2074yo\u00b2 i\u00b3ta\u207d\u00b2\u207e=e\u00b2 kan\u2074 i\u00b3kan\u2074 ndo\u2074o\u00b9\u00b3=a\u00b2 i\u2074chi\u207d\u00b9\u207e=a\u00b9 tan\u00b3 i\u00b3kan\u2074 nda\u00b3-ka\u00b3ya\u00b2=na\u207d\u00b9\u207e=e\u00b9 ko\u2074..., ko\u2074ndo\u207d\u00b3\u207e=a\u00b2 ta\u00b3ta\u00b2=na\u00b9."
+      },
+      "a37": {
+        "lineref": "a37",
+        "start": 96.045,
+        "stop": 104.113,
+        "value": "In\u00b3ka\u2074chi\u00b9 chi&#039;\u2074i\u2074=na\u207d\u00b2\u207e=e\u00b2 ji&#039;\u2074in\u2074 tun\u2074 i\u00b3ta\u00b2 kwa\u00b9on\u2074 ba\u00b3 tu\u2074u\u00b2=yu\u00b9, i\u00b3in\u00b3 tiem\u2074pu\u00b2."
+      },
+      "a38": {
+        "lineref": "a38",
+        "start": 104.113,
+        "stop": 104.113,
+        "value": "I\u00b3in\u00b3 tiem\u2074pu\u00b2 ya\u00b9 kan\u2074 ndi\u2074 ndu\u2074ta\u207d\u00b9\u207e=e\u00b9 tan\u00b3 ja\u2074chiu\u2074un\u207d\u2074\u207e=a\u00b2 ji&#039;\u2074in\u2074=na\u00b2 ya\u00b9, ya\u00b9 bi\u00b3ko\u2074 i\u00b3ta\u00b2 ka\u2074chi\u00b2=o\u2074 kan\u2074 a\u00b9chi\u00b9, sa\u00b3kan\u2074 ba\u2074\u00b2 ji\u2074ni\u00b2 yu&#039;\u00b9u\u00b9 ba\u207d\u00b3\u207e=e\u00b2 ran\u2074, ko\u00b9\u2074o\u207d\u00b3\u207e=a\u00b2 ji\u2074ni\u00b2=yu\u00b9 tiem\u2074pu\u00b2 bi\u00b3tin\u00b3 ndi\u2074,"
+      },
+      "a40": {
+        "lineref": "a40",
+        "start": 111.448,
+        "stop": 113.478,
+        "value": "Ba\u00b9\u2074\u00b3 xi\u2074yo\u00b9\u00b3=a\u00b2 yu\u00b3mi\u2074."
+      },
+      "a41": {
+        "lineref": "a41",
+        "start": 113.478,
+        "stop": 113.478,
+        "value": "Ji\u00b9\u2074ni\u00b2=o\u2074 sa\u00b9a\u00b3 a\u00b3sa\u207d\u00b3\u207e=e\u00b2 na\u2074 i\u2074yo\u00b2 ndi\u00b3kin\u2074=a\u00b2 tan\u00b3 chi&#039;\u00b3i\u207d\u00b3\u207e=o\u2074=e\u00b2 ndi\u2074 xa\u00b3ku\u2074=ni\u2074\u00b2 xi\u2074yo\u00b9\u00b3=a\u00b2 \u00f1u\u00b3u\u00b2=e\u2074 ka\u00b9a\u00b3."
+      },
+      "a44": {
+        "lineref": "a44",
+        "start": 124.14,
+        "stop": 127.012,
+        "value": "Ra\u00fal na\u00b3ni\u2074=\u00b2."
+      },
+      "a46": {
+        "lineref": "a46",
+        "start": 127.012,
+        "stop": 130.175,
+        "value": "U\u00b9bi\u00b9 xi\u00b3ko\u00b3 i\u00b9\u00f1u\u00b9 kwi\u00b9ya\u00b9 ku\u2074u\u207d\u2074\u207e=\u00b2."
+      },
+      "a48": {
+        "lineref": "a48",
+        "start": 130.175,
+        "stop": 132.313,
+        "value": "Yolox\u00f3chitl ku\u2074u\u2074 \u00f1u\u00b3u\u00b2=yu\u00b9."
+      }
+    }
+  },
+  "Ra\u00fal Felipe Margarito Surface-2": {
+    "display": "nodisplay",
+    "color": "5927BB",
+    "lines": {
+      "a21_SURFACE2": {
+        "lineref": "a21_SURFACE2",
+        "start": 16.909,
+        "stop": 24.331,
+        "value": "I\u00b3ta\u00b2 s\u00e3\u00b3\u0129\u2074 ta\u00b3ta\u00b2 k\u00e3\u2074 ba\u2074\u00b2 ya\u00b9, ya\u00b9 ka\u2074chyo\u00b2\u2074 ndo\u2074ko\u00b3twe\u2074 j\u0129&#039;\u2074\u0129\u2074 i\u00b3ta\u00b2 kw\u00e3\u00b9\u00f5\u2074 ka\u2074chyo\u00b2\u2074 ya\u00b9 bi\u00b3ko\u2074 i\u00b3ta\u00b2,"
+      },
+      "a22_SURFACE2": {
+        "lineref": "a22_SURFACE2",
+        "start": 24.331,
+        "stop": 31.243,
+        "value": "ya\u00b9 chi&#039;\u2074i\u2074n\u1ebd\u00b2 k\u00e3\u2074 ndi\u2074 a\u00b9su\u00b3 tyem\u2074pu\u00b2 ka\u00b3te\u00b2\u2074 t\u0169\u2074 i\u00b3ta\u00b2 kw\u00e3\u00b9\u00f5\u2074 i\u00b3k\u00e3\u2074 ba\u2074\u00b2 chi\u00b3..., ka\u00b3ta\u00b2 twe\u2074 ya\u00b9 k\u00e3\u2074 ndi\u00b3k\u1ef9\u00e3\u2074\u00b2 k\u00e3\u2074 t\u00e3\u00b3"
+      },
+      "a23_SURFACE2": {
+        "lineref": "a23_SURFACE2",
+        "start": 31.243,
+        "stop": 40.327,
+        "value": "X\u0129\u00b9\u2074\u0129n\u00b3=ni\u2074\u00b2 bya\u2074\u00b2 kwa\u00b3a\u00b2 nywe\u00b3e\u00b2\u2074 ka\u00b9a\u00b3 ndi\u2074 ba\u00b3 ba\u00b9\u2074\u00b3 ndu\u2074t\u1ebd&#039;\u00b3\u1ebd\u00b2 kwa\u00b3a\u00b2 ka\u00b9a\u00b3 ndi\u2074 \u00f1\u0169\u00b3\u0169\u00b2 ja\u00b9, \u00e3\u2074 \u00f1\u0169\u00b3\u0169\u00b2 s\u00e3&#039;\u2074\u00e3\u2074 ba\u2074\u00b2 \u00e3\u2074 \u00f1\u0169\u00b3\u0169\u00b2 bi\u00b9x\u0129\u00b3 ka\u00b9 i\u00b3k\u00e3\u2074 ba\u2074\u00b2 la\u00b3t\u0169\u2074 xi\u2074ywa\u00b9\u00b3\u00b2 t\u00e3\u00b3 nywe\u00b3e\u00b2\u2074 ka\u00b9a\u00b3 ndi\u2074 kwa\u2074chi\u00b3n\u0129\u2074\u00b2 xa&#039;\u2074n\u0169\u00b3r\u0169\u2074 tu\u2074u\u00b2yu\u00b9."
+      },
+      "a24_SURFACE2": {
+        "lineref": "a24_SURFACE2",
+        "start": 40.327,
+        "stop": 46.041,
+        "value": "So&#039;\u00b3o\u00b3 so&#039;\u00b3o\u00b3 ti\u2074 ba\u00b3 xa&#039;\u2074n\u0169\u00b3r\u0169\u2074 t\u00e3\u00b3 i\u2074yo\u00b2 i\u00b3ta\u00b2r\u0169\u2074, ba\u2074li\u2074n\u0129\u2074\u00b2 nw\u0303\u00e3\u00b9\u2074\u00e3\u00b2 so&#039;\u00b3o\u00b3 so&#039;\u00b3o\u00b3 ti\u2074 ba\u2074li\u2074 nw\u0303\u00e3\u00b9\u2074\u00e3\u00b2 t\u00e3\u00b3"
+      },
+      "a25_SURFACE2": {
+        "lineref": "a25_SURFACE2",
+        "start": 46.041,
+        "stop": 53.917,
+        "value": "ya\u00b9 k\u00e3\u2074 ba\u2074\u00b2 kw\u00e3&#039;\u00b9\u00e3\u00b9 jyo&#039;\u2074o\u2074 pa\u00b3s\u00e3\u2074tu\u00b2 ndo\u00b3ko\u00b3twe\u2074 j\u0129&#039;\u2074\u0129\u2074 i\u00b3ta\u00b2 kw\u00e3\u00b9\u00f5\u2074 n\u00e3\u2074tu\u00b2 i\u2074ywa\u00b2 xa\u00b3ku\u2074n\u0129\u2074\u00b2 ba\u2074\u00b2 xi\u2074ywa\u00b9\u00b3\u00b2 \u00f1\u0169\u00b3\u0169\u00b2 ka\u00b9a\u00b3. Ko\u00b9\u2074o\u00b3 ba&#039;\u00b9a\u00b3 be&#039;\u00b9e\u00b3\u00b2 k\u00e3\u2074 \u00f1\u0169\u00b3\u0169\u00b2 ka\u00b9a\u00b3 ndi\u2074,"
+      },
+      "a26_SURFACE2": {
+        "lineref": "a26_SURFACE2",
+        "start": 53.917,
+        "stop": 57.621,
+        "value": "\u00e3\u2074 ba\u00b9\u2074\u00b3 chi&#039;\u2074i\u2074n\u1ebd\u00b2 \u00e3\u2074 ko\u00b9\u2074o\u00b3 n\u0129\u00b3 m\u0129\u00b3\u0129\u2074\u00b2 t\u00e3\u00b3 ba\u00b9\u2074\u00b3 chya&#039;\u2074a\u00b2 a\u00b9chi\u00b9 ndi\u2074 ta\u00b3te\u00b2 ku\u2074n\u1ef9\u00e3\u00b2."
+      },
+      "a28_SURFACE2": {
+        "lineref": "a28_SURFACE2",
+        "start": 58.351,
+        "stop": 64.875,
+        "value": "Ki\u2074ku\u00b9\u00b3n\u1ebd\u00b2 j\u0129&#039;\u2074\u0129\u2074 yo&#039;\u00b3o\u2074 ki\u2074ku\u00b9\u00b3n\u1ebd\u00b3. Ni\u2074i\u00b2\u2074 chi&#039;\u2074i\u00b2 so&#039;\u00b3o\u00b3 so&#039;\u00b3o\u00b3 ti\u2074 ywa&#039;\u00b3a\u2074\u00b2 ya\u00b9 sa\u00b3k\u00e3\u2074 kwa\u2074a\u00b2 ya\u00b9 i\u00b3ta\u00b2 ba\u2074li\u2074n\u0129\u2074\u00b2 ba\u2074\u00b3."
+      },
+      "a30_SURFACE2": {
+        "lineref": "a30_SURFACE2",
+        "start": 65.885,
+        "stop": 70.611,
+        "value": "X\u00e3&#039;\u2074\u00e3\u00b2 bi\u00b9xi\u00b9 t\u1ebd&#039;\u00b3\u1ebd\u00b2, x\u00e3&#039;\u2074\u00e3\u00b2 bi\u00b9xya\u00b9 ba&#039;\u00b9a\u00b3 xi\u00b3ko\u00b2 be\u00b2 k\u0169&#039;\u00b9\u0169\u00b9 jyo&#039;\u2074o\u2074 ndo\u00b3ko\u00b3twe\u2074."
+      },
+      "a31_SURFACE2": {
+        "lineref": "a31_SURFACE2",
+        "start": 70.611,
+        "stop": 75.889,
+        "value": "I\u00b3ta\u00b2 ndi\u00b9\u2074i\u00b2 ba\u2074\u00b2 k\u00e3\u2074, i\u2074ywa\u00b2 ndi\u00b9\u2074i\u00b2 i\u2074ywa\u00b2 kwa&#039;\u2074a\u00b9, u\u00b9bi\u00b9 n\u0169\u00b9\u2074\u0169\u00b3 tu\u00b3 ba\u2074\u00b2 k\u00e3\u2074 ba\u00b3."
+      },
+      "a32_SURFACE2": {
+        "lineref": "a32_SURFACE2",
+        "start": 75.889,
+        "stop": 79.697,
+        "value": "T\u00e3\u2074\u00b2 ku\u2074n\u0129\u00b2 ko\u00b3o\u00b3 yu\u00b9ku\u00b9 t\u0169\u2074 i\u00b3ta\u00b2 <i>pastora</i> sa\u00b3k\u00e3\u2074 ku\u2074n\u0129\u00b2 ko\u00b3o\u00b3 tu\u00b3 yu\u00b9ku\u00b9 t\u0169\u2074 k\u00e3\u2074 ba\u00b3."
+      },
+      "a34_SURFACE2": {
+        "lineref": "a34_SURFACE2",
+        "start": 79.697,
+        "stop": 86.903,
+        "value": "A\u00b9be\u00b3, sa\u00b3k\u00e3\u2074 \u1ef9\u00e3\u2074\u00e3\u00b2 ya\u00b9 kwi\u2074i\u00b2\u2074 ba\u2074li\u2074 ba\u2074\u00b2 k\u00e3\u2074."
+      },
+      "a35_SURFACE2": {
+        "lineref": "a35_SURFACE2",
+        "start": 86.903,
+        "stop": 96.045,
+        "value": "Ndi\u00b3k\u1ef9\u00e3\u2074\u00b2 k\u00e3\u2074 nda\u2074ka\u00b3ya\u00b2n\u00e3\u00b9 tu\u2074u\u00b2yu\u00b9 a\u00b9chi\u00b9 ndi\u2074 t\u00e3&#039;\u00b9\u2074\u00e3\u00b2 chya&#039;\u00b3a\u00b2. A\u00b9chi\u00b9 ndi\u2074 ya\u00b9 i\u2074yo\u00b2 ndi\u00b3k\u0129\u2074 ba\u2074\u00b2 m\u0129\u2074\u0129\u2074 i\u2074yo\u00b2, m\u0129\u2074\u0129\u2074 i\u2074yo\u00b2 i\u00b3te\u00b2 k\u00e3\u2074 i\u00b3k\u00e3\u2074 ndwa\u2074a\u00b9\u00b3\u00b2 i\u2074chya\u00b9 t\u00e3\u00b3 i\u00b3k\u00e3\u2074 nda\u00b3ka\u00b3ya\u00b2n\u1ebd\u00b9 ko\u2074..., ko\u2074ndwa\u00b2 ta\u00b3ta\u00b2n\u00e3\u00b9."
+      },
+      "a37_SURFACE2": {
+        "lineref": "a37_SURFACE2",
+        "start": 96.045,
+        "stop": 104.113,
+        "value": "In\u00b3ka\u2074chi\u00b9 chi&#039;\u2074i\u2074n\u1ebd\u00b2 j\u0129&#039;\u2074\u0129\u2074 t\u0169\u2074 i\u00b3ta\u00b2 kw\u00e3\u00b9\u00f5\u2074 ba\u00b3 tu\u2074u\u00b2yu\u00b9 \u0129\u00b3\u0129\u00b3 tyem\u2074pu\u00b2."
+      },
+      "a38_SURFACE2": {
+        "lineref": "a38_SURFACE2",
+        "start": 104.113,
+        "stop": 111.448,
+        "value": "I\u00b3\u0129\u00b3 tyem\u2074pu\u00b2 ya\u00b9 k\u00e3\u2074 ndi\u2074 ndu\u2074te\u00b9 t\u00e3\u00b3 ja\u2074chw\u0303\u00e3\u2074\u00e3\u00b2 j\u0129&#039;\u2074\u0129\u2074n\u00e3\u00b2 ya\u00b9, ya\u00b9 bi\u00b3ko\u2074 i\u00b3ta\u00b2 ka\u2074chyo\u00b2\u2074 k\u00e3\u2074 a\u00b9chi\u00b9, sa\u00b3k\u00e3\u2074 ba\u2074\u00b2 ji\u2074n\u0129\u00b2 yu&#039;\u00b9u\u00b9 be\u00b2 r\u00e3\u2074, kwa\u00b9\u2074a\u00b2 ji\u2074n\u0129\u00b2yu\u00b9 tyem\u2074pu\u00b2 bi\u00b3t\u0129\u00b3 ndi\u2074,"
+      },
+      "a40_SURFACE2": {
+        "lineref": "a40_SURFACE2",
+        "start": 111.448,
+        "stop": 113.478,
+        "value": "Ba\u00b9\u2074\u00b3 xi\u2074ywa\u00b9\u00b3\u00b2 yu\u00b3m\u0129\u2074."
+      },
+      "a41_SURFACE2": {
+        "lineref": "a41_SURFACE2",
+        "start": 113.478,
+        "stop": 117.752,
+        "value": "Ji\u00b9\u2074ndyo\u00b2\u2074 sa\u00b9a\u00b3 a\u00b3se\u00b2 n\u00e3\u2074 i\u2074yo\u00b2 ndi\u00b3k\u1ef9\u00e3\u2074\u00b2 t\u00e3\u00b3 chye&#039;\u00b3e\u2074\u00b2 ndi\u2074 xa\u00b3ku\u2074n\u0129\u2074\u00b2 xi\u2074ywa\u00b9\u00b3\u00b2 nywe\u00b3e\u00b2\u2074 ka\u00b9a\u00b3."
+      },
+      "a44_SURFACE2": {
+        "lineref": "a44_SURFACE2",
+        "start": 124.14,
+        "stop": 127.012,
+        "value": "Ra\u00fal n\u00e3\u00b3n\u0129\u2074\u00b2."
+      },
+      "a46_SURFACE2": {
+        "lineref": "a46_SURFACE2",
+        "start": 127.012,
+        "stop": 130.175,
+        "value": "U\u00b9bi\u00b9 xi\u00b3ko\u00b3 i\u00b9\u00f1\u0169\u00b9 kwi\u00b9ya\u00b9 ku\u2074u\u00b2."
+      },
+      "a48_SURFACE2": {
+        "lineref": "a48_SURFACE2",
+        "start": 130.175,
+        "stop": 130.175,
+        "value": "Yolox\u00f3chitl ku\u2074u\u2074 \u00f1\u0169\u00b3\u0169\u00b2yu\u00b9."
+      }
+    }
+  },
+  "RCG Traducci\u00f3n": {
+    "display": "top",
+    "color": "C57214",
+    "lines": {
+      "a50": {
+        "lineref": "a18",
+        "start": 0,
+        "stop": 0,
+        "value": "Cu\u00e9ntanos un poco sobre la flor de olote dom\u00e9stica."
+      },
+      "a51": {
+        "lineref": "a19",
+        "start": 7.1,
+        "stop": 7.1,
+        "value": "Cu\u00e1ntos tipos hay, d\u00f3nde hay, y en qu\u00e9 tiempo lo siembran."
+      },
+      "a52": {
+        "lineref": "a20",
+        "start": 11.972,
+        "stop": 11.972,
+        "value": "Para qu\u00e9 lo utilizan, c\u00f3mo son, y para qu\u00e9 se utilizan."
+      },
+      "a53": {
+        "lineref": "a27",
+        "start": 57.621,
+        "stop": 57.621,
+        "value": "\u00bfLo cosen en guirnaldas?"
+      },
+      "a54": {
+        "lineref": "a29",
+        "start": 64.875,
+        "stop": 64.875,
+        "value": "\u00bfY huele bien?"
+      },
+      "a55": {
+        "lineref": "a33",
+        "start": 79.697,
+        "stop": 79.697,
+        "value": "\u00bfAh, s\u00ed? Son como, son peque\u00f1os.  Y los cosen y, este, y c\u00f3mo recogen las semillas para sembrar?"
+      },
+      "a56": {
+        "lineref": "a36",
+        "start": 96.045,
+        "stop": 96.045,
+        "value": "Y \u00bflos siembran juntos con el cempaz\u00fachitl? Al mismo tiempo. \u00bfAh, s\u00ed?"
+      },
+      "a57": {
+        "lineref": "a39",
+        "start": 111.448,
+        "stop": 111.448,
+        "value": "\u00bfNo se da en temporada de seca?"
+      },
+      "a58": {
+        "lineref": "a42",
+        "start": 117.752,
+        "stop": 117.752,
+        "value": "\u00bfAh, s\u00ed? Y, este, eso es todo, pues. Bueno."
+      },
+      "a59": {
+        "lineref": "a43",
+        "start": 124.14,
+        "stop": 124.14,
+        "value": "\u00bfC\u00f3mo te llamas?"
+      },
+      "a60": {
+        "lineref": "a45",
+        "start": 127.012,
+        "stop": 127.012,
+        "value": "\u00bfCu\u00e1ntos a\u00f1os tienes?"
+      },
+      "a61": {
+        "lineref": "a47",
+        "start": 130.175,
+        "stop": 131.876,
+        "value": "\u00bfC\u00f3mo se llama tu pueblo?"
+      },
+      "a62": {
+        "lineref": "a49",
+        "start": 132.305,
+        "stop": 132.313,
+        "value": "S\u00ed, est\u00e1 bien."
+      }
+    }
+  },
+  "RFM Traducci\u00f3n": {
+    "display": "top",
+    "color": "F84316",
+    "lines": {
+      "a63": {
+        "lineref": "a21",
+        "start": 16.909,
+        "stop": 16.909,
+        "value": "La flor de olote dom\u00e9stica es la que se ocupa en las ofrendas en los altares junto con la flor de cempaz\u00fachitl en todo santo,"
+      },
+      "a64": {
+        "lineref": "a22",
+        "start": 24.331,
+        "stop": 24.331,
+        "value": "las siembran en el tiempo en el que se siembran las semillas de cempaz\u00fachitl."
+      },
+      "a65": {
+        "lineref": "a23",
+        "start": 31.243,
+        "stop": 31.243,
+        "value": "Aqu\u00ed en el pueblo no se dan muy bien, en otros lugares, quiz\u00e1 m\u00e1s fr\u00edos se dan las flores muy bonitas, pero aqu\u00ed en el pueblo se dan las flores muy peque\u00f1as, creo."
+      },
+      "a66": {
+        "lineref": "a24",
+        "start": 40.327,
+        "stop": 40.327,
+        "value": "Crece apenas as\u00ed, sus flores son muy peque\u00f1as, apenas as\u00ed y"
+      },
+      "a67": {
+        "lineref": "a25",
+        "start": 46.041,
+        "stop": 46.041,
+        "value": "esas flores son las que se llevan en los ofrendas junto con las flores de cempaz\u00fachitl en el tiempo de todo santo, se dan muy poco aqu\u00ed en el pueblo. No se da bien en este pueblo."
+      },
+      "a68": {
+        "lineref": "a26",
+        "start": 53.917,
+        "stop": 53.917,
+        "value": "Quiz\u00e1 no lo siembran, ni yo no lo siembro porque para eso se necesitan las semillas."
+      },
+      "a69": {
+        "lineref": "a28",
+        "start": 58.351,
+        "stop": 58.351,
+        "value": "S\u00ed, los cosen con un hilo delgado. Sus guirnaldas son delgadas porque sus flores son muy peque\u00f1as."
+      },
+      "a70": {
+        "lineref": "a30",
+        "start": 65.885,
+        "stop": 65.885,
+        "value": "S\u00ed tiene olor, huelen, sirven para llevarlas a ofrendar en los altares."
+      },
+      "a71": {
+        "lineref": "a31",
+        "start": 70.611,
+        "stop": 70.611,
+        "value": "Sus flores son rosas, hay rosas y rojas, esas tambi\u00e9n son de dos tipos."
+      },
+      "a72": {
+        "lineref": "a32",
+        "start": 75.889,
+        "stop": 75.889,
+        "value": "Se parecen a las hojas de la flor de pastora las hojas de \u00e9sa planta."
+      },
+      "a73": {
+        "lineref": "a34",
+        "start": 79.697,
+        "stop": 86.903,
+        "value": "S\u00ed asi son verdes, son peque\u00f1as."
+      },
+      "a74": {
+        "lineref": "a35",
+        "start": 86.903,
+        "stop": 86.903,
+        "value": "Recogen las semillas de esas flores creo, porque yo no la he sembrado. Porque tienen semillas, donde tiene sus flores las secan para recoger las semillas para sembrar."
+      },
+      "a75": {
+        "lineref": "a37",
+        "start": 96.045,
+        "stop": 104.113,
+        "value": "S\u00ed los siembran al mismo tiempo que el cempaz\u00fachitl."
+      },
+      "a76": {
+        "lineref": "a38",
+        "start": 104.113,
+        "stop": 104.113,
+        "value": "Al mismo tiempo se da, porque se ocupa en todo santo, s\u00e9 que se da en ese tiempo, no hay en esta temporada que yo sepa."
+      },
+      "a77": {
+        "lineref": "a40",
+        "start": 111.448,
+        "stop": 113.478,
+        "value": "No se da en temporada de seca."
+      },
+      "a78": {
+        "lineref": "a41",
+        "start": 113.478,
+        "stop": 113.478,
+        "value": "No sabemos si al sembrarla se va dar en este pueblo porque aqui se da muy poco."
+      },
+      "a79": {
+        "lineref": "a44",
+        "start": 124.14,
+        "stop": 127.012,
+        "value": "Me llamo Ra\u00fal."
+      },
+      "a80": {
+        "lineref": "a46",
+        "start": 127.012,
+        "stop": 130.175,
+        "value": "Tengo 46 a\u00f1os."
+      },
+      "a81": {
+        "lineref": "a48",
+        "start": 130.175,
+        "stop": 132.313,
+        "value": "Mi pueblo es Yolox\u00f3chitl."
+      }
+    }
+  }
+};
+      
+      var tierArr = {
+        "Rey Castillo García": {
+          participant: "Rey Castillo García",
+          tiers: {
+            "Rey Castillo García": {
+              name: "Rey Castillo García",
+              code: "RCG",
+              color: "049160",
+            },
+            "Rey Castillo García Surface-2": {
+              name: "Rey Castillo García Surface-2",
+              code: "RCG",
+              color: "16F304",
+            },
+            "RCG Traducción": {
+              name: "RCG Traducción",
+              code: "RCG",
+              color: "46AF7E",
+            },
+          },
+        },
+        "Raúl Felipe Margarito": {
+          participant: "Raúl Felipe Margarito",
+          tiers: {
+            "Raúl Felipe Margarito": {
+              name: "Raúl Felipe Margarito",
+              code: "RFM",
+              color: "DC209C",
+            },
+            "Raúl Felipe Margarito Surface-2": {
+              name: "Raúl Felipe Margarito Surface-2",
+              code: "RFM",
+              color: "1F807F",
+            },
+            "RFM Traducción": {
+              name: "RFM Traducción",
+              code: "RFM",
+              color: "90C647",
+            },
+          },
+        },
+      };
+      
+      var timeslotArr = {
+        1: 0,
+        2: 0,
+        3: 7100,
+        4: 7100,
+        5: 7100,
+        6: 7100,
+        7: 11972,
+        8: 11972,
+        9: 11972,
+        10: 11972,
+        11: 16909,
+        12: 16909,
+        13: 16909,
+        14: 16909,
+        15: 24331,
+        16: 24331,
+        17: 24331,
+        18: 24331,
+        19: 31243,
+        20: 31243,
+        21: 31243,
+        22: 31243,
+        23: 40327,
+        24: 40327,
+        25: 40327,
+        26: 40327,
+        27: 46041,
+        28: 46041,
+        29: 46041,
+        30: 46041,
+        31: 53917,
+        32: 53917,
+        33: 53917,
+        34: 53917,
+        35: 57621,
+        36: 57621,
+        37: 57621,
+        38: 57621,
+        39: 58351,
+        40: 58351,
+        41: 58351,
+        42: 58351,
+        43: 64875,
+        44: 64875,
+        45: 64875,
+        46: 64875,
+        47: 65885,
+        48: 65885,
+        49: 65885,
+        50: 65885,
+        51: 70611,
+        52: 70611,
+        53: 70611,
+        54: 70611,
+        55: 75889,
+        56: 75889,
+        57: 75889,
+        58: 75889,
+        59: 79697,
+        60: 79697,
+        61: 79697,
+        62: 79697,
+        63: 79697,
+        64: 79697,
+        65: 86903,
+        66: 86903,
+        67: 86903,
+        68: 86903,
+        69: 86903,
+        70: 86903,
+        71: 96045,
+        72: 96045,
+        73: 96045,
+        74: 96045,
+        75: 96045,
+        76: 96045,
+        77: 104113,
+        78: 104113,
+        79: 104113,
+        80: 104113,
+        81: 104113,
+        82: 104113,
+        83: 111448,
+        84: 111448,
+        85: 111448,
+        86: 111448,
+        87: 111448,
+        88: 111448,
+        89: 113478,
+        90: 113478,
+        91: 113478,
+        92: 113478,
+        93: 113478,
+        94: 113478,
+        95: 117752,
+        96: 117752,
+        97: 117752,
+        98: 117752,
+        99: 124140,
+        100: 124140,
+        101: 124140,
+        102: 124140,
+        103: 124140,
+        104: 124140,
+        105: 127012,
+        106: 127012,
+        107: 127012,
+        108: 127012,
+        109: 127012,
+        110: 127012,
+        111: 127012,
+        112: 127012,
+        113: 130175,
+        114: 130175,
+        115: 130175,
+        116: 130175,
+        117: 130175,
+        118: 130175,
+        119: 130175,
+        120: 130175,
+        121: 131876,
+        122: 132305,
+        123: 132305,
+        124: 132313,
+        125: 132313,
+        126: 132313,
+        127: 134468,
+        128: 134468,
+      };
+      
+      var lineTimeArr = {
+        a18: {
+          start: 1,
+          stop: 3,
+        },
+        a19: {
+          start: 5,
+          stop: 7,
+        },
+        a20: {
+          start: 9,
+          stop: 11,
+        },
+        a27: {
+          start: 37,
+          stop: 39,
+        },
+        a29: {
+          start: 45,
+          stop: 47,
+        },
+        a33: {
+          start: 61,
+          stop: 65,
+        },
+        a36: {
+          start: 73,
+          stop: 77,
+        },
+        a39: {
+          start: 85,
+          stop: 89,
+        },
+        a42: {
+          start: 97,
+          stop: 99,
+        },
+        a43: {
+          start: 101,
+          stop: 105,
+        },
+        a45: {
+          start: 109,
+          stop: 113,
+        },
+        a47: {
+          start: 117,
+          stop: 122,
+        },
+        a49: {
+          start: 123,
+          stop: 127,
+        },
+        a18_SURFACE2: {
+          start: 2,
+          stop: 4,
+        },
+        a19_SURFACE2: {
+          start: 6,
+          stop: 8,
+        },
+        a20_SURFACE2: {
+          start: 10,
+          stop: 12,
+        },
+        a27_SURFACE2: {
+          start: 38,
+          stop: 40,
+        },
+        a29_SURFACE2: {
+          start: 46,
+          stop: 48,
+        },
+        a33_SURFACE2: {
+          start: 62,
+          stop: 66,
+        },
+        a36_SURFACE2: {
+          start: 74,
+          stop: 78,
+        },
+        a39_SURFACE2: {
+          start: 86,
+          stop: 90,
+        },
+        a42_SURFACE2: {
+          start: 98,
+          stop: 100,
+        },
+        a43_SURFACE2: {
+          start: 102,
+          stop: 106,
+        },
+        a45_SURFACE2: {
+          start: 110,
+          stop: 114,
+        },
+        a47_SURFACE2: {
+          start: 118,
+          stop: 124,
+        },
+        a49_SURFACE2: {
+          start: 125,
+          stop: 128,
+        },
+        a21: {
+          start: 13,
+          stop: 15,
+        },
+        a22: {
+          start: 17,
+          stop: 19,
+        },
+        a23: {
+          start: 21,
+          stop: 23,
+        },
+        a24: {
+          start: 25,
+          stop: 27,
+        },
+        a25: {
+          start: 29,
+          stop: 31,
+        },
+        a26: {
+          start: 33,
+          stop: 35,
+        },
+        a28: {
+          start: 41,
+          stop: 43,
+        },
+        a30: {
+          start: 49,
+          stop: 51,
+        },
+        a31: {
+          start: 53,
+          stop: 55,
+        },
+        a32: {
+          start: 57,
+          stop: 59,
+        },
+        a34: {
+          start: 63,
+          stop: 67,
+        },
+        a35: {
+          start: 69,
+          stop: 71,
+        },
+        a37: {
+          start: 75,
+          stop: 79,
+        },
+        a38: {
+          start: 81,
+          stop: 83,
+        },
+        a40: {
+          start: 87,
+          stop: 91,
+        },
+        a41: {
+          start: 93,
+          stop: 95,
+        },
+        a44: {
+          start: 103,
+          stop: 107,
+        },
+        a46: {
+          start: 111,
+          stop: 115,
+        },
+        a48: {
+          start: 119,
+          stop: 126,
+        },
+        a21_SURFACE2: {
+          start: 14,
+          stop: 16,
+        },
+        a22_SURFACE2: {
+          start: 18,
+          stop: 20,
+        },
+        a23_SURFACE2: {
+          start: 22,
+          stop: 24,
+        },
+        a24_SURFACE2: {
+          start: 26,
+          stop: 28,
+        },
+        a25_SURFACE2: {
+          start: 30,
+          stop: 32,
+        },
+        a26_SURFACE2: {
+          start: 34,
+          stop: 36,
+        },
+        a28_SURFACE2: {
+          start: 42,
+          stop: 44,
+        },
+        a30_SURFACE2: {
+          start: 50,
+          stop: 52,
+        },
+        a31_SURFACE2: {
+          start: 54,
+          stop: 56,
+        },
+        a32_SURFACE2: {
+          start: 58,
+          stop: 60,
+        },
+        a34_SURFACE2: {
+          start: 64,
+          stop: 68,
+        },
+        a35_SURFACE2: {
+          start: 70,
+          stop: 72,
+        },
+        a37_SURFACE2: {
+          start: 76,
+          stop: 80,
+        },
+        a38_SURFACE2: {
+          start: 82,
+          stop: 84,
+        },
+        a40_SURFACE2: {
+          start: 88,
+          stop: 92,
+        },
+        a41_SURFACE2: {
+          start: 94,
+          stop: 96,
+        },
+        a44_SURFACE2: {
+          start: 104,
+          stop: 108,
+        },
+        a46_SURFACE2: {
+          start: 112,
+          stop: 116,
+        },
+        a48_SURFACE2: {
+          start: 120,
+          stop: 121,
+        },
+      };
+
+      $(document).ready(function () {
+        setColors();
+        setData();
+        for (pid in tierArr) {
+          if (tierArr.hasOwnProperty(pid)) {
+            var showSpeaker = false;
+            var tiers = tierArr[pid].tiers;
+            for (tid in tiers) {
+              if (tiers.hasOwnProperty(tid)) {
+                if (tierShowArr.indexOf(tid) === -1) {
+                  if (dataArr[tid]) {
+                    var display = dataArr[tid].display;
+                    if (display !== "nodisplay") {
+                      showSpeaker = true;
+                      tierShowArr.push(tid);
+                    }
+                  }
+                }
+              }
+            }
+            if (speakerShowArr.indexOf(pid) === -1 && showSpeaker) {
+              var checkboxId = "check-tier-" + pid;
+              if (document.getElementById(checkboxId)) {
+                speakerShowArr.push(pid);
+                document.getElementById(checkboxId).checked = true;
+              }
+            }
+          }
+        }
+        setTranscriptionBox();
+        initial_time = 7.746;
+        initial_time_end = 7.746;
+        media = document.getElementById("sync_player");
+        media.setAttribute("ontimeupdate", "sync(this.currentTime)");
+        media.setAttribute("onmousemove", "sync(this.currentTime)");
+        media.setAttribute("onclick", "sync(this.currentTime)");
+        setPlayer();
+        //primePlayer();
+        document.getElementById("sync_player").onmousemove();
+      });
+
+      function alertMLoadErr() {
+        document.getElementById("innertext").innerHTML =
+          "<h1>Failed to open media file</h1>";
+      }
+
+      function setColors() {
+        for (pid in tierArr) {
+          //pid == $speaker
+          var tiers = tierArr[pid].tiers;
+          for (tid in tiers) {
+            //tid == $a_tier['TIER_ID']
+            if (dataArr[tid] && dataArr[tid].color) {
+              tierArr[pid].tiers[tid].color = dataArr[tid].color;
+            }
+          }
+        }
+      }
+
+      function setData() {
+        transArr = [];
+        glossArr = [];
+        for (pid in tierArr) {
+          //pid == $speaker
+          var tiers = tierArr[pid].tiers;
+          for (tid in tiers) {
+            //tid == $a_tier['TIER_ID']
+            var spkr = tiers[tid].code;
+            var color = tiers[tid].color;
+            if (dataArr[tid]) {
+              var display = dataArr[tid].display;
+              var lines = dataArr[tid].lines;
+              for (l in lines) {
+                var lineref = lines[l].lineref;
+                var start = lineTimeArr[lineref].start;
+                if (display === "bottom") {
+                  if (!transArr[start]) transArr[start] = [];
+                  if (!transArr[start][tid]) transArr[start][tid] = [];
+                  transArr[start][tid]["speaker"] = pid;
+                  transArr[start][tid]["color"] = color;
+                  transArr[start][tid]["lineref"] = lineref;
+                  transArr[start][tid]["start"] = lines[l].start;
+                  transArr[start][tid]["stop"] = lines[l].stop;
+                  transArr[start][tid]["spkr"] = spkr;
+                  transArr[start][tid]["id"] = l;
+                  transArr[start][tid]["value"] = lines[l].value;
+                } else {
+                  if (!glossArr[lineref]) glossArr[lineref] = [];
+                  if (!glossArr[lineref][tid]) glossArr[lineref][tid] = [];
+                  if (!glossArr[lineref][tid][l])
+                    glossArr[lineref][tid][l] = [];
+                  glossArr[lineref][tid][l]["speaker"] = pid;
+                  glossArr[lineref][tid][l]["color"] = color;
+                  glossArr[lineref][tid][l]["spkr"] = spkr;
+                  glossArr[lineref][tid][l]["value"] = lines[l].value;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      function setTranscriptionBox() {
+        var innerHtml = '<div class="divTable scrollTableCont">';
+        for (t in transArr) {
+          for (s in transArr[t]) {
+            var speaker = transArr[t][s]["speaker"];
+            if (
+              tierShowArr.indexOf(s) !== -1 &&
+              speakerShowArr.indexOf(speaker) !== -1
+            ) {
+              var color = transArr[t][s]["color"];
+              var lineref = transArr[t][s]["lineref"];
+              var start = transArr[t][s]["start"];
+              var stop = transArr[t][s]["stop"];
+              var spkr = transArr[t][s]["spkr"];
+              var id = transArr[t][s]["id"];
+              var value = transArr[t][s]["value"];
+              innerHtml +=
+                '<div name="bottom-' +
+                lineref +
+                '" class="divTableRow" style="color:#' +
+                color +
+                '" data-start="' +
+                start +
+                '" data-stop="' +
+                stop +
+                '"><div class="divTableCell spkr">' +
+                spkr +
+                '</div><div class="divTableCell spkn" id="' +
+                id +
+                '">' +
+                value +
+                "</div></div>";
+            }
+          }
+        }
+        innerHtml += "</div>";
+        document.getElementById("txt_lns").innerHTML = innerHtml;
+      }
+
+      function setPlayer() {
+        var i = 0;
+        for (l in lineTimeArr) {
+          ts_start_time_array[i] = timeslotArr[lineTimeArr[l]["start"]] / 1000;
+          ts_stop_time_array[i] = timeslotArr[lineTimeArr[l]["stop"]] / 1000;
+          if (document.getElementsByName("bottom-" + l)) {
+            var element = document.getElementsByName("bottom-" + l)[0];
+            if (element)
+              element.childNodes[0].setAttribute(
+                "onclick",
+                "set_time_play_and_pause(" +
+                  ts_start_time_array[i] +
+                  ", " +
+                  ts_stop_time_array[i] +
+                  ")"
+              );
+          }
+          i++;
+        }
+        if (initial_time > 0) {
+          try {
+            set_time_play_and_pause(initial_time, initial_time_end);
+          } catch (error) {
+            media.addEventListener(
+              "canplay",
+              function () {
+                set_time_play_and_pause(initial_time, initial_time_end);
+              },
+              true
+            );
+          }
+        }
+      }
+
+      function set_time_play_and_pause(start_time, end_time) {
+        media.pause();
+        clearTimeout(sub_time);
+        play_time = Math.ceil((end_time - start_time) * 1000);
+        if (play_time > 0) {
+          media.currentTime = start_time;
+          media.play();
+          sub_time = setTimeout(function () {
+            media.pause();
+          }, play_time);
+        }
+      }
+
+      function sync(current_time) {
+        var txt_lns_rect = document
+          .getElementById("txt_lns")
+          .getBoundingClientRect();
+        var mid_point = 460;
+        var max_scroll = document.getElementById("txt_lns").scrollHeight - 470;
+        var ref_id;
+        var innerHtml = "";
+        var i = 0;
+        for (l in lineTimeArr) {
+          if (
+            current_time >= parseFloat(ts_start_time_array[i]) &&
+            current_time <= parseFloat(ts_stop_time_array[i])
+          ) {
+            if (document.getElementsByName("bottom-" + l)) {
+              var elements = document.getElementsByName("bottom-" + l);
+              for (e in elements) {
+                if (elements[e] instanceof Element) {
+                  elements[e].setAttribute("id", "txt-current_" + i);
+                  if (
+                    elements[e].getBoundingClientRect().bottom >
+                    txt_lns_rect.bottom
+                  ) {
+                    var scroll =
+                      elements[e].getBoundingClientRect().top -
+                      txt_lns_rect.top -
+                      10;
+                    document.getElementById("txt_lns").scrollTop += scroll;
+                  }
+                }
+              }
+            }
+            if (current_start_time != ts_start_time_array[i]) {
+              current_start_time = ts_start_time_array[i];
+              current_id_arr = [];
+              document.getElementById("txt_refs").innerHTML = "";
+            }
+            if (current_id_arr.indexOf(l) === -1) {
+              if (glossArr[l]) {
+                innerHtml = document.getElementById("txt_refs").innerHTML;
+                for (s in glossArr[l]) {
+                  if (tierShowArr.indexOf(s) !== -1) {
+                    for (n in glossArr[l][s]) {
+                      var speaker = glossArr[l][s][n]["speaker"];
+                      if (speakerShowArr.indexOf(speaker) !== -1) {
+                        var spkr = glossArr[l][s][n]["spkr"];
+                        var value = glossArr[l][s][n]["value"];
+                        var color = glossArr[l][s][n]["color"];
+                        innerHtml +=
+                          "<div class='divTableRow' style='color:#" +
+                          color +
+                          "'><div class='divTableCell spkr'>" +
+                          spkr +
+                          "</div><div class='divTableCell tran'>" +
+                          value +
+                          "</div></div>";
+                      }
+                    }
+                  }
+                }
+                document.getElementById("txt_refs").innerHTML = innerHtml;
+              }
+              current_id_arr.push(l);
+            }
+          } else {
+            try {
+              if (document.getElementsByName("bottom-" + l)) {
+                var elements = document.getElementsByName("bottom-" + l);
+                for (e in elements) {
+                  if (elements[e] instanceof Element) {
+                    elements[e].removeAttribute("id");
+                  }
+                }
+              }
+            } catch (err) {}
+          }
+          i++;
+        }
+      }
+
+      function changePresCheck(tierID) {
+        var eleName = "check-tier-" + tierID;
+        var idName = "check-tier-" + tierID;
+        var cbarray = document.getElementsByName(eleName);
+        var checked = document.getElementById(idName).checked;
+        for (i in cbarray) {
+          var tierName = cbarray[i].value;
+          cbarray[i].checked = checked;
+          if (tierName) toggleTier(tierName);
+        }
+      }
+
+      function changeTierCheck(tierID) {
+        var eleName = "check-tier-" + tierID;
+        var idName = "check-tier-" + tierID;
+        var cbarray = document.getElementsByName(eleName);
+        var tchecked = false;
+        for (i in cbarray) {
+          if (cbarray[i].checked === true && cbarray[i].value) tchecked = true;
+        }
+        document.getElementById(idName).checked = tchecked;
+      }
+
+      function restartPlayer() {
+        media.currentTime = 0;
+        document.getElementById("txt_refs").innerHTML = "";
+        var innerHtml = "";
+        var i = 0;
+        for (l in lineTimeArr) {
+          if (
+            0 >= parseFloat(ts_start_time_array[i]) &&
+            0 <= parseFloat(ts_stop_time_array[i])
+          ) {
+            current_start_time = ts_start_time_array[i];
+            current_id_arr = [];
+            document.getElementById("txt_refs").innerHTML = "";
+            if (current_id_arr.indexOf(l) === -1) {
+              if (glossArr[l]) {
+                innerHtml = document.getElementById("txt_refs").innerHTML;
+                for (s in glossArr[l]) {
+                  if (tierShowArr.indexOf(s) !== -1) {
+                    for (n in glossArr[l][s]) {
+                      var speaker = glossArr[l][s][n]["speaker"];
+                      if (speakerShowArr.indexOf(speaker) !== -1) {
+                        var spkr = glossArr[l][s][n]["spkr"];
+                        var value = glossArr[l][s][n]["value"];
+                        var color = glossArr[l][s][n]["color"];
+                        innerHtml +=
+                          "<div class='divTableRow' style='color:#" +
+                          color +
+                          "'><div class='divTableCell spkr'>" +
+                          spkr +
+                          "</div><div class='divTableCell tran'>" +
+                          value +
+                          "</div></div>";
+                      }
+                    }
+                  }
+                }
+                document.getElementById("txt_refs").innerHTML = innerHtml;
+              }
+              current_id_arr.push(l);
+            }
+          }
+          i++;
+        }
+      }
+
+      function toggleTier(tierID) {
+        var chkIdStr = "checkbox-" + tierID;
+        if (document.getElementById(chkIdStr).checked === true) {
+          tierShowArr.push(tierID);
+        } else {
+          var index = tierShowArr.indexOf(tierID);
+          tierShowArr.splice(index, 1);
+        }
+        restartPlayer();
+        setTranscriptionBox();
+        setPlayer();
+      }
+
+      function changeTierColor(color, speaker, tierID) {
+        var keyID = "key-" + tierID;
+        var selColor = "#" + color;
+        document.getElementById(keyID).style.color = selColor;
+        tierArr[speaker].tiers[tierID].color = color;
+        setData();
+        restartPlayer();
+        setTranscriptionBox();
+        setPlayer();
+      }
+
+      function changeTierPlacement(tierID) {
+        var idName = tierID + "-display";
+        var value = document.getElementById(idName).value;
+        dataArr[tierID].display = value;
+        setData();
+        restartPlayer();
+        setTranscriptionBox();
+        setPlayer();
+      }
+
+      function toggleSpeaker(spkr) {
+        var chkIdStr = "check-tier-" + spkr;
+        if (document.getElementById(chkIdStr).checked === true) {
+          speakerShowArr.push(spkr);
+        } else {
+          var index = speakerShowArr.indexOf(spkr);
+          speakerShowArr.splice(index, 1);
+        }
+        restartPlayer();
+        setTranscriptionBox();
+        setPlayer();
+      }
+
+      function toggleDisplayPanel() {
+        var display = document.getElementById("spkr_keys").style.display;
+        if (display === "none") {
+          document.getElementById("spkr_keys").style.display = "block";
+          document.getElementById("plusButton").style.display = "none";
+          document.getElementById("minusButton").style.display = "block";
+        }
+        if (display === "block") {
+          document.getElementById("spkr_keys").style.display = "none";
+          document.getElementById("plusButton").style.display = "flex";
+          document.getElementById("minusButton").style.display = "none";
+        }
+      }
+    </script>
+	<script src="js/la_color_picker.js"></script>
+	
+	
+	<script>
+	var acc = document.getElementsByClassName("contenedor_acordeon");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("acordeon_activo");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+	</script>
+	<script>
+var acc = document.getElementsByClassName("contenedor_acordeon");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("acordeon_activo");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+	<script src="js/la_color_picker.js"></script>
+	</body>
+	
+</html>
