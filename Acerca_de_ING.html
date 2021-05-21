@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos_menu.css">
+	<link rel="icon" href="images/favicon_sylard3.svg" sizes="any" type="image/svg+xml">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css"> <!--GRID SOLAMENTE-->
+	<title>About SYLARD</title>
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid back_aqua">
+			<!--INICIA barra de navegacion superior-->
+			<nav class="container contenedor_ancho_area_principal"> 
+				<div class="contenedor_switch float_left">
+                	<label class="texto" for="checkbox">ESP</label>
+					<label class="switch">
+					<input type="checkbox">
+                   	<span class="slider round"></span></label>
+					<label class="texto" for="checkbox">ENG</label>
+				</div>
+				<div class="barra_superior_elemento float_left "><a  href="#" ><span class="icono icon-home1"></span> SYLARD</a></div> 
+				<!-- la clase "ACTIVE" se usa en la sección que esta activa--> <!-- En el caso de HOME este elemento desaparece, ya que hay un icono en la barra publico-->
+            	<!-- <div class="barra_superior_elemento float_right"><a  class="" href="login.html">ACCESAR <span class="icono icon-login"></span></a></div>
+				<div class="barra_superior_elemento float_right"><a href="registro.html" class="active_a">REGISTRO <span class="icono icon-person"></span></a></div>-->
+				<div class="barra_superior_elemento dropdown_menu_usuario float_right">
+					<button class="dropbtn_barra_superior">
+						<div class="contenedor_icono_usuario"><img src="images/iconousuario.svg" class="imagen_icono_usuario" alt="Ícono de venado usuario"></div>
+						Emiliano Zapata <span class="icono icon-angle-down" id="flecha_dropdow_barra_superior"></span>
+					</button>
+					<div class="contenido_dropdown_menu_usuario">
+						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-edit"></span> Editar cuenta</a>
+   						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-key1"></span> Editar contraseña</a>
+    					<a href="#"><span class="icono_dropdown_menu_usuario_item icon-folder-open-o"></span> Mis colecciones</a>
+						<a href="#">Link 1 </a>
+   						<a href="#">Link 2</a>
+    					<a class="dropdown_menu_usuario_logout" href="#"><span class="icono_dropdown_menu_usuario_item icon-log-out"></span>  Cerrar sesión</a>
+					</div>
+				</div>
+			</nav>
+			<!--TERMINA barra de navegacion superior-->
+		</div>
+		<div class="container-fluid back_aqua_0">
+			<nav class=" container contenedor_barra_nav_publico">
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_1"><span class="icono_nav_publico icon-home1"></span></a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_2">Catálogo</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_3">Documentación</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_4">Manual de usuario</a>		
+				<h1 class="logo_menu" id="bnpe_5">SYLARD</h1>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_6">Contacto</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_7">Código fuente</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_8">Términos y condiciones</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_9">Creditos</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="container-fluid" id="contenedor_acerca_de">
+			<div class="extension_fondo_blanco_izquierdo d-sm-none d-md-block"></div>
+		<div class="container">
+			<div class="row contenedor-90vh" id="fila1_acerca_de">
+				<div class="col-md-7" id="columna_izquierda_acerca_de">
+				  <div class="columna_izquierda_seccion_standar">
+					<h1 class="color_principal h1_para_fijas">About SYLARD</h1>
+					  <h3 class="h3_para_fijas">Overview</h3>
+					<p class="parrafo_grande">SYLARD is <a href="#" alt="Github">open source software</a> that aims to remedy one significant deficiency in endangered language documentation efforts: The delivery of a corpus of audiovisual language documentation to end users who are not familiar with navigating the repositories that contain the primary materials (generally .wav audio files with time-coded annotations in <a href="https://archive.mpi.nl/tla/elan">ELAN</a> or, in some cases, <a href="https://transcriber.en.softonic.com">Transcriber</a>, the files of which can be seamlessly imported to ELAN).</p>
+					<p class="parrafo_grande">An initial attempt to deliver audio and transcriptions to end users was developed as part of the DEMCA: Documenting the Ethnobiology of Mexico and Central America portal <a href="https://demca.mesolex.org/portal/ethno/eaf/index.php">(demca.mesolex.org &gt; Multimedia)</a>, which includes online presentation of recordings on ethnobiological knowledge. Examples of materials from Mixtec, Nahuatl, and Totonac can be found <a href="https://demca.mesolex.org/portal/ethno/eaf/index.php">within this portal</a> Yet this system was not independent of DEMCA and therefore was limited in its ability to place audio and annotations online without first integrating them into a DEMCA ethnobotanical research project. SYLARD remedies this situation.</p>	
+					<h3 class="h3_para_fijas">Mesolex: Lexicosemantic Resources <br> for Mesoamerican Languages</h3>
+					<p class="parrafo_grande">In 2019, Jonathan D. Amith sought support from the National Endowment for the Humanities, Office of Digital Humanities (which had twice supported the development of DEMCA) for a project he called Mesolex: Lexicosemantic Resources for Mesoamerican Languages (presently available at <a href="https://staging.mesolex.org/es/">staging.mesolex.org</a>). The original conception was to offer to the public such resources in a single portal, with subportals for individual languages. An example of a subportal is that which offers Amith's material from <a href="https://staging.mesolex.org/en/azz/">Highland Puebla Nahuatl.</a> As can be seen on this subportal, the lexicosemantic resources that Mesolex delivers are divided into three sections:</p>
+					<ol>
+						<li><strong>Lexicons / Dictionaries</strong></li>
+						<li><strong>Corpora</strong> (audio recordings with transcriptions and often translations or linguistic analysis)</li>
+						<li><strong>Grammar</strong> (texts and articles on any number of topics related to the grammar of the subportal language)</li>
+					</ol>
+					<p class="parrafo_grande">Mesolex development began with Amith's collaboration with Neil Ashton, a programmer who is focusing on the lexicon back- and front-ends of Mesolex. Once the structure of this portal and subportals came into better focus, it was decided to have Ashton focus on the lexicon modules and have Bruno Pérez of Estudios Drako focus on the corpora module, which has been named SYLARD: Synchronized Language Annotation Result Display. Presently SYLARD is being developed as a stand-alone program with its own administrative interface for Visitors and Collaborators. The SYLARD interface is presently designed only to manage the ELAN-to-HTML conversion. Stage 1 of Mesolex will simply link the Corpora module of Mesolex subportals to SYLARD collections. Subsequent development will employ SYLARD administrative functionalities as the gateway into Mesolex, its subportals, and its three basic modules: Lexicons, Corpora, and Grammar.</p>
+				
+
+					<h3 class="h3_para_fijas">SYLARD: Synchronized Language<br>Annotation Result Display</h3>
+					<p class="parrafo_grande">The present version of SYLARD, 1.0, is a preliminary effort to provide the most versatile online presentation of endangered language recordings and annotations. It aims to offer the flexibility needed to solve multiple formats in ELAN files, that is, annotations that may be limited to transcriptions, or that may include translations into one or more languages, morphological segmentation, and glosses. Collaborators can select the tiers in their ELAN files that they wish to upload to the SYLARD server. These tiers can be made visible or hidden in the default view with the text in a color chosen from a color picker. Most importantly the Visitor (user) can customize the display by changing the tiers that are displayed for viewing (the changes are temporary and do not alter the default for other Visitors). The Visitor can also change where any tier appears (in a single-line display above a scroll box, or within a scroll box) and how it appears (the color of the text).</p>  
+					<p class="parrafo_grande">For further description of SYLARD functionalities for Visitors and Collaborators, see the <a href="#">Manual</a>.</p>
+				  </div>
+				    </div>						
+					<div class="" id="columna_derecha_acerca_de">
+						<img class="" src="images/ave_volando_huichapan.svg" id="pajaro_al_vuelo_acerca_de" alt="Imagen de animal fantástico de Textil Huichapan">
+						<img class="" src="images/guajolote_huichapan.svg" id="guajolote_acerca_de" alt="Imagen de animal fantástico de Textil Huichapan">
+						<img class="" src="images/gallo_huichapan.svg" id="gallo_acerca_de" alt="Imagen de animal fantástico de Textil Huichapan">
+						<img class="" src="images/ave_pequena.svg" id="ave_pequena_acerca_de" alt="Imagen de animal fantástico de Textil Huichapan">
+					</div>
+		</div>
+		</div>
+	</div>
+	</main>
+	<footer>
+		<div class="container-fluid contenedor_ancho_total back_aqua_0">
+			<div class="container contenedor_footer">
+				<a href="#">Terminos y condiciones</a>
+				<a href="#">Aviso de privacidad</a>
+				<a href="#" target="_blank"><span class="icono_footer icon-github"></span></a>
+				<p>© Derechos reservados SYLARD</p><img src="images/favicon_sylard3.svg" alt="Logo SYLARD">
+
+			</div>
+		</div>
+	</footer>
+</body>
+</html>	

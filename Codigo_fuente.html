@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos_menu.css">
+	<link rel="icon" href="images/favicon_sylard3.svg" sizes="any" type="image/svg+xml">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css"> <!--GRID SOLAMENTE-->
+	<title>Código fuente</title>
+</head>
+
+<body>
+	<header>
+		<div class="container-fluid back_aqua">
+			<!--INICIA barra de navegacion superior-->
+			<nav class="container contenedor_ancho_area_principal"> 
+				<div class="contenedor_switch float_left">
+                	<label class="texto" for="checkbox">ESP</label>
+					<label class="switch">
+					<input type="checkbox">
+                   	<span class="slider round"></span></label>
+					<label class="texto" for="checkbox">ENG</label>
+				</div>
+				<div class="barra_superior_elemento float_left "><a  href="#" ><span class="icono icon-home1"></span> SYLARD</a></div> 
+				<!-- la clase "ACTIVE" se usa en la sección que esta activa--> <!-- En el caso de HOME este elemento desaparece, ya que hay un icono en la barra publico-->
+            	<!-- <div class="barra_superior_elemento float_right"><a  class="" href="login.html">ACCESAR <span class="icono icon-login"></span></a></div>
+				<div class="barra_superior_elemento float_right"><a href="registro.html" class="active_a">REGISTRO <span class="icono icon-person"></span></a></div>-->
+				<div class="barra_superior_elemento dropdown_menu_usuario float_right">
+					<button class="dropbtn_barra_superior">
+						<div class="contenedor_icono_usuario"><img src="images/iconousuario.svg" class="imagen_icono_usuario" alt="Ícono de venado usuario"></div>
+						Emiliano Zapata <span class="icono icon-angle-down" id="flecha_dropdow_barra_superior"></span>
+					</button>
+					<div class="contenido_dropdown_menu_usuario">
+						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-edit"></span> Editar cuenta</a>
+   						<a href="#"><span class="icono_dropdown_menu_usuario_item icon-key1"></span> Editar contraseña</a>
+    					<a href="#"><span class="icono_dropdown_menu_usuario_item icon-folder-open-o"></span> Mis colecciones</a>
+						<a href="#">Link 1 </a>
+   						<a href="#">Link 2</a>
+    					<a class="dropdown_menu_usuario_logout" href="#"><span class="icono_dropdown_menu_usuario_item icon-log-out"></span>  Cerrar sesión</a>
+					</div>
+				</div>
+			</nav>
+			<!--TERMINA barra de navegacion superior-->
+		</div>
+		<div class="container-fluid back_aqua_0">
+			<nav class=" container contenedor_barra_nav_publico">
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_1"><span class="icono_nav_publico icon-home1"></span></a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_2">Catálogo</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_3">Documentación</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_4">Manual de usuario</a>		
+				<h1 class="logo_menu" id="bnpe_5">SYLARD</h1>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_6">Contacto</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_7">Código fuente</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_8">Términos y condiciones</a>
+				<a class="barra_nav_publico_elemento" href="#" id="bnpe_9">Creditos</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<div class="container-fluid" id="contenedor_editar_contrasena">
+			<div class="extension_fondo_blanco_izquierdo d-sm-none d-md-block"></div>
+		<div class="container">
+			<div class="row contenedor-90vh" id="fila1_codigo_fuente">
+				<div class="col-md-7" id="columna_izquierda_creditos">
+				  <div class="columna_izquierda_seccion_standar">
+					<h1 class="color_principal h1_para_fijas">Código fuente</h1>
+						<p class="parrafo_grande">El código fuente de SYLARD es de acceso libre mediante GitHub.</p>
+					  <p class="parrafo_grande">Favor de contactar a Drako Estudio, el equipo de desarrollo para preguntas o mejoras acerca del código: <a href="mailto:contacto@drakoestudio.com.mx">contacto@drakoestudio.com.mx</a>.</p>
+					  <p class="parrafo_grande">Para autorizaciones de usuarios, dudas o ayuda en SYLARD, contactar a <a href="mailto:mesolex.director@gmail.com">mesolex.director@gmail.com</a></p>
+					  <a class="btn btn-predeterminado" href="#">SYLARD en GitHub <span class="icono_boton icon-github"></span></a>			  
+				  </div>
+				    </div>						
+					<div class="" id="columna_derecha_codigo_fuente">
+						<img class="" src="images/mascota_hichapan.svg" id="mascota_codigo_fuente" alt="Imagen de animal fantástico de Textil Huichapan">
+					</div>
+			</div>
+	
+			</div>
+		</div>	
+	</main>
+	<footer>
+		<div class="container-fluid contenedor_ancho_total back_aqua_0">
+			<div class="container contenedor_footer">
+				<a href="#">Terminos y condiciones</a>
+				<a href="#">Aviso de privacidad</a>
+				<a href="#" target="_blank"><span class="icono_footer icon-github"></span></a>
+				<p>© Derechos reservados SYLARD</p><img src="images/favicon_sylard3.svg" alt="Logo SYLARD">
+
+			</div>
+		</div>
+	</footer>
+</body>
+</html>	
